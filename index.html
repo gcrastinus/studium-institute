@@ -79,13 +79,14 @@ h1{
   margin:0 auto 18px; max-width:560px;
 }
 .grid{
-  display:grid;
-  grid-template-columns:1fr;
+  display:flex;
+  flex-direction:column;
   gap:14px;
 }
-@media (min-width:640px){
-  .grid{grid-template-columns:1fr 1fr}
-  .grid .span-2{grid-column:1 / -1}
+.stack{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
 }
 a.card{
   display:block; text-decoration:none; color:inherit;
@@ -108,6 +109,34 @@ a.card:hover{
 .card .go{
   display:inline-block; margin-top:12px; font-family:'Cinzel', serif; font-size:13px;
   letter-spacing:.14em; color:var(--gold); text-transform:uppercase;
+}
+a.card-sub{
+  margin-left:28px;
+  padding:14px 20px 16px;
+  background:var(--paper2);
+  box-shadow:none;
+  border-left:3px solid var(--gold-soft);
+  border-radius:4px 12px 12px 4px;
+}
+a.card-sub:hover{
+  transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(74,58,32,.10);
+}
+.card-sub .card-kicker{
+  font-size:11px;
+  letter-spacing:.16em;
+  color:var(--ink-soft);
+}
+.card-sub h2{
+  font-size:18px;
+  font-weight:500;
+  margin:4px 0 6px;
+}
+.card-sub p{font-size:16px}
+.card-sub .go{
+  margin-top:8px;
+  font-size:12px;
+  color:var(--ink-soft);
 }
 footer{
   text-align:center; margin-top:56px; color:var(--ink-soft); font-size:16px; font-style:italic;
@@ -134,25 +163,27 @@ footer .rule{margin:0 auto 18px}
   <h2 class="section-label">The Trivium</h2>
   <p class="section-gloss">The three roads: grammar, logic, and rhetoric</p>
   <div class="grid">
-    <a class="card" href="https://grammatica.studiuminstitute.org">
-      <div class="card-kicker">Grammar</div>
-      <h2>Ars Grammatica</h2>
-      <p>The art of putting words together rightly, from the letter to the sentence, in English and Latin.</p>
-      <span class="go">Enter ⟶</span>
-    </a>
-    <a class="card" href="https://homeric.studiuminstitute.org">
-      <div class="card-kicker">Grammar</div>
-      <h2>Homeric Grammar</h2>
-      <p>The grammar of Homeric Greek, for reading the poems as they were made.</p>
-      <span class="go">Enter ⟶</span>
-    </a>
+    <div class="stack">
+      <a class="card" href="https://grammatica.studiuminstitute.org">
+        <div class="card-kicker">Grammar</div>
+        <h2>Ars Grammatica</h2>
+        <p>The art of putting words together rightly, from the letter to the sentence, in English and Latin.</p>
+        <span class="go">Enter ⟶</span>
+      </a>
+      <a class="card card-sub" href="https://homeric.studiuminstitute.org">
+        <div class="card-kicker">Companion</div>
+        <h2>Homeric Grammar</h2>
+        <p>Not the art itself, but the grammar of Homeric Greek, for reading the poems as they were made.</p>
+        <span class="go">Enter ⟶</span>
+      </a>
+    </div>
     <a class="card" href="https://syllogistica.studiuminstitute.org">
       <div class="card-kicker">Logic</div>
       <h2>Ars Syllogistica</h2>
       <p>Exercises in scholastic logic: predicables, categories, propositions, syllogisms, dialectic, and fallacy.</p>
       <span class="go">Enter ⟶</span>
     </a>
-    <a class="card span-2" href="https://rhetorica.studiuminstitute.org">
+    <a class="card" href="https://rhetorica.studiuminstitute.org">
       <div class="card-kicker">Rhetoric</div>
       <h2>Ars Rhetorica</h2>
       <p>The art of persuasion, carried beside the syllogism: the enthymeme, and the hidden premise brought into the open.</p>
@@ -175,7 +206,7 @@ footer .rule{margin:0 auto 18px}
       <p>An introduction to Euclidean classical mathematics.</p>
       <span class="go">Enter ⟶</span>
     </a>
-    <a class="card span-2" href="https://chant.studiuminstitute.org">
+    <a class="card" href="https://chant.studiuminstitute.org">
       <div class="card-kicker">Chant</div>
       <h2>Byzantine Voice</h2>
       <p>An app for Byzantine liturgical chant: reading, following, and singing the score.</p>
@@ -186,7 +217,7 @@ footer .rule{margin:0 auto 18px}
   <h2 class="section-label">Further Tools</h2>
   <p class="section-gloss">Alongside the liberal arts, for extra drill</p>
   <div class="grid">
-    <a class="card span-2" href="https://logicola.studiuminstitute.org">
+    <a class="card" href="https://logicola.studiuminstitute.org">
       <div class="card-kicker">Logic</div>
       <h2>LogiCola</h2>
       <p>A web version of Harry Gensler’s LogiCola, for drilling the forms of modern symbolic logic.</p>
