@@ -16,9 +16,9 @@
   --shadow:0 2px 14px rgba(74,58,32,.10);
 }
 body.dark{
-  --paper:#1a1611; --paper2:#120f0c; --card:#241e17; --ink:#e9dfc8; --ink-soft:#b4a583;
-  --gold:#c9a45c; --gold-soft:#a67c2e; --line:#463b2b; --wine:#8a3a31; --sage:#4f7355;
-  --sel-text:#1a1611; --glow:#231d15;
+  --paper:#2f2f32; --paper2:#27272a; --card:#3a3a3e; --ink:#e9dfc8; --ink-soft:#b4a583;
+  --gold:#c9a45c; --gold-soft:#a67c2e; --line:#55555c; --wine:#8a3a31; --sage:#4f7355;
+  --sel-text:#2f2f32; --glow:#323236;
   --shadow:0 2px 14px rgba(0,0,0,.45);
 }
 *{box-sizing:border-box; margin:0; padding:0}
@@ -30,16 +30,16 @@ html{
   scrollbar-width:thin;
 }
 html:has(body.dark){
-  background:#1a1611;
+  background:#2f2f32;
   color-scheme:dark;
-  scrollbar-color:#8a7a55 #231d15;
+  scrollbar-color:#8a7a55 #27272a;
 }
 ::-webkit-scrollbar{width:12px; height:12px}
 ::-webkit-scrollbar-track{background:#e6dcc2}
 ::-webkit-scrollbar-thumb{background:#c9a45c; border-radius:8px; border:3px solid #e6dcc2}
 ::-webkit-scrollbar-thumb:hover{background:#a67c2e}
-html:has(body.dark)::-webkit-scrollbar-track{background:#231d15}
-html:has(body.dark)::-webkit-scrollbar-thumb{background:#5a4a38; border-color:#231d15}
+html:has(body.dark)::-webkit-scrollbar-track{background:#27272a}
+html:has(body.dark)::-webkit-scrollbar-thumb{background:#55555c; border-color:#27272a}
 html:has(body.dark)::-webkit-scrollbar-thumb:hover{background:#8a7a55}
 body{
   font-family:'EB Garamond', Georgia, 'Times New Roman', serif;
