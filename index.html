@@ -119,12 +119,22 @@ a.card-sub{
   padding:12px 20px;
   background:var(--paper2);
   box-shadow:none;
-  border-left:3px solid var(--gold-soft);
+  border:1px solid var(--line);
+  border-left:3px solid #e4d4a8;
   border-radius:4px 12px 12px 4px;
+  color:var(--ink-soft);
+}
+body.dark a.card-sub{
+  border-left-color:#6a6558;
 }
 a.card-sub:hover{
-  transform:translateY(-2px);
-  box-shadow:0 4px 12px rgba(74,58,32,.10);
+  transform:translateY(-1px);
+  border-color:var(--line);
+  border-left-color:#d9c9a3;
+  box-shadow:none;
+}
+body.dark a.card-sub:hover{
+  border-left-color:#7a7568;
 }
 .card-sub h2{
   font-size:18px;
@@ -132,6 +142,7 @@ a.card-sub:hover{
   margin:0;
   white-space:nowrap;
   flex:0 0 auto;
+  color:var(--ink-soft);
 }
 .card-sub p{
   font-size:16px;
