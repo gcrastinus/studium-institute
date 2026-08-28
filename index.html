@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studium Institute — Companion Apps for the Liberal Arts</title>
+<meta name="description" content="Companion apps for students of the classical liberal arts: grammar, logic, rhetoric, music, mathematics, and chant.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f6f0e1; --paper2:#efe6cf; --card:#fffdf4; --ink:#2b2118; --ink-soft:#5a4a38;
+  --gold:#a67c2e; --gold-soft:#c9a45c; --line:#d9c9a3; --wine:#7b2d26; --sage:#48664c;
+  --sel-text:#f3e9cf; --glow:#fbf7ea;
+  --shadow:0 2px 14px rgba(74,58,32,.10);
+}
+body.dark{
+  --paper:#1a1611; --paper2:#120f0c; --card:#241e17; --ink:#e9dfc8; --ink-soft:#b4a583;
+  --gold:#c9a45c; --gold-soft:#a67c2e; --line:#463b2b; --wine:#8a3a31; --sage:#4f7355;
+  --sel-text:#1a1611; --glow:#231d15;
+  --shadow:0 2px 14px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box; margin:0; padding:0}
+html{
+  min-height:100%;
+  background:#f6f0e1;
+  color-scheme:light;
+  scrollbar-color:#c9a45c #e6dcc2;
+  scrollbar-width:thin;
+}
+html:has(body.dark){
+  background:#1a1611;
+  color-scheme:dark;
+  scrollbar-color:#8a7a55 #231d15;
+}
+::-webkit-scrollbar{width:12px; height:12px}
+::-webkit-scrollbar-track{background:#e6dcc2}
+::-webkit-scrollbar-thumb{background:#c9a45c; border-radius:8px; border:3px solid #e6dcc2}
+::-webkit-scrollbar-thumb:hover{background:#a67c2e}
+html:has(body.dark)::-webkit-scrollbar-track{background:#231d15}
+html:has(body.dark)::-webkit-scrollbar-thumb{background:#5a4a38; border-color:#231d15}
+html:has(body.dark)::-webkit-scrollbar-thumb:hover{background:#8a7a55}
+body{
+  font-family:'EB Garamond', Georgia, 'Times New Roman', serif;
+  color:var(--ink); min-height:100vh; font-size:19px; line-height:1.5;
+  transition:color .25s;
+  background:var(--paper);
+}
+#dark-toggle{
+  position:fixed; top:14px; right:16px; width:44px; height:44px; border-radius:50%;
+  border:1px solid var(--line); background:var(--card); color:var(--gold); font-size:20px;
+  cursor:pointer; box-shadow:var(--shadow); z-index:50; transition:transform .15s;
+}
+#dark-toggle:hover{transform:scale(1.08)}
+.wrap{max-width:880px; margin:0 auto; padding:48px 22px 70px}
+header{text-align:center; margin-bottom:10px}
+.ornament{color:var(--gold); font-size:22px; letter-spacing:.4em; margin:6px 0}
+h1{
+  font-family:'Cinzel', serif; font-size:42px; font-weight:600; letter-spacing:.08em;
+  color:var(--ink);
+}
+.subtitle{font-style:italic; color:var(--ink-soft); font-size:20px; margin-top:6px}
+.rule{display:flex; align-items:center; gap:14px; margin:22px auto; max-width:520px; color:var(--gold)}
+.rule::before,.rule::after{content:""; flex:1; height:1px; background:linear-gradient(90deg,transparent,var(--gold-soft))}
+.rule::after{background:linear-gradient(90deg,var(--gold-soft),transparent)}
+.lede{
+  text-align:center; color:var(--ink-soft); font-size:18px; max-width:640px;
+  margin:0 auto 36px; line-height:1.55;
+}
+.section-label{
+  font-family:'Cinzel', serif; font-size:15px; letter-spacing:.22em; color:var(--gold);
+  text-transform:uppercase; text-align:center; margin:42px 0 8px;
+}
+.section-label::before{content:"❧\00a0\00a0"; color:var(--gold); font-size:16px}
+.section-label::after{content:"\00a0\00a0❧"; color:var(--gold); font-size:16px}
+.section-gloss{
+  text-align:center; font-style:italic; color:var(--ink-soft); font-size:16px;
+  margin:0 auto 18px; max-width:560px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:14px;
+}
+@media (min-width:640px){
+  .grid{grid-template-columns:1fr 1fr}
+  .grid .span-2{grid-column:1 / -1}
+}
+a.card{
+  display:block; text-decoration:none; color:inherit;
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:22px 24px; box-shadow:var(--shadow); position:relative;
+  transition:transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+a.card:hover{
+  transform:translateY(-3px); border-color:var(--gold-soft);
+  box-shadow:0 6px 20px rgba(74,58,32,.16);
+}
+.card-kicker{
+  font-family:'Cinzel', serif; color:var(--gold); font-size:13px; letter-spacing:.18em;
+  text-transform:uppercase;
+}
+.card h2{
+  font-family:'Cinzel', serif; font-size:22px; font-weight:600; margin:6px 0 8px;
+}
+.card p{color:var(--ink-soft); font-size:17px; line-height:1.45}
+.card .go{
+  display:inline-block; margin-top:12px; font-family:'Cinzel', serif; font-size:13px;
+  letter-spacing:.14em; color:var(--gold); text-transform:uppercase;
+}
+footer{
+  text-align:center; margin-top:56px; color:var(--ink-soft); font-size:16px; font-style:italic;
+}
+footer .rule{margin:0 auto 18px}
+@media (max-width:420px){
+  h1{font-size:32px}
+  #dark-toggle{width:40px; height:40px; font-size:18px}
+  .wrap{padding-top:36px}
+}
+</style>
+</head>
+<body>
+<button id="dark-toggle" type="button" aria-label="Toggle dark mode">☾</button>
+<div class="wrap">
+  <header>
+    <div class="ornament">❧</div>
+    <h1>Studium Institute</h1>
+    <p class="subtitle">Companion apps for students of the classical liberal arts</p>
+  </header>
+  <div class="rule">✦</div>
+  <p class="lede">These are practice-apps, not lectures. They sit beside the study of grammar, logic, rhetoric, music, mathematics, and chant, and they keep the traditional names and questions in view while the student works.</p>
+
+  <h2 class="section-label">The Trivium</h2>
+  <p class="section-gloss">The three roads: grammar, logic, and rhetoric</p>
+  <div class="grid">
+    <a class="card" href="https://grammatica.studiuminstitute.org">
+      <div class="card-kicker">Grammar</div>
+      <h2>Ars Grammatica</h2>
+      <p>The art of putting words together rightly, from the letter to the sentence, in English and Latin.</p>
+      <span class="go">Enter ⟶</span>
+    </a>
+    <a class="card" href="https://homeric.studiuminstitute.org">
+      <div class="card-kicker">Grammar</div>
+      <h2>Homeric Grammar</h2>
+      <p>The grammar of Homeric Greek, for reading the poems as they were made.</p>
+      <span class="go">Enter ⟶</span>
+    </a>
+    <a class="card" href="https://syllogistica.studiuminstitute.org">
+      <div class="card-kicker">Logic</div>
+      <h2>Ars Syllogistica</h2>
+      <p>Exercises in scholastic logic: predicables, categories, propositions, syllogisms, dialectic, and fallacy.</p>
+      <span class="go">Enter ⟶</span>
+    </a>
+    <a class="card" href="https://logicola.studiuminstitute.org">
+      <div class="card-kicker">Logic</div>
+      <h2>LogiCola</h2>
+      <p>A web version of Harry Gensler’s LogiCola, for drilling the forms of modern symbolic logic.</p>
+      <span class="go">Enter ⟶</span>
+    </a>
+    <a class="card span-2" href="https://rhetorica.studiuminstitute.org">
+      <div class="card-kicker">Rhetoric</div>
+      <h2>Ars Rhetorica</h2>
+      <p>The art of persuasion, carried beside the syllogism: the enthymeme, and the hidden premise brought into the open.</p>
+      <span class="go">Enter ⟶</span>
+    </a>
+  </div>
+
+  <h2 class="section-label">The Quadrivium</h2>
+  <p class="section-gloss">Number, figure, sound, and the music of the liturgy</p>
+  <div class="grid">
+    <a class="card" href="https://musica.studiuminstitute.org">
+      <div class="card-kicker">Music</div>
+      <h2>Ars Musica</h2>
+      <p>Music treated as a liberal art, not as a trade.</p>
+      <span class="go">Enter ⟶</span>
+    </a>
+    <a class="card" href="https://mathematics.studiuminstitute.org">
+      <div class="card-kicker">Mathematics</div>
+      <h2>Classical Mathematics</h2>
+      <p>An introduction to Euclidean classical mathematics.</p>
+      <span class="go">Enter ⟶</span>
+    </a>
+    <a class="card span-2" href="https://chant.studiuminstitute.org">
+      <div class="card-kicker">Chant</div>
+      <h2>Byzantine Voice</h2>
+      <p>An app for Byzantine liturgical chant: reading, following, and singing the score.</p>
+      <span class="go">Enter ⟶</span>
+    </a>
+  </div>
+
+  <footer>
+    <div class="rule">✦</div>
+    Designed and built by Timothy Kearns, PhD
+  </footer>
+</div>
+<script>
+(function(){
+  var btn = document.getElementById('dark-toggle');
+  var key = 'studium-dark';
+  function apply(on){
+    document.body.classList.toggle('dark', on);
+    btn.textContent = on ? '☀' : '☾';
+    btn.setAttribute('aria-label', on ? 'Switch to light mode' : 'Switch to dark mode');
+  }
+  apply(localStorage.getItem(key) === '1');
+  btn.addEventListener('click', function(){
+    var on = !document.body.classList.contains('dark');
+    localStorage.setItem(key, on ? '1' : '0');
+    apply(on);
+  });
+})();
+</script>
+</body>
+</html>
