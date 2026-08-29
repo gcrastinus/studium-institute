@@ -163,6 +163,26 @@ a.card-sub:hover{
   .card-sub p{white-space:normal; flex-basis:100%}
   .card-sub .go{margin-left:0}
 }
+.card.soon{
+  background:var(--paper2);
+  border-color:var(--line);
+  box-shadow:none;
+  cursor:default;
+  pointer-events:none;
+  color:var(--ink-soft);
+}
+.card.soon:hover{
+  transform:none;
+  border-color:var(--line);
+  box-shadow:none;
+}
+.card.soon .card-kicker{
+  color:var(--ink-soft);
+}
+.card.soon h2{
+  color:var(--ink-soft);
+  font-weight:500;
+}
 footer{
   text-align:center; margin-top:56px; color:var(--ink-soft); font-size:16px; font-style:italic;
 }
@@ -216,14 +236,13 @@ footer .rule{margin:0 auto 18px}
   </div>
 
   <h2 class="section-label">The Quadrivium</h2>
-  <p class="section-gloss">Number, figure, sound, and the music of the liturgy</p>
+  <p class="section-gloss">Number, figure, harmony, and the heavens</p>
   <div class="grid">
-    <a class="card" href="https://mathematics.studiuminstitute.org">
-      <div class="card-kicker">Mathematics</div>
-      <h2>Classical Mathematics</h2>
-      <p>An introduction to Euclidean classical mathematics.</p>
-      <span class="go">Enter ⟶</span>
-    </a>
+    <div class="card soon" aria-disabled="true">
+      <div class="card-kicker">In preparation</div>
+      <h2>Exercises in Arithmetic</h2>
+      <p>Number considered in itself, before it is applied to figure or to sound: the even and the odd, and the kinds of multitude.</p>
+    </div>
     <div class="stack">
       <a class="card" href="https://musica.studiuminstitute.org">
         <div class="card-kicker">Music</div>
@@ -236,6 +255,17 @@ footer .rule{margin:0 auto 18px}
         <p>A set of exercises for Byzantine liturgical chant: reading, following, and singing the score.</p>
         <span class="go">Enter ⟶</span>
       </a>
+    </div>
+    <a class="card" href="https://mathematics.studiuminstitute.org">
+      <div class="card-kicker">Geometry</div>
+      <h2>Geometry</h2>
+      <p>An introduction to Euclidean geometry: magnitude at rest, and the figures that follow from it.</p>
+      <span class="go">Enter ⟶</span>
+    </a>
+    <div class="card soon" aria-disabled="true">
+      <div class="card-kicker">In preparation</div>
+      <h2>Exercises in Astronomy</h2>
+      <p>Magnitude in motion: the measure of the heavens, and the ordered courses of the stars.</p>
     </div>
   </div>
 
