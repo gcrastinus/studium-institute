@@ -12,7 +12,15 @@
 <body data-page="path-voice-2" data-path="voice">
 <a class="skip" href="#main">Skip to the text</a>
 <button type="button" id="nav-toggle" aria-label="Open contents">☰</button>
-<button type="button" id="dark-toggle" aria-label="Toggle dark mode">☾</button>
+<button type="button" id="dark-toggle" aria-label="Toggle dark mode" title="Light / dark">☾</button>
+<select id="speak-rate" title="Reading speed" aria-label="Reading speed">
+  <option value="1">1×</option>
+  <option value="1.5">1.5×</option>
+  <option value="2">2×</option>
+  <option value="2.5">2.5×</option>
+  <option value="3">3×</option>
+</select>
+<button type="button" id="speak-toggle" title="Read this screen aloud" aria-label="Read this screen aloud">🔊</button>
 <div class="app">
   <aside class="toc" id="toc"></aside>
   <main class="main" id="main">
