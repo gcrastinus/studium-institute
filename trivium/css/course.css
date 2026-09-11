@@ -460,16 +460,16 @@ h1 {
   transition: transform 0.15s, background 0.15s, color 0.15s;
 }
 
+#dark-toggle { right: 16px; }
+
 #speak-toggle {
-  right: 16px;
+  right: 68px;
   font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
   line-height: 1;
 }
-
-#dark-toggle { right: 68px; }
 
 #speak-toggle.speaking {
   background: var(--gold);
@@ -597,9 +597,9 @@ h1 {
 
 @media (max-width: 420px) {
   #dark-toggle, #nav-toggle, #speak-toggle { width: 40px; height: 40px; top: 12px; }
-  #dark-toggle { right: 58px; }
-  #speak-toggle { right: 12px; font-size: 16px; }
-  .speak-rate { right: 12px; top: 56px; }
+  #dark-toggle { right: 12px; }
+  #speak-toggle { right: 56px; font-size: 16px; }
+  .speak-rate { right: 100px; top: 16px; }
   .speak-rate-btn { height: 28px; min-width: 52px; font-size: 11px; padding: 0 8px; }
   .main { padding-top: 92px; }
   body { font-size: 18px; }
