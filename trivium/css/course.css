@@ -477,23 +477,83 @@ h1 {
   border-color: var(--gold);
 }
 
-#speak-rate {
+.speak-rate {
   position: fixed;
   top: 20px;
   right: 120px;
+  z-index: 51;
+}
+
+.speak-rate-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   height: 32px;
   min-width: 58px;
   border: 1px solid var(--line);
   background: var(--card);
-  color: var(--ink);
+  color: var(--gold);
   font-family: var(--display);
   font-size: 12px;
   letter-spacing: 0.08em;
   border-radius: 8px;
-  padding: 0 8px;
-  z-index: 50;
+  padding: 0 10px;
   box-shadow: var(--shadow);
   cursor: pointer;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+
+.speak-rate-btn::after {
+  content: "▾";
+  margin-left: 5px;
+  font-size: 9px;
+  opacity: 0.85;
+}
+
+.speak-rate-btn:hover,
+.speak-rate.open .speak-rate-btn {
+  border-color: var(--gold-soft);
+  color: var(--ink);
+}
+
+.speak-rate-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  min-width: 100%;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.speak-rate-menu[hidden] {
+  display: none;
+}
+
+.speak-rate-menu li {
+  font-family: var(--display);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  padding: 7px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.speak-rate-menu li:hover,
+.speak-rate-menu li:focus {
+  background: var(--panel);
+  color: var(--gold);
+}
+
+.speak-rate-menu li[aria-selected="true"] {
+  color: var(--gold);
+  background: var(--paper2);
 }
 
 #nav-toggle {
@@ -539,7 +599,8 @@ h1 {
   #dark-toggle, #nav-toggle, #speak-toggle { width: 40px; height: 40px; top: 12px; }
   #dark-toggle { right: 58px; }
   #speak-toggle { right: 12px; font-size: 16px; }
-  #speak-rate { right: 12px; top: 56px; height: 28px; min-width: 52px; font-size: 11px; padding: 0 4px; }
+  .speak-rate { right: 12px; top: 56px; }
+  .speak-rate-btn { height: 28px; min-width: 52px; font-size: 11px; padding: 0 8px; }
   .main { padding-top: 92px; }
   body { font-size: 18px; }
 }

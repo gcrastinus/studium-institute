@@ -329,6 +329,20 @@
   var RATE_KEY = "studium-trivium-speak-rate";
   var RATES = [1, 1.5, 2, 2.5, 3];
 
+  function rateLabel(r) {
+    return String(r) + "×";
+  }
+
+  function rateWidgetHTML(current) {
+    var html = '<button type="button" class="speak-rate-btn" aria-haspopup="listbox" aria-expanded="false" title="Reading speed" aria-label="Reading speed">' + rateLabel(current) + "</button>";
+    html += '<ul class="speak-rate-menu" role="listbox" hidden>';
+    RATES.forEach(function (r) {
+      html += '<li role="option" data-rate="' + r + '" aria-selected="' + (r === current ? "true" : "false") + '">' + rateLabel(r) + "</li>";
+    });
+    html += "</ul>";
+    return html;
+  }
+
   function bindSpeak() {
     var btn = document.getElementById("speak-toggle");
     var rateEl = document.getElementById("speak-rate");
@@ -341,13 +355,49 @@
       btn.textContent = "🔊";
       document.body.appendChild(btn);
     }
-    if (!rateEl) {
-      rateEl = document.createElement("select");
-      rateEl.id = "speak-rate";
-      rateEl.title = "Reading speed";
-      rateEl.setAttribute("aria-label", "Reading speed");
-      rateEl.innerHTML = '<option value="1">1×</option><option value="1.5">1.5×</option><option value="2">2×</option><option value="2.5">2.5×</option><option value="3">3×</option>';
-      document.body.appendChild(rateEl);
+
+    var rate = 1;
+    try {
+      rate = parseFloat(localStorage.getItem(RATE_KEY) || "1") || 1;
+    } catch (e) { rate = 1; }
+    if (RATES.indexOf(rate) < 0) rate = 1;
+
+    if (!rateEl || rateEl.tagName === "SELECT") {
+      var wrap = document.createElement("div");
+      wrap.id = "speak-rate";
+      wrap.className = "speak-rate";
+      wrap.innerHTML = rateWidgetHTML(rate);
+      if (rateEl && rateEl.parentNode) rateEl.parentNode.replaceChild(wrap, rateEl);
+      else document.body.appendChild(wrap);
+      rateEl = wrap;
+    } else {
+      rateEl.classList.add("speak-rate");
+      if (!rateEl.querySelector(".speak-rate-btn")) rateEl.innerHTML = rateWidgetHTML(rate);
+    }
+
+    var rateBtn = rateEl.querySelector(".speak-rate-btn");
+    var rateMenu = rateEl.querySelector(".speak-rate-menu");
+
+    function setRateUI(r) {
+      rate = r;
+      if (rateBtn) rateBtn.textContent = rateLabel(r);
+      if (rateMenu) {
+        rateMenu.querySelectorAll("[data-rate]").forEach(function (li) {
+          li.setAttribute("aria-selected", parseFloat(li.getAttribute("data-rate")) === r ? "true" : "false");
+        });
+      }
+    }
+    setRateUI(rate);
+
+    function closeRateMenu() {
+      rateEl.classList.remove("open");
+      if (rateBtn) rateBtn.setAttribute("aria-expanded", "false");
+      if (rateMenu) rateMenu.hidden = true;
+    }
+    function openRateMenu() {
+      rateEl.classList.add("open");
+      if (rateBtn) rateBtn.setAttribute("aria-expanded", "true");
+      if (rateMenu) rateMenu.hidden = false;
     }
 
     var supported = !!(window.speechSynthesis && window.SpeechSynthesisUtterance);
@@ -356,19 +406,49 @@
       btn.setAttribute("aria-disabled", "true");
       btn.style.opacity = ".45";
       btn.style.cursor = "default";
-      rateEl.disabled = true;
       rateEl.style.opacity = ".45";
+      if (rateBtn) {
+        rateBtn.disabled = true;
+        rateBtn.style.cursor = "default";
+      }
       return;
     }
 
+    if (rateBtn) {
+      rateBtn.addEventListener("click", function (ev) {
+        ev.stopPropagation();
+        if (rateMenu && rateMenu.hidden) openRateMenu();
+        else closeRateMenu();
+      });
+    }
+    if (rateMenu) {
+      rateMenu.addEventListener("click", function (ev) {
+        var li = ev.target.closest("[data-rate]");
+        if (!li) return;
+        var r = parseFloat(li.getAttribute("data-rate")) || 1;
+        if (RATES.indexOf(r) < 0) r = 1;
+        setRateUI(r);
+        try { localStorage.setItem(RATE_KEY, String(rate)); } catch (e2) {}
+        closeRateMenu();
+      });
+    }
+    document.addEventListener("click", function (ev) {
+      if (!rateEl.contains(ev.target)) closeRateMenu();
+    });
+    document.addEventListener("keydown", function (ev) {
+      if (ev.key === "Escape") closeRateMenu();
+    });
+
     var speaking = false;
     var queue = [];
-    var rate = 1;
-    try {
-      rate = parseFloat(localStorage.getItem(RATE_KEY) || "1") || 1;
-    } catch (e) { rate = 1; }
-    if (RATES.indexOf(rate) < 0) rate = 1;
-    rateEl.value = String(rate);
+    var keepAlive = null;
+
+    function clearKeepAlive() {
+      if (keepAlive) {
+        clearInterval(keepAlive);
+        keepAlive = null;
+      }
+    }
 
     function setSpeakingUI(on) {
       speaking = on;
@@ -379,9 +459,10 @@
     }
 
     function stopSpeak() {
-      try { window.speechSynthesis.cancel(); } catch (e) {}
+      clearKeepAlive();
       queue = [];
       setSpeakingUI(false);
+      try { window.speechSynthesis.cancel(); } catch (e) {}
     }
 
     function normalizeText(s) {
@@ -414,9 +495,10 @@
     function pickVoice() {
       try {
         var voices = window.speechSynthesis.getVoices() || [];
-        return voices.filter(function (v) { return /^en(-|_)/i.test(v.lang) && /english/i.test(v.name); })[0]
-          || voices.filter(function (v) { return /^en(-|_)/i.test(v.lang); })[0]
-          || voices[0]
+        var en = voices.filter(function (v) { return /^en(-|_)/i.test(v.lang); });
+        return en.filter(function (v) { return v.localService && /samantha|daniel|karen|moira|alex|serena|rishi|siri/i.test(v.name); })[0]
+          || en.filter(function (v) { return v.localService; })[0]
+          || en[0]
           || null;
       } catch (e) { return null; }
     }
@@ -438,24 +520,61 @@
       return chunks.length ? chunks : [text];
     }
 
+    function kickSynth() {
+      try {
+        if (window.speechSynthesis.paused) window.speechSynthesis.resume();
+      } catch (e) {}
+    }
+
     function speakChunks(chunks) {
       queue = chunks.slice();
       setSpeakingUI(true);
       var voice = pickVoice();
+
       function next() {
         if (!speaking) return;
-        if (!queue.length) { setSpeakingUI(false); return; }
+        if (!queue.length) {
+          clearKeepAlive();
+          setSpeakingUI(false);
+          return;
+        }
         var u = new SpeechSynthesisUtterance(queue.shift());
+        u.lang = "en-US";
         if (voice) u.voice = voice;
         u.rate = rate;
         u.pitch = 1;
-        u.onend = next;
-        u.onerror = function () { setSpeakingUI(false); };
-        try { window.speechSynthesis.speak(u); }
-        catch (e) { setSpeakingUI(false); }
+        u.volume = 1;
+        u.onend = function () { next(); };
+        u.onerror = function (ev) {
+          var err = ev && ev.error;
+          if (err === "canceled" || err === "interrupted") return;
+          clearKeepAlive();
+          setSpeakingUI(false);
+        };
+        try {
+          window.speechSynthesis.speak(u);
+          kickSynth();
+        } catch (e) {
+          clearKeepAlive();
+          setSpeakingUI(false);
+        }
       }
-      try { window.speechSynthesis.cancel(); } catch (e) {}
-      setTimeout(next, 40);
+
+      /* Speak the first chunk inside the click. Chrome drops speech if
+         cancel() is followed by speak() on a timeout (lost user gesture). */
+      try {
+        if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
+          window.speechSynthesis.cancel();
+        }
+      } catch (e) {}
+
+      clearKeepAlive();
+      keepAlive = setInterval(function () {
+        if (!speaking) { clearKeepAlive(); return; }
+        kickSynth();
+      }, 12000);
+
+      next();
     }
 
     btn.addEventListener("click", function () {
@@ -466,15 +585,10 @@
       }
     });
 
-    rateEl.addEventListener("change", function () {
-      rate = parseFloat(rateEl.value) || 1;
-      try { localStorage.setItem(RATE_KEY, String(rate)); } catch (e) {}
-    });
-
     window.addEventListener("pagehide", stopSpeak);
     try {
-      window.speechSynthesis.onvoiceschanged = function () {};
       window.speechSynthesis.getVoices();
+      window.speechSynthesis.addEventListener("voiceschanged", function () {});
     } catch (e) {}
   }
 
