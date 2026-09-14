@@ -1,0 +1,850 @@
+{
+  "title": "The Age of Chivalry",
+  "author": "Thomas Bulfinch",
+  "source": {
+    "name": "Project Gutenberg eBook #4926",
+    "url": "https://www.gutenberg.org/cache/epub/4926/pg4926.txt",
+    "html": "https://www.gutenberg.org/ebooks/4926"
+  },
+  "parts": [
+    {
+      "id": "arthur",
+      "title": "King Arthur and His Knights",
+      "chapters": [
+        "arthur-i",
+        "arthur-ii",
+        "arthur-iii",
+        "arthur-iv",
+        "arthur-v",
+        "arthur-vi",
+        "arthur-vii",
+        "arthur-viii",
+        "arthur-ix",
+        "arthur-x",
+        "arthur-xi",
+        "arthur-xii",
+        "arthur-xiii",
+        "arthur-xiv",
+        "arthur-xv",
+        "arthur-xvi",
+        "arthur-xvii",
+        "arthur-xviii",
+        "arthur-xix",
+        "arthur-xx",
+        "arthur-xxi",
+        "arthur-xxii",
+        "arthur-xxiii"
+      ]
+    },
+    {
+      "id": "mabinogi",
+      "title": "The Mabinogeon",
+      "chapters": [
+        "mabinogi-intro",
+        "mabinogi-i",
+        "mabinogi-ii",
+        "mabinogi-iii",
+        "mabinogi-iv",
+        "mabinogi-v",
+        "mabinogi-vi",
+        "mabinogi-vii",
+        "mabinogi-viii",
+        "mabinogi-ix",
+        "mabinogi-x",
+        "mabinogi-xi",
+        "mabinogi-xii",
+        "mabinogi-xiii"
+      ]
+    },
+    {
+      "id": "heroes",
+      "title": "Hero Myths of the British Race",
+      "chapters": [
+        "hero-beowulf",
+        "hero-cuchulain",
+        "hero-hereward",
+        "hero-robin"
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": "arthur-i",
+      "part": "arthur",
+      "num": "I",
+      "title": "Introduction",
+      "kicker": "King Arthur and His Knights",
+      "figures": [
+        "Arthur"
+      ],
+      "excerpt": "On the decline of the Roman power, about five centuries after Christ, the countries of Northern Europe were left almost destitute of a national government. Numerous chiefs, more or less powerful, held local sway, as far as each could enforce his dominion, and occasionally those chiefs would unite for a common object; but, in ordinary times, they were much more likely to be found in hostility to one another. In such a",
+      "searchText": "On the decline of the Roman power, about five centuries after Christ, the countries of Northern Europe were left almost destitute of a national government. Numerous chiefs, more or less powerful, held local sway, as far as each could enforce his dominion, and occasionally those chiefs would unite for a common object; but, in ordinary times, they were much more likely to be found in hostility to one another. In such a state of things the rights of the humbler classes of society were at the mercy of every assailant; and it is plain that, without some check upon the lawless power of the chiefs, society must have relapsed into barbarism. Such checks were found, first, in the rivalry of the chiefs themselves, whose mutual jealousy made them restraints upon one another; secondly, in the influence of the Church, which, by every motive, pure or selfish, was pledged to interpose for the protection of the weak; and lastly, in the generosity and sense of right which, however crushed under the weight of passion and selfishness, dwell naturally in the heart of man. From this last source sprang Chivalry, which framed an ideal of the heroic character, combining invincible strength and valor, justice, modesty, loyalty to superiors, courtesy to equals, compassion to weakness, and devotedness to the Church; an ideal which, if never met with in real life, was acknowledged by all as the highest model for emulation. The word \"Chivalry\" is derived from the French \"cheval,\" a horse. The word \"knight,\" which originally meant boy or servant, was particularly applied to a young man after he was admitted to the privilege of bearing arms. This privilege was conferred on youths of family and fortune only, for the mass of the people were not furnished with arms. The knight then was a mounted warrior",
+      "wordCount": 3881,
+      "poemCount": 3
+    },
+    {
+      "id": "arthur-ii",
+      "part": "arthur",
+      "num": "II",
+      "title": "The Mythical History of England",
+      "kicker": "King Arthur and His Knights",
+      "figures": [
+        "Arthur"
+      ],
+      "excerpt": "The illustrious poet, Milton, in his \"History of England,\" is the author whom we chiefly follow in this chapter. According to the earliest accounts, Albion, a giant, and son of Neptune, a contemporary of Hercules, ruled over the island, to which he gave his name. Presuming to oppose the progress of Hercules in his western march, he was slain by him. Another story is that Histion, the son of Japhet, the son of Noah, h",
+      "searchText": "The illustrious poet, Milton, in his \"History of England,\" is the author whom we chiefly follow in this chapter. According to the earliest accounts, Albion, a giant, and son of Neptune, a contemporary of Hercules, ruled over the island, to which he gave his name. Presuming to oppose the progress of Hercules in his western march, he was slain by him. Another story is that Histion, the son of Japhet, the son of Noah, had four sons, Francus, Romanus, Alemannus, and Britto, from whom descended the French, Roman, German, and British people. Rejecting these and other like stories, Milton gives more regard to the story of Brutus, the Trojan, which, he says, is supported by \"descents of ancestry long continued, laws and exploits not plainly seeming to be borrowed or devised, which on the common belief have wrought no small impression; defended by many, denied utterly by few.\" The principal authority is Geoffrey of Monmouth, whose history, written in the twelfth century, purports to be a translation of a history of Britain brought over from the opposite shore of France, which, under the name of Brittany, was chiefly peopled by natives of Britain who, from time to time, emigrated thither, driven from their own country by the inroads of the Picts and Scots. According to this authority, Brutus was the son of Silvius, and he of Ascanius, the son of Aeneas, whose flight from Troy and settlement in Italy are narrated in \"Stories of Gods and Heroes.\" Brutus, at the age of fifteen, attending his father to the chase, unfortunately killed him with an arrow. Banished therefor by his kindred, he sought refuge in that part of Greece where Helenus, with a band of Trojan exiles, had become established. But Helenus was now dead and the descendants of the Trojans were oppressed by Pandrasus, the",
+      "wordCount": 3493,
+      "poemCount": 7
+    },
+    {
+      "id": "arthur-iii",
+      "part": "arthur",
+      "num": "III",
+      "title": "Merlin",
+      "kicker": "King Arthur and His Knights",
+      "figures": [
+        "Arthur",
+        "Merlin",
+        "Gawain",
+        "Uther",
+        "Viviane"
+      ],
+      "excerpt": "Merlin was the son of no mortal father, but of an Incubus, one of a class of beings not absolutely wicked, but far from good, who inhabit the regions of the air. Merlin's mother was a virtuous young woman, who, on the birth of her son, intrusted him to a priest, who hurried him to the baptismal fount, and so saved him from sharing the lot of his father, though he retained many marks of his unearthly origin. At this t",
+      "searchText": "Merlin was the son of no mortal father, but of an Incubus, one of a class of beings not absolutely wicked, but far from good, who inhabit the regions of the air. Merlin's mother was a virtuous young woman, who, on the birth of her son, intrusted him to a priest, who hurried him to the baptismal fount, and so saved him from sharing the lot of his father, though he retained many marks of his unearthly origin. At this time Vortigern reigned in Britain. He was a usurper, who had caused the death of his sovereign, Moines, and driven the two brothers of the late king, whose names were Uther and Pendragon, into banishment. Vortigern, who lived in constant fear of the return of the rightful heirs of the kingdom, began to erect a strong tower for defence. The edifice, when brought by the workmen to a certain height, three times fell to the ground, without any apparent cause. The king consulted his astrologers on this wonderful event, and learned from them that it would be necessary to bathe the corner-stone of the foundation with the blood of a child born without a mortal father. In search of such an infant, Vortigern sent his messengers all over the kingdom, and they by accident discovered Merlin, whose lineage seemed to point him out as the individual wanted. They took him to the king; but Merlin, young as he was, explained to the king the absurdity of attempting to rescue the fabric by such means, for he told him the true cause of the instability of the tower was its being placed over the den of two immense dragons, whose combats shook the earth above them. The king ordered his workmen to dig beneath the tower, and when they had done so they discovered two enormous serpents, the one white as milk the other red as fire. The multitude looked on with amazement, till the serpents",
+      "wordCount": 1850,
+      "poemCount": 3
+    },
+    {
+      "id": "arthur-iv",
+      "part": "arthur",
+      "num": "IV",
+      "title": "Arthur",
+      "kicker": "King Arthur and His Knights",
+      "figures": [
+        "Arthur",
+        "Guenever",
+        "Launcelot",
+        "Merlin",
+        "Gawain",
+        "Kay",
+        "Mordred",
+        "Uther",
+        "Igraine"
+      ],
+      "excerpt": "We shall begin our history of King Arthur by giving those particulars of his life which appear to rest on historical evidence; and then proceed to record those legends concerning him which form the earliest portion of British literature. Arthur was a prince of the tribe of Britons called Silures, whose country was South Wales, the son of Uther, named Pendragon, a title given to an elective sovereign, paramount over t",
+      "searchText": "We shall begin our history of King Arthur by giving those particulars of his life which appear to rest on historical evidence; and then proceed to record those legends concerning him which form the earliest portion of British literature. Arthur was a prince of the tribe of Britons called Silures, whose country was South Wales, the son of Uther, named Pendragon, a title given to an elective sovereign, paramount over the many kings of Britain. He appears to have commenced his martial career about the year 500, and was raised to the Pendragonship about ten years later. He is said to have gained twelve victories over the Saxons. The most important of them was that of Badon, by some supposed to be Bath, by others Berkshire. This was the last of his battles with the Saxons, and checked their progress so effectually, that Arthur experienced no more annoyance from them, and reigned in peace, until the revolt of his nephew Modred, twenty years later, which led to the fatal battle of Camlan, in Cornwall, in 542. Modred was slain, and Arthur, mortally wounded, was conveyed by sea to Glastonbury, where he died, and was buried. Tradition preserved the memory of the place of his interment within the abbey, as we are told by Giraldus Cambrensis, who was present when the grave was opened by command of Henry II. about 1150, and saw the bones and sword of the monarch, and a leaden cross let into his tombstone, with the inscription in rude Roman letters, \"Here lies buried the famous King Arthur, in the island Avalonia.\" This story has been elegantly versified by Warton. A popular traditional belief was long entertained among the Britons, that Arthur was not dead, but had been carried off to be healed of his wounds in Fairy-land, and that he would reappear to avenge his countrymen and rein",
+      "wordCount": 3623,
+      "poemCount": 7
+    },
+    {
+      "id": "arthur-v",
+      "part": "arthur",
+      "num": "V",
+      "title": "Arthur (Continued)",
+      "kicker": "King Arthur and His Knights",
+      "figures": [
+        "Arthur",
+        "Guenever",
+        "Merlin",
+        "Gawain",
+        "Kay",
+        "Mordred",
+        "Viviane"
+      ],
+      "excerpt": "ARTHUR (Continued) After the great victory of Mount Badon, by which the Saxons were for the time effectually put down, Arthur turned his arms against the Scots and Picts, whom he routed at Lake Lomond, and compelled to sue for mercy. He then went to York to keep his Christmas, and employed himself in restoring the Christian churches which the Pagans had rifled and overthrown. The following summer he conquered Ireland",
+      "searchText": "ARTHUR (Continued) After the great victory of Mount Badon, by which the Saxons were for the time effectually put down, Arthur turned his arms against the Scots and Picts, whom he routed at Lake Lomond, and compelled to sue for mercy. He then went to York to keep his Christmas, and employed himself in restoring the Christian churches which the Pagans had rifled and overthrown. The following summer he conquered Ireland, and then made a voyage with his fleet to Iceland, which he also subdued. The kings of Gothland and of the Orkneys came voluntarily and made their submission, promising to pay tribute. Then he returned to Britain, where, having established the kingdom, he dwelt twelve years in peace. During this time he invited over to him all persons whatsoever that were famous for valor in foreign nations, and augmented the number of his domestics, and introduced such politeness into his court as people of the remotest countries thought worthy of their imitation. So that there was not a nobleman who thought himself of any consideration unless his clothes and arms were made in the same fashion as those of Arthur's knights. Finding himself so powerful at home, Arthur began to form designs for extending his power abroad. So, having prepared his fleet, he first attempted Norway, that he might procure the crown of it for Lot, his sister's husband. Arthur landed in Norway, fought a great battle with the king of that country, defeated him, and pursued the victory till he had reduced the whole country under his dominion, and established Lot upon the throne. Then Arthur made a voyage to Gaul and laid siege to the city of Paris. Gaul was at that time a Roman province, and governed by Flollo, the Tribune. When the siege of Paris had continued a month, and the people began to suffer",
+      "wordCount": 3451,
+      "poemCount": 0
+    },
+    {
+      "id": "arthur-vi",
+      "part": "arthur",
+      "num": "VI",
+      "title": "Sir Gawain",
+      "kicker": "King Arthur and His Knights",
+      "figures": [
+        "Arthur",
+        "Gawain"
+      ],
+      "excerpt": "Sir Gawain was nephew to King Arthur, by his sister Morgana, married to Lot, king of Orkney, who was by Arthur made king of Norway. Sir Gawain was one of the most famous knights of the Round Table, and is characterized by the romancers as the SAGE and COURTEOUS Gawain. To this Chaucer alludes in his \"Squiere's Tale,\" where the strange knight \"salueth\" all the court \"With so high reverence and observance, As well in s",
+      "searchText": "Sir Gawain was nephew to King Arthur, by his sister Morgana, married to Lot, king of Orkney, who was by Arthur made king of Norway. Sir Gawain was one of the most famous knights of the Round Table, and is characterized by the romancers as the SAGE and COURTEOUS Gawain. To this Chaucer alludes in his \"Squiere's Tale,\" where the strange knight \"salueth\" all the court \"With so high reverence and observance, As well in speeche as in countenance, That Gawain, with his olde curtesie, Though he were come agen out of faerie, Ne coude him not amenden with a word.\" Gawain's brothers were Agrivain, Gahariet, and Gareth. Sir Gawain'S Marriage Once upon a time King Arthur held his court in merry Carlisle, when a damsel came before him and craved a boon. It was for vengeance upon a caitiff knight, who had made her lover captive and despoiled her of her lands. King Arthur commanded to bring him his sword, Excalibar, and to saddle his steed, and rode forth without delay to right the lady's wrong. Ere long he reached the castle of the grim baron, and challenged him to the conflict. But the castle stood on magic ground, and the spell was such that no knight could tread thereon but straight his courage fell and his strength decayed. King Arthur felt the charm, and before a blow was struck, his sturdy limbs lost their strength, and his head grew faint. He was fain to yield himself prisoner to the churlish knight, who refused to release him except upon condition that he should return at the end of a year, and bring a true answer to the question, \"What thing is it which women most desire?\" or in default thereof surrender himself and his lands. King Arthur accepted the terms, and gave his oath to return at the time appointed. During the year the king rode east, and he rode west, and inquired",
+      "wordCount": 1303,
+      "poemCount": 5
+    },
+    {
+      "id": "arthur-vii",
+      "part": "arthur",
+      "num": "VII",
+      "title": "Caradoc Briefbras; or, Caradoc with the Shrunken Arm",
+      "kicker": "King Arthur and His Knights",
+      "figures": [
+        "Arthur",
+        "Guenever",
+        "Kay",
+        "Caradoc"
+      ],
+      "excerpt": "Caradoc was the son of Ysenne, the beautiful niece of Arthur. He was ignorant who his father was, till it was discovered in the following manner: When the youth was of proper years to receive the honors of knighthood, King Arthur held a grand court for the purpose of knighting him. On this occasion a strange knight presented himself, and challenged the knights of Arthur's court to exchange blow for blow with him. His",
+      "searchText": "Caradoc was the son of Ysenne, the beautiful niece of Arthur. He was ignorant who his father was, till it was discovered in the following manner: When the youth was of proper years to receive the honors of knighthood, King Arthur held a grand court for the purpose of knighting him. On this occasion a strange knight presented himself, and challenged the knights of Arthur's court to exchange blow for blow with him. His proposal was this--to lay his neck on a block for any knight to strike, on condition that, if he survived the blow, the knight should submit in turn to the same experiment. Sir Kay, who was usually ready to accept all challenges, pronounced this wholly unreasonable, and declared that he would not accept it for all the wealth in the world. And when the knight offered his sword, with which the operation was to be performed, no person ventured to accept it, till Caradoc, growing angry at the disgrace which was thus incurred by the Round Table, threw aside his mantle and took it. \"Do you do this as one of the best knights?\" said the stranger. \"No,\" he replied, \"but as one of the most foolish.\" The stranger lays his head upon the block, receives a blow which sends it rolling from his shoulders, walks after it, picks it up, replaces it with great success, and says he will return when the court shall be assembled next year, and claim his turn. When the anniversary arrived, both parties were punctual to their engagement. Great entreaties were used by the king and queen, and the whole court, in behalf of Caradoc, but the stranger was inflexible. The young knight laid his head upon the block, and more than once desired him to make an end of the business, and not keep him longer in so disagreeable a state of expectation. At last the stranger strikes him gently with th",
+      "wordCount": 1648,
+      "poemCount": 2
+    },
+    {
+      "id": "arthur-viii",
+      "part": "arthur",
+      "num": "VIII",
+      "title": "Launcelot of the Lake",
+      "kicker": "King Arthur and His Knights",
+      "figures": [
+        "Arthur",
+        "Guenever",
+        "Launcelot",
+        "Merlin",
+        "Gawain",
+        "Kay",
+        "Viviane"
+      ],
+      "excerpt": "King Ban, of Brittany, the faithful ally of Arthur was attacked by his enemy Claudas, and after a long war saw himself reduced to the possession of a single fortress, where he was besieged by his enemy. In this extremity he determined to solicit the assistance of Arthur, and escaped in a dark night, with his wife Helen and his infant son Launcelot, leaving his castle in the hands of his seneschal, who immediately sur",
+      "searchText": "King Ban, of Brittany, the faithful ally of Arthur was attacked by his enemy Claudas, and after a long war saw himself reduced to the possession of a single fortress, where he was besieged by his enemy. In this extremity he determined to solicit the assistance of Arthur, and escaped in a dark night, with his wife Helen and his infant son Launcelot, leaving his castle in the hands of his seneschal, who immediately surrendered the place to Claudas. The flames of his burning citadel reached the eyes of the unfortunate monarch during his flight and he expired with grief. The wretched Helen, leaving her child on the brink of a lake, flew to receive the last sighs of her husband, and on returning perceived the little Launcelot in the arms of a nymph, who, on the approach of the queen, threw herself into the lake with the child. This nymph was Viviane, mistress of the enchanter Merlin, better known by the name of the Lady of the Lake. Launcelot received his appellation from having been educated at the court of this enchantress, whose palace was situated in the midst, not of a real, but, like the appearance which deceives the African traveller, of an imaginary lake, whose deluding resemblance served as a barrier to her residence. Here she dwelt not alone, but in the midst of a numerous retinue, and a splendid court of knights and damsels. The queen, after her double loss, retired to a convent, where she was joined by the widow of Bohort, for this good king had died of grief on hearing of the death of his brother Ban. His two sons, Lionel and Bohort, were rescued by a faithful knight, and arrived in the shape of greyhounds at the palace of the lake, where, having resumed their natural form, they were educated along with their cousin Launcelot. The fairy, when her pupil had attai",
+      "wordCount": 4463,
+      "poemCount": 1
+    },
+    {
+      "id": "arthur-ix",
+      "part": "arthur",
+      "num": "IX",
+      "title": "The Adventure of the Cart",
+      "kicker": "King Arthur and His Knights",
+      "figures": [
+        "Guenever",
+        "Launcelot",
+        "Gawain",
+        "Kay"
+      ],
+      "excerpt": "It befell in the month of May, Queen Guenever called to her knights of the Table Round, and gave them warning that early upon the morrow she would ride a-maying into the woods and fields beside Westminster; \"and I warn you that there be none of you but he be well horsed, and that ye all be clothed in green, either silk or cloth; and I shall bring with me ten ladies, and every knight shall have a lady behind him, and",
+      "searchText": "It befell in the month of May, Queen Guenever called to her knights of the Table Round, and gave them warning that early upon the morrow she would ride a-maying into the woods and fields beside Westminster; \"and I warn you that there be none of you but he be well horsed, and that ye all be clothed in green, either silk or cloth; and I shall bring with me ten ladies, and every knight shall have a lady behind him, and every knight shall have a squire and two yeoman, and all well horsed.\" \"For thus it chanced one morn when all the court, Green-suited, but with plumes that mock'd the May, Had been, their wont, a-maying\" --Guinevere. So they made them ready; and these were the names of the knights: Sir Kay the Seneschal, Sir Agrivaine, Sir Brandiles, Sir Sagramour le Desirus, Sir Dodynas le Sauvage, Sir Ozanna, Sir Ladynas, Sir Persant of Inde, Sir Ironside, and Sir Pelleas; and these ten knights made them ready, in the freshest manner, to ride with the queen. So upon the morn they took their horses with the queen, and rode a-maying in woods and meadows, as it pleased them, in great joy and delight. Now there was a knight named Maleagans, son to King Brademagus, who loved Queen Guenever passing well, and so had he done long and many years. Now this knight, Sir Maleagans, learned the queen's purpose, and that she had no men of arms with her but the ten noble knights all arrayed in green for maying; so he prepared him twenty men of arms, and a hundred archers, to take captive the queen and her knights. \"In the merry month of May, In a morn at break of day, With a troop of damsels playing, The Queen, forsooth, went forth a-maying.\" --Old Song. So when the queen had mayed, and all were bedecked with herbs, mosses, and flowers in the best manner and freshest, right then came out",
+      "wordCount": 2189,
+      "poemCount": 2
+    },
+    {
+      "id": "arthur-x",
+      "part": "arthur",
+      "num": "X",
+      "title": "The Lady of Shalott",
+      "kicker": "King Arthur and His Knights",
+      "figures": [
+        "Arthur",
+        "Guenever",
+        "Launcelot",
+        "Gawain",
+        "Galehaut"
+      ],
+      "excerpt": "King Arthur proclaimed a solemn tournament to be held at Winchester. The king, not less impatient than his knights for this festival, set off some days before to superintend the preparations, leaving the queen with her court at Camelot. Sir Launcelot, under pretence of indisposition, remained behind also. His intention was to attend the tournament--in disguise; and having communicated his project to Guenever, he moun",
+      "searchText": "King Arthur proclaimed a solemn tournament to be held at Winchester. The king, not less impatient than his knights for this festival, set off some days before to superintend the preparations, leaving the queen with her court at Camelot. Sir Launcelot, under pretence of indisposition, remained behind also. His intention was to attend the tournament--in disguise; and having communicated his project to Guenever, he mounted his horse, set off without any attendant, and, counterfeiting the feebleness of age, took the most unfrequented road to Winchester, and passed unnoticed as an old knight who was going to be a spectator of the sports. Even Arthur and Gawain, who happened to behold him from the windows of a castle under which he passed, were the dupes of his disguise. But an accident betrayed him. His horse happened to stumble, and the hero, forgetting for a moment his assumed character, recovered the animal with a strength and agility so peculiar to himself, that they instantly recognized the inimitable Launcelot. They suffered him, however, to proceed on his journey without interruption, convinced that his extraordinary feats of arms must discover him at the approaching festival. In the evening Launcelot was magnificently entertained as a stranger knight at the neighboring castle of Shalott. The lord of this castle had a daughter of exquisite beauty, and two sons lately received into the order of knighthood, one of whom was at that time ill in bed, and thereby prevented from attending the tournament, for which both brothers had long made preparation. Launcelot offered to attend the other, if he were permitted to borrow the armor of the invalid, and the lord of Shalott, without knowing the name of his guest, being satisfied from his appearance that his son could not have",
+      "wordCount": 1329,
+      "poemCount": 1
+    },
+    {
+      "id": "arthur-xi",
+      "part": "arthur",
+      "num": "XI",
+      "title": "Queen Guenever's Peril",
+      "kicker": "King Arthur and His Knights",
+      "figures": [
+        "Arthur",
+        "Guenever",
+        "Launcelot",
+        "Gawain"
+      ],
+      "excerpt": "It happened at this time that Queen Guenever was thrown into great peril of her life. A certain squire who was in her immediate service, having some cause of animosity to Sir Gawain, determined to destroy him by poison, at a public entertainment. For this purpose he concealed the poison in an apple of fine appearance, which he placed on the top of several others, and put the dish before the queen, hoping that, as Sir",
+      "searchText": "It happened at this time that Queen Guenever was thrown into great peril of her life. A certain squire who was in her immediate service, having some cause of animosity to Sir Gawain, determined to destroy him by poison, at a public entertainment. For this purpose he concealed the poison in an apple of fine appearance, which he placed on the top of several others, and put the dish before the queen, hoping that, as Sir Gawain was the knight of greatest dignity, she would present the apple to him. But it happened that a Scottish knight of high distinction, who arrived on that day, was seated next to the queen, and to him as a stranger she presented the apple, which he had no sooner eaten than he was seized with dreadful pain, and fell senseless. The whole court was, of course, thrown into confusion; the knights rose from table, darting looks of indignation at the wretched queen, whose tears and protestations were unable to remove their suspicions. In spite of all that could be done the knight died, and nothing remained but to order a magnificent funeral and monument for him, which was done. Some time after Sir Mador, brother of the murdered knight, arrived at Arthur's court in quest of him. While hunting in the forest he by chance came to the spot where the monument was erected, read the inscription, and returned to court determined on immediate and signal vengeance. He rode into the hall, loudly accused the queen of treason, and insisted on her being given up for punishment, unless she should find by a certain day a knight hardy enough to risk his life in support of her innocence. Arthur, powerful as he was, did not dare to deny the appeal, but was compelled with a heavy heart to accept it, and Mador sternly took his departure, leaving the royal couple plunged in terror a",
+      "wordCount": 1358,
+      "poemCount": 0
+    },
+    {
+      "id": "arthur-xii",
+      "part": "arthur",
+      "num": "XII",
+      "title": "Tristram and Isoude",
+      "kicker": "King Arthur and His Knights",
+      "figures": [
+        "Arthur",
+        "Guenever",
+        "Merlin",
+        "Tristram",
+        "Isoude",
+        "Palamedes",
+        "Uther",
+        "Igraine"
+      ],
+      "excerpt": "Meliadus was king of Leonois, or Lionesse, a country famous in the annals of romance, which adjoined the kingdom of Cornwall, but has now disappeared from the map, having been, it is said, overwhelmed by the ocean. Meliadus was married to Isabella, sister of Mark, king of Cornwall. A fairy fell in love with him, and drew him away by enchantment while he was engaged in hunting. His queen set out in quest of him, but w",
+      "searchText": "Meliadus was king of Leonois, or Lionesse, a country famous in the annals of romance, which adjoined the kingdom of Cornwall, but has now disappeared from the map, having been, it is said, overwhelmed by the ocean. Meliadus was married to Isabella, sister of Mark, king of Cornwall. A fairy fell in love with him, and drew him away by enchantment while he was engaged in hunting. His queen set out in quest of him, but was taken ill on her journey, and died, leaving an infant son, whom, from the melancholy circumstances of his birth, she called Tristram. Gouvernail, the queen's squire, who had accompanied her, took charge of the child, and restored him to his father, who had at length burst the enchantments of the fairy, and returned home. Meliadus after seven years married again, and the new queen, being jealous of the influence of Tristram with his father, laid plots for his life, which were discovered by Gouvernail, who in consequence fled with the boy to the court of the king of France, where Tristram was kindly received, and grew up improving in every gallant and knightly accomplishment, adding to his skill in arms the arts of music and of chess. In particular, he devoted himself to the chase and to all woodland sports, so that he became distinguished above all other chevaliers of the court for his knowledge of all that relates to hunting. No wonder that Belinda, the king's daughter, fell in love with him; but as he did not return her passion, she, in a sudden impulse of anger, excited her father against him, and he was banished the kingdom. The princess soon repented of her act, and in despair destroyed herself, having first written a most tender letter to Tristram, sending him at the same time a beautiful and sagacious dog, of which she was very fond, desiring him to",
+      "wordCount": 2971,
+      "poemCount": 1
+    },
+    {
+      "id": "arthur-xiii",
+      "part": "arthur",
+      "num": "XIII",
+      "title": "Tristram and Isoude (Continued)",
+      "kicker": "King Arthur and His Knights",
+      "figures": [
+        "Arthur",
+        "Guenever",
+        "Launcelot",
+        "Gawain",
+        "Tristram",
+        "Isoude",
+        "Kay",
+        "Viviane"
+      ],
+      "excerpt": "TRISTRAM AND ISOUDE (Continued) After this affair Tristram was banished from the kingdom, and Isoude shut up in a tower, which stood on the bank of a river. Tristram could not resolve to depart without some further communication with his beloved; so he concealed himself in the forest, till at last he contrived to attract her attention, by means of twigs which he curiously peeled, and sent down the stream under her wi",
+      "searchText": "TRISTRAM AND ISOUDE (Continued) After this affair Tristram was banished from the kingdom, and Isoude shut up in a tower, which stood on the bank of a river. Tristram could not resolve to depart without some further communication with his beloved; so he concealed himself in the forest, till at last he contrived to attract her attention, by means of twigs which he curiously peeled, and sent down the stream under her window. By this means many secret interviews were obtained. Tristram dwelt in the forest, sustaining himself by game, which the dog Houdain ran down for him; for this faithful animal was unequalled in the chase, and knew so well his master's wish for concealment, that, in the pursuit of his game, he never barked. At length Tristram departed, but left Houdain with Isoude, as a remembrancer of him. Sir Tristram wandered through various countries, achieving the most perilous enterprises, and covering himself with glory, yet unhappy at the separation from his beloved Isoude. At length King Mark's territory was invaded by a neighboring chieftain, and he was forced to summon his nephew to his aid. Tristram obeyed the call, put himself at the head of his uncle's vassals, and drove the enemy out of the country. Mark was full of gratitude, and Tristram, restored to favor and to the society of his beloved Isoude, seemed at the summit of happiness. But a sad reverse was at hand. Tristram had brought with him a friend named Pheredin, son of the king of Brittany. This young knight saw Queen Isoude, and could not resist her charms. Knowing the love of his friend for the queen, and that that love was returned, Pheredin concealed his own, until his health failed, and he feared he was drawing near his end. He then wrote to the beautiful queen that he was dying for love of her.",
+      "wordCount": 2489,
+      "poemCount": 3
+    },
+    {
+      "id": "arthur-xiv",
+      "part": "arthur",
+      "num": "XIV",
+      "title": "Sir Tristram's Battle with Sir Launcelot",
+      "kicker": "King Arthur and His Knights",
+      "figures": [
+        "Arthur",
+        "Guenever",
+        "Launcelot",
+        "Merlin",
+        "Gawain",
+        "Tristram",
+        "Palamedes"
+      ],
+      "excerpt": "Sir Tristram rode through a forest and saw ten men fighting, and one man did battle against nine. So he rode to the knights and cried to them, bidding them cease their battle, for they did themselves great shame, so many knights to fight against one. Then answered the master of the knights (his name was Sir Breuse sans Pitie, who was at that time the most villanous knight living): \"Sir knight, what have ye to do to m",
+      "searchText": "Sir Tristram rode through a forest and saw ten men fighting, and one man did battle against nine. So he rode to the knights and cried to them, bidding them cease their battle, for they did themselves great shame, so many knights to fight against one. Then answered the master of the knights (his name was Sir Breuse sans Pitie, who was at that time the most villanous knight living): \"Sir knight, what have ye to do to meddle with us? If ye be wise depart on your way as you came, for this knight shall not escape us.\" \"That were pity,\" said Sir Tristram, \"that so good a knight should be slain so cowardly; therefore I warn you I will succor him with all my puissance.\" Then Sir Tristram alighted off his horse, because they were on foot, that they should not slay his horse. And he smote on the right hand and on the left so vigorously that well-nigh at every stroke he struck down a knight. At last they fled, with Breuse sans Pitie, into the tower, and shut Sir Tristram without the gate. Then Sir Tristram returned back to the rescued knight, and found him sitting under a tree, sore wounded. \"Fair knight,\" said he, \"how is it with you?\" \"Sir knight,\" said Sir Palamedes, for he it was, \"I thank you of your great goodness, for ye have rescued me from death.\" \"What is your name?\" said Sir Tristram. He said, \"My name is Sir Palamedes.\" \"Say ye so?\" said Sir Tristram; \"now know that thou art the man in the world that I most hate; therefore make thee ready, for I will do battle with thee.\" \"What is your name?\" said Sir Palamedes. \"My name is Sir Tristram, your mortal enemy.\" \"It may be so,\" said Sir Palamedes; \"but you have done overmuch for me this day, that I should fight with you. Moreover, it will be no honor for you to have to do with me, for you are fresh and I am wounded. Therefo",
+      "wordCount": 1193,
+      "poemCount": 2
+    },
+    {
+      "id": "arthur-xv",
+      "part": "arthur",
+      "num": "XV",
+      "title": "The Round Table",
+      "kicker": "King Arthur and His Knights",
+      "figures": [
+        "Arthur",
+        "Guenever",
+        "Launcelot",
+        "Merlin",
+        "Tristram",
+        "Isoude"
+      ],
+      "excerpt": "The famous enchanter, Merlin, had exerted all his skill in fabricating the Round Table. Of the seats which surrounded it he had constructed thirteen, in memory of the thirteen Apostles. Twelve of these seats only could be occupied, and they only by knights of the highest fame; the thirteenth represented the seat of the traitor Judas. It remained always empty. It was called the PERILOUS SEAT, ever since a rash and hau",
+      "searchText": "The famous enchanter, Merlin, had exerted all his skill in fabricating the Round Table. Of the seats which surrounded it he had constructed thirteen, in memory of the thirteen Apostles. Twelve of these seats only could be occupied, and they only by knights of the highest fame; the thirteenth represented the seat of the traitor Judas. It remained always empty. It was called the PERILOUS SEAT, ever since a rash and haughty Saracen knight had dared to place himself in it, when the earth opened and swallowed him up. \"In our great hall there stood a vacant chair, Fashion'd by Merlin ere he past away, And carven with strange figures; and in and out The figures, like a serpent, ran a scroll Of letters in a tongue no man could read And Merlin call'd it 'The Siege perilous,' Perilous for good and ill; 'for there,' he said, 'No man could sit but he should lose himself.'\" --The Holy Grail. A magic power wrote upon each seat the name of the knight who was entitled to sit in it. No one could succeed to a vacant seat unless he surpassed in valor and glorious deeds the knight who had occupied it before him; without this qualification he would be violently repelled by a hidden force. Thus proof was made of all those who presented themselves to replace any companions of the order who had fallen. One of the principal seats, that of Moraunt of Ireland, had been vacant ten years, and his name still remained over it ever since the time when that distinguished champion fell beneath the sword of Sir Tristram. Arthur now took Tristram by the hand and led him to that seat. Immediately the most melodious sounds were heard, and exquisite perfumes filled the place; the name of Moraunt disappeared, and that of Tristram blazed forth in light. The rare modesty of Tristram had now to be subjected to a",
+      "wordCount": 1653,
+      "poemCount": 3
+    },
+    {
+      "id": "arthur-xvi",
+      "part": "arthur",
+      "num": "XVI",
+      "title": "Sir Palamedes",
+      "kicker": "King Arthur and His Knights",
+      "figures": [
+        "Arthur",
+        "Guenever",
+        "Merlin",
+        "Gawain",
+        "Tristram",
+        "Isoude",
+        "Palamedes"
+      ],
+      "excerpt": "While Sir Tristram and the fair Isoude abode yet at La Joyeuse Garde, Sir Tristram rode forth one day, without armor, having no weapon but his spear and his sword. And as he rode he came to a place where he saw two knights in battle, and one of them had gotten the better and the other lay overthrown. The knight who had the better was Sir Palamedes. When Sir Palamedes knew Sir Tristram, he cried out, \"Sir Tristram, no",
+      "searchText": "While Sir Tristram and the fair Isoude abode yet at La Joyeuse Garde, Sir Tristram rode forth one day, without armor, having no weapon but his spear and his sword. And as he rode he came to a place where he saw two knights in battle, and one of them had gotten the better and the other lay overthrown. The knight who had the better was Sir Palamedes. When Sir Palamedes knew Sir Tristram, he cried out, \"Sir Tristram, now we be met, and ere we depart we will redress our old wrongs.\" \"As for that,\" said Sir Tristram, \"there never yet was Christian man that might make his boast that I ever fled from him, and thou that art a Saracen shalt never say that of me.\" And therewith Sir Tristram made his horse to run, and with all his might came straight upon Sir Palamedes, and broke his spear upon him. Then he drew his sword and struck at Sir Palamedes six great strokes, upon his helm. Sir Palamedes saw that Sir Tristram had not his armor on, and he marvelled at his rashness and his great folly; and said to himself, \"If I meet and slay him, I am shamed wheresoever I go.\" Then Sir Tristram cried out and said, \"Thou coward knight, why wilt thou not do battle with me? for have thou no doubt I shall endure all thy malice.\" \"Ah, Sir Tristram!\" said Sir Palamedes, \"thou knowest I may not fight with thee for shame; for thou art here naked, and I am armed; now I require that thou answer me a question that I shall ask you.\" \"Tell me what it is,\" said Sir Tristram. \"I put the case,\" said Palamedes, \"that you were well armed, and I naked as ye be; what would you do to me now, by your true knighthood?\" \"Ah!\" said Sir Tristram, \"now I understand thee well, Sir Palamedes; and, as God bless me, what I shall say shall not be said for fear that I have of thee. But if it were so, thou shouldest depart",
+      "wordCount": 1231,
+      "poemCount": 0
+    },
+    {
+      "id": "arthur-xvii",
+      "part": "arthur",
+      "num": "XVII",
+      "title": "Sir Tristram",
+      "kicker": "King Arthur and His Knights",
+      "figures": [
+        "Tristram",
+        "Isoude"
+      ],
+      "excerpt": "On arriving in Brittany Tristram found King Hoel engaged in a war with a rebellious vassal, and hard pressed by his enemy. His best knights had fallen in a late battle, and he knew not where to turn for assistance. Tristram volunteered his aid. It was accepted; and the army of Hoel, led by Tristram, and inspired by his example, gained a complete victory. The king, penetrated by the most lively sentiments of gratitude",
+      "searchText": "On arriving in Brittany Tristram found King Hoel engaged in a war with a rebellious vassal, and hard pressed by his enemy. His best knights had fallen in a late battle, and he knew not where to turn for assistance. Tristram volunteered his aid. It was accepted; and the army of Hoel, led by Tristram, and inspired by his example, gained a complete victory. The king, penetrated by the most lively sentiments of gratitude, and having informed himself of Tristram's birth, offered him his daughter in marriage. The princess was beautiful and accomplished, and bore the same name with the Queen of Cornwall; but this one is designated by the Romancers as Isoude of the White Hands, to distinguish her from Isoude the Fair. How can we describe the conflict that agitated the heart of Tristram? He adored the first Isoude, but his love for her was hopeless, and not unaccompanied by remorse. Moreover, the sacred quest on which he had now entered demanded of him perfect purity of life. It seemed as if a happy destiny had provided for him in the charming princess Isoude of the White Hands the best security for all his good resolutions. This last reflection determined him. They were married, and passed some months in tranquil happiness at the court of King Hoel. The pleasure which Tristram felt in his wife's society increased day by day. An inward grace seemed to stir within him from the moment when he took the oath to go on the quest of the Holy Greal; it seemed even to triumph over the power of the magic love-potion. The war, which had been quelled for a time, now burst out anew. Tristram as usual was foremost in every danger. The enemy was worsted in successive conflicts, and at last shut himself up in his principal city. Tristram led on the attack of the city. As he mounted a ladder to",
+      "wordCount": 1283,
+      "poemCount": 2
+    },
+    {
+      "id": "arthur-xviii",
+      "part": "arthur",
+      "num": "XVIII",
+      "title": "Perceval",
+      "kicker": "King Arthur and His Knights",
+      "figures": [
+        "Arthur",
+        "Guenever",
+        "Gawain",
+        "Perceval",
+        "Kay"
+      ],
+      "excerpt": "The father and two elder brothers of Perceval had fallen in battle or tournaments, and hence, as the last hope of his family, his mother retired with him into a solitary region, where he was brought up in total ignorance of arms and chivalry. He was allowed no weapon but \"a lyttel Scots spere,\" which was the only thing of all \"her lordes faire gere\" that his mother carried to the wood with her. In the use of this he",
+      "searchText": "The father and two elder brothers of Perceval had fallen in battle or tournaments, and hence, as the last hope of his family, his mother retired with him into a solitary region, where he was brought up in total ignorance of arms and chivalry. He was allowed no weapon but \"a lyttel Scots spere,\" which was the only thing of all \"her lordes faire gere\" that his mother carried to the wood with her. In the use of this he became so skilful, that he could kill with it not only the animals of the chase for the table, but even birds on the wing. At length, however, Perceval was roused to a desire of military renown by seeing in the forest five knights who were in complete armor. He said to his mother, \"Mother, what are those yonder?\" \"They are angels, my son,\" said she. \"By my faith, I will go and become an angel with them.\" And Perceval went to the road and met them. \"Tell me, good lad,\" said one of them, \"sawest thou a knight pass this way either today or yesterday?\" \"I know not,\" said he, \"what a knight is.\" \"Such an one as I am,\" said the knight. \"If thou wilt tell me what I ask thee, I will tell thee what thou askest me.\" \"Gladly will I do so,\" said Sir Owain, for that was the knight's name. \"What is this?\" demanded Perceval, touching the saddle. \"It is a saddle,\" said Owain. Then he asked about all the accoutrements which he saw upon the men and the horses, and about the arms, and what they were for, and how they were used. And Sir Owain showed him all those things fully. And Perceval in return gave him such information as he had Then Perceval returned to his mother, and said to her, \"Mother, those were not angels, but honorable knights.\" Then his mother swooned away. And Perceval went to the place where they kept the horses that carried firewood and provisions for the cas",
+      "wordCount": 2753,
+      "poemCount": 2
+    },
+    {
+      "id": "arthur-xix",
+      "part": "arthur",
+      "num": "XIX",
+      "title": "The Sangreal, or Holy Graal",
+      "kicker": "King Arthur and His Knights",
+      "figures": [
+        "Arthur",
+        "Launcelot",
+        "Merlin",
+        "Gawain",
+        "Perceval",
+        "Galahad"
+      ],
+      "excerpt": "The Sangreal was the cup from which our Saviour drank at his last supper. He was supposed to have given it to Joseph of Arimathea, who carried it to Europe, together with the spear with which the soldier pierced the Saviour's side. From generation to generation, one of the descendants of Joseph of Arimathea had been devoted to the guardianship of these precious relics; but on the sole condition of leading a life of p",
+      "searchText": "The Sangreal was the cup from which our Saviour drank at his last supper. He was supposed to have given it to Joseph of Arimathea, who carried it to Europe, together with the spear with which the soldier pierced the Saviour's side. From generation to generation, one of the descendants of Joseph of Arimathea had been devoted to the guardianship of these precious relics; but on the sole condition of leading a life of purity in thought, word, and deed. For a long time the Sangreal was visible to all pilgrims, and its presence conferred blessings upon the land in which it was preserved. But at length one of those holy men to whom its guardianship had descended so far forgot the obligation of his sacred office as to look with unhallowed eye upon a young female pilgrim whose robe was accidentally loosened as she knelt before him. The sacred lance instantly punished his frailty, spontaneously falling upon him, and inflicting a deep wound. The marvellous wound could by no means be healed, and the guardian of the Sangreal was ever after called \"Le Roi Pescheur,\"--The Sinner King. The Sangreal withdrew its visible presence from the crowds who came to worship, and an iron age succeeded to the happiness which its presence had diffused among the tribes of Britain. \"But then the times Grew to such evil that the Holy cup Was caught away to heaven and disappear'd.\" --The Holy Grail. We have told in the history of Merlin how that great prophet and enchanter sent a message to King Arthur by Sir Gawain, directing him to undertake the recovery of the Sangreal, informing him at the same time that the knight who should accomplish that sacred quest was already born, and of a suitable age to enter upon it. Sir Gawain delivered his message, and the king was anxiously revolving in his mind how b",
+      "wordCount": 2130,
+      "poemCount": 2
+    },
+    {
+      "id": "arthur-xx",
+      "part": "arthur",
+      "num": "XX",
+      "title": "The Sangreal (Continued)",
+      "kicker": "King Arthur and His Knights",
+      "figures": [
+        "Arthur",
+        "Launcelot",
+        "Perceval",
+        "Galahad"
+      ],
+      "excerpt": "THE SANGREAL (Continued) Sir Launcelot Sir Launcelot rode overthwart and endlong in a wide forest, and held no path but as wild adventure lee him. \"My golden spurs now bring to me, And bring to me my richest mail, For to-morrow I go over land and sea In search of the Holy, Holy Grail Shall never a bed for me be spread, Nor shall a pillow be under my head, Till I begin my vow to keep. Here on the rushes will I sleep,",
+      "searchText": "THE SANGREAL (Continued) Sir Launcelot Sir Launcelot rode overthwart and endlong in a wide forest, and held no path but as wild adventure lee him. \"My golden spurs now bring to me, And bring to me my richest mail, For to-morrow I go over land and sea In search of the Holy, Holy Grail Shall never a bed for me be spread, Nor shall a pillow be under my head, Till I begin my vow to keep. Here on the rushes will I sleep, And perchance there may come a vision true Ere day create the world anew\" --Lowell's Holy Grail. And at last he came to a stone cross. Then Sir Launcelot looked round him, and saw an old chapel. So he tied his horse to a tree, and put off his shield, and hung it upon a tree; and then he went into the chapel, and looked through a place where the wall was broken. And within he saw a fair altar, full richly arrayed with cloth of silk; and there stood a fair candlestick, which bare six great candles, and the candlestick was of silver. When Sir Launcelot saw this sight, he had a great wish to enter the chapel, but he could find no place where he might enter. Then was he passing heavy and dismayed. And he returned and came again to his horse, and took off his saddle and his bridle, and let him pasture; and unlaced his helm, and ungirded his sword, and laid him down to sleep upon his shield before the cross. And as he lay, half waking and half sleeping, he saw come by him two palfreys, both fair and white, which bare a litter, on which lay a sick knight. And when he was nigh the cross, he there abode still. And Sir Launcelot heard him say, \"O sweet Lord, when shall this sorrow leave me, and when shall the holy vessel come by me whereby I shall be healed?\" And thus a great while complained the knight, and Sir Launcelot heard it. Then Sir Launcelot saw the candlestic",
+      "wordCount": 2176,
+      "poemCount": 2
+    },
+    {
+      "id": "arthur-xxi",
+      "part": "arthur",
+      "num": "XXI",
+      "title": "The Sangreal (Continued)",
+      "kicker": "King Arthur and His Knights",
+      "figures": [
+        "Arthur",
+        "Guenever",
+        "Launcelot",
+        "Perceval",
+        "Galahad"
+      ],
+      "excerpt": "THE SANGREAL (Continued) Sir Bohort When Sir Boliort departed from Camelot he met with a religious man, riding upon an ass; and Sir Bohort saluted him. \"What are ye?\" said the good man. \"Sir,\" said Sir Bohort, \"I am a knight that fain would be counselled in the quest of the Sangreal.\" So rode they both together till they came to a hermitage; and there he prayed Sir Bohort to dwell that night with him. So he alighted,",
+      "searchText": "THE SANGREAL (Continued) Sir Bohort When Sir Boliort departed from Camelot he met with a religious man, riding upon an ass; and Sir Bohort saluted him. \"What are ye?\" said the good man. \"Sir,\" said Sir Bohort, \"I am a knight that fain would be counselled in the quest of the Sangreal.\" So rode they both together till they came to a hermitage; and there he prayed Sir Bohort to dwell that night with him. So he alighted, and put away his armor, and prayed him that he might be confessed. And they went both into the chapel, and there he was clean confessed. And they ate bread and drank water together. \"Now,\" said the good man, \"I pray thee that thou eat none other till thou sit at the table where the Sangreal shall be.\" \"Sir,\" said Sir Bohort, \"but how know ye that I shall sit there?\" \"Yea,\" said the good man, \"that I know well; but there shall be few of your fellows with you.\" Then said Sir Bohort, \"I agree me thereto\" And the good man when he had heard his confession found him in so pure a life and so stable that he marvelled thereof. On the morrow, as soon as the day appeared, Sir Bohort departed thence, and rode into a forest unto the hour of midday. And there befell him a marvellous adventure. For he met, at the parting of two ways, two knights that led Sir Lionel, his brother, all naked, bound upon a strong hackney, and his hands bound before his breast; and each of them held in his hand thorns wherewith they went beating him, so that he was all bloody before and behind; but he said never a word, but, as he was great of heart, he suffered all that they did to him as though he had felt none anguish. Sir Bohort prepared to rescue his brother. But he looked on the other side of him, and saw a knight dragging along a fair gentlewoman, who cried out, \"Saint Mary! succor your",
+      "wordCount": 3950,
+      "poemCount": 2
+    },
+    {
+      "id": "arthur-xxii",
+      "part": "arthur",
+      "num": "XXII",
+      "title": "Sir Agrivain's Treason",
+      "kicker": "King Arthur and His Knights",
+      "figures": [
+        "Arthur",
+        "Guenever",
+        "Launcelot",
+        "Gawain",
+        "Perceval",
+        "Galahad",
+        "Palamedes",
+        "Mordred"
+      ],
+      "excerpt": "When Sir Perceval and Sir Bohort saw Sir Galahad dead they made as much sorrow as ever did two men. And if they had not been good men they might have fallen into despair. As soon as Sir Galahad was buried Sir Perceval retired to a hermitage out of the city, and took a religious clothing; and Sir Bohort was always with him, but did not change his secular clothing, because he purposed to return to the realm of Loegria.",
+      "searchText": "When Sir Perceval and Sir Bohort saw Sir Galahad dead they made as much sorrow as ever did two men. And if they had not been good men they might have fallen into despair. As soon as Sir Galahad was buried Sir Perceval retired to a hermitage out of the city, and took a religious clothing; and Sir Bohort was always with him, but did not change his secular clothing, because he purposed to return to the realm of Loegria. Thus a year and two months lived Sir Perceval in the hermitage a full holy life, and then passed out of this world, and Sir Bohort buried him by his sister and Sir Galahad. Then Sir Bohort armed himself and departed from Sarras, and entered into a ship, and sailed to the kingdom of Loegria, and in due time arrived safe at Camelot, where the king was. Then was there great joy made of him in the whole court, for they feared he had been dead. Then the king made great clerks to come before him, that they should chronicle of the high adventures of the good knights. And Sir Bohort told him of the adventures that had befallen him, and his two fellows, Sir Perceval and Sir Galahad. And Sir Launcelot told the adventures of the Sangreal that he had seen. All this was made in great books, and put up in the church at Salisbury. So King Arthur and Queen Guenever made great joy of the remnant that were come home, and chiefly of Sir Launcelot and Sir Bohort. Then Sir Launcelot began to resort unto Queen Guenever again, and forgot the promise that he made in the quest: so that many in the court spoke of it, and in especial Sir Agrivain, Sir Gawain's brother, for he was ever open-mouthed. So it happened Sir Gawain and all his brothers were in King Arthur's chamber, and then Sir Agrivain said thus openly, \"I marvel that we all are not ashamed to see and to know so noble a kn",
+      "wordCount": 3049,
+      "poemCount": 3
+    },
+    {
+      "id": "arthur-xxiii",
+      "part": "arthur",
+      "num": "XXIII",
+      "title": "Morte d'Arthur",
+      "kicker": "King Arthur and His Knights",
+      "figures": [
+        "Arthur",
+        "Guenever",
+        "Launcelot",
+        "Gawain",
+        "Bedivere",
+        "Mordred",
+        "Viviane"
+      ],
+      "excerpt": "Sir Modred was left ruler of all England, and he caused letters to be written, as if from beyond sea, that King Arthur was slain in battle. So he called a Parliament, and made himself be crowned king; and he took the queen Guenever, and said plainly that he would wed her, but she escaped from him and took refuge in the Tower of London. And Sir Modred went and laid siege about the Tower of London, and made great assau",
+      "searchText": "Sir Modred was left ruler of all England, and he caused letters to be written, as if from beyond sea, that King Arthur was slain in battle. So he called a Parliament, and made himself be crowned king; and he took the queen Guenever, and said plainly that he would wed her, but she escaped from him and took refuge in the Tower of London. And Sir Modred went and laid siege about the Tower of London, and made great assaults thereat, but all might not avail him. Then came word to Sir Modred that King Arthur had raised the siege of Sir Launcelot, and was coming home. Then Sir Modred summoned all the barony of the land; and much people drew unto Sir Modred, and said they would abide with him for better and for worse; and he drew a great host to Dover, for there he heard say that King Arthur would arrive. \"I hear the steps of Modred in the west, And with him many of thy people, and knights Once thine, whom thou hast loved, but grosser grown Than heathen, spitting at their vows and thee\" --The Passing of Arthur. And as Sir Modred was at Dover with his host, came King Arthur, with a great number of ships and galleys, and there was Sir Modred awaiting upon the landing. Then was there launching of great boats and small, full of noble men of arms, and there was much slaughter of gentle knights on both parts. But King Arthur was so courageous, there might no manner of knights prevent him to land, and his knights fiercely followed him; and so they landed, and put Sir Modred aback so that he fled, and all his people. And when the battle was done, King Arthur commanded to bury his people that were dead. And then was noble Sir Gawain found, in a great boat, lying more than half dead. And King Arthur went to him, and made sorrow out of measure. \"Mine uncle,\" said Sir Gawain, \"know thou we",
+      "wordCount": 4156,
+      "poemCount": 5
+    },
+    {
+      "id": "mabinogi-intro",
+      "part": "mabinogi",
+      "num": "Note",
+      "title": "Introductory Note",
+      "kicker": "The Mabinogeon",
+      "figures": [
+        "Arthur"
+      ],
+      "excerpt": "It has been well known to the literati and antiquarians of Europe that there exist in the great public libraries voluminous manuscripts of romances and tales once popular, but which on the invention of printing had already become antiquated, and fallen into neglect. They were therefore never printed, and seldom perused even by the learned, until about half a century ago, when attention was again directed to them, and",
+      "searchText": "It has been well known to the literati and antiquarians of Europe that there exist in the great public libraries voluminous manuscripts of romances and tales once popular, but which on the invention of printing had already become antiquated, and fallen into neglect. They were therefore never printed, and seldom perused even by the learned, until about half a century ago, when attention was again directed to them, and they were found very curious monuments of ancient manners, habits, and modes of thinking. Several have since been edited, some by individuals, as Sir Walter Scott and the poet Southey, others by antiquarian societies. The class of readers which could be counted on for such publications was so small that no inducement of profit could be found to tempt editors and publishers to give them to the world. It was therefore only a few, and those the most accessible, which were put in print. There was a class of manuscripts of this kind which were known, or rather suspected, to be both curious and valuable, but which it seemed almost hopeless to expect ever to see in fair printed English. These were the Welsh popular tales called Mabinogeon, a plural word, the singular being Mabinogi, a tale. Manuscripts of these were contained in the Bodleian Library at Oxford and elsewhere, but the difficulty was to find translators and editors. The Welsh is a spoken language among the peasantry of Wales, but is entirely neglected by the learned, unless they are natives of the principality. Of the few Welsh scholars none were found who took sufficient interest in this branch of learning to give these productions to the English public. Southey and Scott, and others, who like them, loved the old romantic legends of their country, often urged upon the Welsh literati the duty of repro",
+      "wordCount": 868,
+      "poemCount": 1
+    },
+    {
+      "id": "mabinogi-i",
+      "part": "mabinogi",
+      "num": "I",
+      "title": "The Britons",
+      "kicker": "The Mabinogeon",
+      "figures": [
+        "Arthur",
+        "Guenever",
+        "Merlin",
+        "Gawain",
+        "Uther",
+        "Caradoc",
+        "Taliesin"
+      ],
+      "excerpt": "The earliest inhabitants of Britain are supposed to have been a branch of that great family known in history by the designation of Celts. Cambria, which is a frequent name for Wales, is thought to be derived from Cymri, the name which the Welsh traditions apply to an immigrant people who entered the island from the adjacent continent. This name is thought to be identical with those of Cimmerians and Cimbri, under whi",
+      "searchText": "The earliest inhabitants of Britain are supposed to have been a branch of that great family known in history by the designation of Celts. Cambria, which is a frequent name for Wales, is thought to be derived from Cymri, the name which the Welsh traditions apply to an immigrant people who entered the island from the adjacent continent. This name is thought to be identical with those of Cimmerians and Cimbri, under which the Greek and Roman historians describe a barbarous people, who spread themselves from the north of the Euxine over the whole of Northwestern Europe. The origin of the names Wales and Welsh has been much canvassed. Some writers make them a derivation from Gael or Gaul, which names are said to signify \"woodlanders;\" others observe that Walsh, in the northern languages, signifies a stranger, and that the aboriginal Britons were so called by those who at a later era invaded the island and possessed the greater part of it, the Saxons and Angles. The Romans held Britain from the invasion of Julius Caesar till their voluntary withdrawal from the island, A.D. 420,--that is, about five hundred years. In that time there must have been a wide diffusion of their arts and institutions among the natives. The remains of roads, cities, and fortifications show that they did much to develop and improve the country, while those of their villas and castles prove that many of the settlers possessed wealth and taste for the ornamental arts. Yet the Roman sway was sustained chiefly by force, and never extended over the entire island. The northern portion, now Scotland, remained independent, and the western portion, constituting Wales and Cornwall, was only nominally subjected. Neither did the later invading hordes succeed in subduing the remoter sections of the island. For age",
+      "wordCount": 1347,
+      "poemCount": 5
+    },
+    {
+      "id": "mabinogi-ii",
+      "part": "mabinogi",
+      "num": "II",
+      "title": "The Lady of the Fountain",
+      "kicker": "The Mabinogeon",
+      "figures": [
+        "Arthur",
+        "Guenever",
+        "Kay"
+      ],
+      "excerpt": "Kynon'S Adventure King Arthur was at Caerleon upon Usk; and one day he sat in his chamber, and with him were Owain, the son of Urien, and Kynon, the son of Clydno, and Kay, the son of Kyner, and Guenever and her handmaidens at needlework by the window. In the centre of the chamher King Arthur sat, upon a seat of green rushes, [Footnote: The use of green rushes in apartments was by no means peculiar to the court of Ca",
+      "searchText": "Kynon'S Adventure King Arthur was at Caerleon upon Usk; and one day he sat in his chamber, and with him were Owain, the son of Urien, and Kynon, the son of Clydno, and Kay, the son of Kyner, and Guenever and her handmaidens at needlework by the window. In the centre of the chamher King Arthur sat, upon a seat of green rushes, [Footnote: The use of green rushes in apartments was by no means peculiar to the court of Carleon upon Usk. Our ancestors had a great predilection for them, and they seem to have constituted an essential article, not only of comfort, but of luxury. The custom of strewing the floor with rushes is well known to have existed in England during the Middle Ages, and also in France.] over which was spread a covering of flame-covered satin, and a cushion of red satin was under his elbow. Then Arthur spoke. \"If I thought you would not disparage me,\" said he, \"I would sleep while I wait for my repast; and you can entertain one another with relating tales, and can obtain a flagon of mead and some meat from Kay.\" And the king went to sleep. And Kynon the son of Clydno asked Kay for that which Arthur had promised them. \"I too will have the good tale which he promised me,\" said Kay. \"Nay,\" answered Kynon; \"fairer will it be for thee to fulfil Arthur's behest in the first place, and then we will tell thee the best tale that we know.\" So Kay went to the kitchen and to the mead-cellar, and returned, bearing a flagon of mead, and a golden goblet, and a handful of skewers, upon which were broiled collops of meat. Then they ate the collops, and began to drink the mead. \"Now,\" said Kay, \"it is time for you to give me my story.\" \"Kynon,\" said Owain, \"do thou pay to Kay the tale that is his due.\" \"I will do so,\" answered Kynon. \"I was the only son of my mother and father",
+      "wordCount": 2133,
+      "poemCount": 1
+    },
+    {
+      "id": "mabinogi-iii",
+      "part": "mabinogi",
+      "num": "III",
+      "title": "The Lady of the Fountain (Continued)",
+      "kicker": "The Mabinogeon",
+      "figures": [
+        "Arthur",
+        "Guenever",
+        "Launcelot",
+        "Kay",
+        "Taliesin"
+      ],
+      "excerpt": "THE LADY OF THE FOUNTAIN (Continued) Owain'S Adventure [Footnote: Amongst all the characters of early British history none is the more interesting, or occupies more conspicuous place, than the hero of this tale. Urien, his father, was prince of Rheged, a district comprising the present Cumberland and part of the adjacent country. His valor, and the consideration in which he was held, are a frequent theme of Bardic so",
+      "searchText": "THE LADY OF THE FOUNTAIN (Continued) Owain'S Adventure [Footnote: Amongst all the characters of early British history none is the more interesting, or occupies more conspicuous place, than the hero of this tale. Urien, his father, was prince of Rheged, a district comprising the present Cumberland and part of the adjacent country. His valor, and the consideration in which he was held, are a frequent theme of Bardic song, and form the subject of several very spirited odes by Taliesin. Among the Triads there is one relating to him; it is thus translated: \"Three Knights of Battle were in court of Arthur Cadwr, the Earl of Cornwall, Launcelot du Lac, and Owain, the son of Urien. And this was their characteristic--that they would not retreat from battle, neither for spear, nor for arrow, nor for sword. And Arthur never had shame in battle the day he saw their faces there. And they were called the Knights of Battle.\"] \"Now,\" quoth Owain, \"would it not be well to go and endeavor to discover that place?\" \"By the hand of my friend,\" said Kay, \"often dost thou utter that with thy tongue which thou wouldest not make good with thy deeds.\" \"In very truth,\" said Guenever, \"it were better thou wert hanged, Kay, than to use such uncourteous speech towards a man like Owain.\" \"By the hand of my friend, good lady,\" said Kay, \"thy praise of Owain is not greater than mine.\" With that Arthur awoke, and asked if he had not been sleeping a little. \"Yes, lord,\" answered Owain, \"thou hast slept awhile.\" \"Is it time for us to go to meat?\" \"It is, lord,\" said Owain. Then the horn for washing was sounded, and the king and all his household sat down to eat. And when the meal was ended Owain withdrew to his lodging, and made ready his horse and his arms. On the morrow with the dawn of day he put on hi",
+      "wordCount": 3071,
+      "poemCount": 5
+    },
+    {
+      "id": "mabinogi-iv",
+      "part": "mabinogi",
+      "num": "IV",
+      "title": "The Lady of the Fountain (Continued)",
+      "kicker": "The Mabinogeon",
+      "figures": [
+        "Arthur",
+        "Gawain",
+        "Kay"
+      ],
+      "excerpt": "THE LADY OF THE FOUNTAIN (Continued) Gawain'S Adventure It befell that, as Gawain went forth one day with King Arthur, he perceived him to be very sad and sorrowful. And Gawain was much grieved to see Arthur in his state, and he questioned him, saying, \"O my lord, what has befallen thee?\" \"In sooth, Gawain,\" said Arthur, \"I am grieved concerning Owain, whom I have lost these three years; and I shall certainly die if",
+      "searchText": "THE LADY OF THE FOUNTAIN (Continued) Gawain'S Adventure It befell that, as Gawain went forth one day with King Arthur, he perceived him to be very sad and sorrowful. And Gawain was much grieved to see Arthur in his state, and he questioned him, saying, \"O my lord, what has befallen thee?\" \"In sooth, Gawain,\" said Arthur, \"I am grieved concerning Owain, whom I have lost these three years; and I shall certainly die if the fourth year pass without my seeing him. Now I am sure that it is through the tale which Kynon, the son of Clydno, related, that I have lost Owain.\" \"There is no need for thee,\" said Gawain, \"to summon to arms thy whole dominions on this account, for thou thyself, and the men of thy household, will be able to avenge Owain if he be slain or to set him free if he be in prison; and, if alive, to bring him back with thee.\" And it was settled according to what Gawain had said. Then Arthur and the men of his household prepared to go and seek Owain. And Kynon, the son of Clydno, acted as their guide. And Arthur came to the castle where Kynon had been before. And when he came there, the youths were shooting in the same place, and the yellow man was standing hard by. When the yellow man saw Arthur, he greeted him, and invited him to the castle. And Arthur accepted his invitation, and they entered the castle together. And great as was the number of his retinue, their presence was scarcely observed in the castle, so vast was its extent. And the maidens rose up to wait on them. And the service of the maidens appeared to them all to excel any attendance they had ever met with; and even the pages, who had charge of the horses, were no worse served that night than Arthur himself would have been in his own palace. The next morning Arthur set out thence, with Kynon for hi",
+      "wordCount": 2744,
+      "poemCount": 1
+    },
+    {
+      "id": "mabinogi-v",
+      "part": "mabinogi",
+      "num": "V",
+      "title": "Geraint, the Son of Erbin",
+      "kicker": "The Mabinogeon",
+      "figures": [
+        "Arthur",
+        "Guenever",
+        "Gawain",
+        "Geraint"
+      ],
+      "excerpt": "Arthur was accustomed to hold his court at Caerleon upon Usk. And there he held it seven Easters and five Christmases. And once upon a time he held his court there at Whitsuntide. For Caerleon was the place most easy of access in his dominions, both by sea and by land. And there were assembled nine crowned kings, who were his tributaries, and likewise earls and barons. For they were his invited guests at all the high",
+      "searchText": "Arthur was accustomed to hold his court at Caerleon upon Usk. And there he held it seven Easters and five Christmases. And once upon a time he held his court there at Whitsuntide. For Caerleon was the place most easy of access in his dominions, both by sea and by land. And there were assembled nine crowned kings, who were his tributaries, and likewise earls and barons. For they were his invited guests at all the high festivals, unless they were prevented by any great hinderatice. And when he was at Caerleon holding his court, thirteen churches were set apart for mass. And thus they were appointed: one church for Arthur and his kings, and his guests; and the second for Guenever and her ladies; and the third for the steward of the household and the suitors; and the fourth for the Franks and the other officers; and the other nine churches were for the nine masters of the household, and chiefly for Gawain, for he, from the eminence of his warlike fame, and from the nobleness of his birth, was the most exalted of the nine. And there was no other arrangement respecting the churches than that which we have here mentioned. And on Whit-Tuesday, as the king sat at the banquet, lo, there entered a tall, fair-headed youth, clad in a coat and surcoat of satin, and a golden-hilted sword about his neck, and low shoes of leather upon his feet. And he came and stood before Arthur. \"Hail to thee, lord,\" said he. \"Heaven prosper thee,\" he answered, \"and be thou welcome. Dost thou bring any new tidings?\" \"I do, lord,\" he said. \"I am one of thy foresters, lord, in the forest of Dean, and my name is Madoc, son of Turgadarn. In the forest I saw a stag, the like of which beheld I never yet.\" \"What is there about him,\" asked Arthur, \"that thou never yet didst see his like?\" \"He is of pure white",
+      "wordCount": 4104,
+      "poemCount": 4
+    },
+    {
+      "id": "mabinogi-vi",
+      "part": "mabinogi",
+      "num": "VI",
+      "title": "Geraint, the Son of Erbin (Continued)",
+      "kicker": "The Mabinogeon",
+      "figures": [
+        "Arthur",
+        "Guenever",
+        "Gawain",
+        "Perceval",
+        "Bedivere",
+        "Mordred",
+        "Geraint"
+      ],
+      "excerpt": "GERAINT, THE SON OF ERBIN (Continued) Now this is how Arthur hunted the stag. The men and the dogs were divided into hunting-parties, and the dogs were let loose upon the stag. And the last dog that was let loose was the favorite dog of Arthur; Cavall was his name. And he left all the other dogs behind him and turned the stag. And at the second turn the stag came toward the hunting-party of Arthur. And Arthur set upo",
+      "searchText": "GERAINT, THE SON OF ERBIN (Continued) Now this is how Arthur hunted the stag. The men and the dogs were divided into hunting-parties, and the dogs were let loose upon the stag. And the last dog that was let loose was the favorite dog of Arthur; Cavall was his name. And he left all the other dogs behind him and turned the stag. And at the second turn the stag came toward the hunting-party of Arthur. And Arthur set upon him; and before he could be slain by any other, Arthur cut off his head. Then they sounded the death-horn for slaying and they all gathered round. They came Kadyriath to Arthur and spoke to him. \"Lord,\" said he, \"behold, yonder is Guenever, and none with her save only one maiden.\" \"Command Gildas, the son of Caw, and all the scholars of the court,\" said Arthur, \"to attend Guenever to the palace.\" And they did so. Then they all set forth, holding converse together concerning the head of the stag, to whom it should be given. One wished that it should be given to the lady best beloved by him, and another to the lady whom he loved best. And so they came to the palace. And when Arthur and Guenever heard them disputing about the head of the stag, Guenever said to Arthur: \"My lord, this is my counsel concerning the stag's head; let it not be given away until Geraint, the son of Erbin, shall return from the errand he is upon.\" And Guenever told Arthur what that errand was. \"Right gladly shall it be so,\" said Arthur. And Guenever caused a watch to be set upon the ramparts for Geraint's coming. And after midday they beheld an unshapely little man upon a horse, and after him a dame or a damsel, also on horseback, and after her a knight of large stature, bowed down, and hanging his head low and sorrowfully, and clad in broken and worthless armor. And before they came",
+      "wordCount": 2941,
+      "poemCount": 2
+    },
+    {
+      "id": "mabinogi-vii",
+      "part": "mabinogi",
+      "num": "VII",
+      "title": "Geraint, the Son of Erbin (Continued)",
+      "kicker": "The Mabinogeon",
+      "figures": [
+        "Arthur",
+        "Geraint"
+      ],
+      "excerpt": "GERAINT, THE SON OF ERBIN (Continued) Geraint, as he had been used to do when he was at Arthur's court, frequented tournaments. And he became acquainted with valiant and mighty men, until he had gained as much fame there as he had formerly done elsewhere. And he enriched his court, and his companions, and his nobles, with the best horses and the best arms, and with the best and most valuable jewels, and he ceased not",
+      "searchText": "GERAINT, THE SON OF ERBIN (Continued) Geraint, as he had been used to do when he was at Arthur's court, frequented tournaments. And he became acquainted with valiant and mighty men, until he had gained as much fame there as he had formerly done elsewhere. And he enriched his court, and his companions, and his nobles, with the best horses and the best arms, and with the best and most valuable jewels, and he ceased not until his fame had flown over the face of the whole kingdom. \"Before Geraint, the scourge of the enemy, I saw steeds white with foam, And after the shout of battle a fearful torrent.\" --Hen. When he knew that it was thus, he began to love ease and pleasure, for there was no one who was worth his opposing. And he loved his wife, and liked to continue in the palace with minstrelsy and diversions. So he began to shut himself up in the chamber of his wife, and he took no delight in anything besides, insomuch that he gave up the friendship of his nobles, together with his hunting and his amusements, and lost the hearts of all the host in his court. And there was murmuring and scoffing concerning him among the inhabitants of the palace, on account of his relinquishing so completely their companionship for the love of his wife. \"They Began to scoff and jeer and babble of him As of a prince whose manhood was all gone, And molten down in mere uxoriousness.\" These tidings came to Erbin. And when Erbin had heard these things, he spoke unto Enid, and inquired of her whether it was she that had caused Geraint to act thus, and to forsake his people and his hosts. \"Not I, by my confession unto Heaven,\" said she; \"there is nothing more hateful unto me than this.\" And she knew not what she should do, for, although it was hard for her to own this to Geraint, yet was it not m",
+      "wordCount": 4421,
+      "poemCount": 4
+    },
+    {
+      "id": "mabinogi-viii",
+      "part": "mabinogi",
+      "num": "VIII",
+      "title": "Pwyll, Prince of Dyved",
+      "kicker": "The Mabinogeon",
+      "figures": [
+        "Pwyll"
+      ],
+      "excerpt": "Once upon a time Pwyll was at Narberth, his chief palace, where a feast had been prepared for him, and with him was a great host of men. And after the first meal Pwyll arose to walk; and he went to the top of a mound that was above the palace, and was called Gorsedd Arberth. \"Lord,\" said one of the court, \"it is peculiar to the mound that whosoever sits upon it cannot go thence without either receiving wounds or blow",
+      "searchText": "Once upon a time Pwyll was at Narberth, his chief palace, where a feast had been prepared for him, and with him was a great host of men. And after the first meal Pwyll arose to walk; and he went to the top of a mound that was above the palace, and was called Gorsedd Arberth. \"Lord,\" said one of the court, \"it is peculiar to the mound that whosoever sits upon it cannot go thence without either receiving wounds or blows, or else seeing a wonder.\" \"I fear not to receive wounds or blows,\" said Pwyll; \"but as to the wonder, gladly would I see it. I will therefore go and sit upon the mound.\" And upon the mound he sat. And while he sat there, they saw a lady, on a pure white horse of large size, with a garment of shining gold around her, coming along the highway that led from the mound. \"My men,\" said Pwyll, \"is there any among you who knows yonder lady?\" \"There is not, lord,\" said they. \"Go one of you and meet her, that we may know who she is.\" And one of them arose, and as he came upon the road to meet her, she passed by; and he followed as fast as he could, being on foot, and the greater was his speed, the further was she from him. And when he saw that it profited him nothing to follow her, he returned to Pwyll, and said unto him, \"Lord, it is idle for any one in the world to follow her on foot.\" \"Verily,\" said Pwyll, \"go unto the palace, and take the fleetest horse that thou seest, and go after her.\" And he took a horse and went forward. And he came to an open, level plain, and put spurs to his horse; and the more he urged his horse, the further was she from him. And he returned to the place where Pwyll was, and said, \"Lord, it will avail nothing for any one to follow yonder lady. I know of no horse in these realms swifter than this, and it availed me not to pursue her.\" \"",
+      "wordCount": 2428,
+      "poemCount": 1
+    },
+    {
+      "id": "mabinogi-ix",
+      "part": "mabinogi",
+      "num": "IX",
+      "title": "Branwen, the Daughter of Llyr",
+      "kicker": "The Mabinogeon",
+      "figures": [
+        "Arthur",
+        "Caradoc",
+        "Branwen",
+        "Manawyddan",
+        "Taliesin"
+      ],
+      "excerpt": "Bendigeid Vran, the son of Llyr, was the crowned king of this island, and he was exalted from the crown of London. And one afternoon he was at Harlech, in Ardudwy, at his court; and he sat upon the rock of Harlech, looking over the sea. And with him were his brother, Manawyddan, the son of Llyr, and his brothers by the mother's side, Nissyen and Evnissyen, and many nobles likewise, as was fitting to see around a king",
+      "searchText": "Bendigeid Vran, the son of Llyr, was the crowned king of this island, and he was exalted from the crown of London. And one afternoon he was at Harlech, in Ardudwy, at his court; and he sat upon the rock of Harlech, looking over the sea. And with him were his brother, Manawyddan, the son of Llyr, and his brothers by the mother's side, Nissyen and Evnissyen, and many nobles likewise, as was fitting to see around a king. His two brothers by the mother's side were the sons of Euroswydd, and one of these youths was a good youth, and of gentle nature, and would make peace between his kindred, and cause his family to be friends when their wrath was at the highest, and this one was Nissyen; but the other would cause strife between his two brothers when they were most at peace. And as they sat thus they beheld thirteen ships coming from the south of Ireland, and making towards them; and they came with a swift motion, the wind being behind them; and they neared them rapidly. \"I see ships afar,\" said the king, \"coming swiftly towards the land. Command the men of the court that they equip themselves, and go and learn their intent.\" So the men equipped themselves, and went down towards them. And when they saw the ships near, certain were they that they had never seen ships better furnished. Beautiful flags of satin were upon them. And, behold, one of the ships outstripped the others, and they saw a shield lifted up above the side of the ship, and the point of the shield was upwards, in token of peace. And the men drew near, that they might hold converse. Then they put out boats, and came toward the land. And they saluted the king. Now the king could hear them from the place where he was upon the rock above their heads. \"Heaven prosper you.\" said he, \"and be ye welcome! To whom do th",
+      "wordCount": 3357,
+      "poemCount": 1
+    },
+    {
+      "id": "mabinogi-x",
+      "part": "mabinogi",
+      "num": "X",
+      "title": "Manawyddan",
+      "kicker": "The Mabinogeon",
+      "figures": [
+        "Pwyll",
+        "Branwen",
+        "Manawyddan"
+      ],
+      "excerpt": "Pwyll and Rhiannon had a son, whom they named Pryderi. And when he was grown up, Pwyll, his father, died. And Pryderi married Kicva, the daughter of Gwynn Gloy. Now Manawyddan returned from the war in Ireland, and he found that his cousin had seized all his possessions, and much grief and heaviness came upon him. \"Alas! woe is me!\" he exclaimed; \"there is none save myself without a home and a resting-place.\" \"Lord,\"",
+      "searchText": "Pwyll and Rhiannon had a son, whom they named Pryderi. And when he was grown up, Pwyll, his father, died. And Pryderi married Kicva, the daughter of Gwynn Gloy. Now Manawyddan returned from the war in Ireland, and he found that his cousin had seized all his possessions, and much grief and heaviness came upon him. \"Alas! woe is me!\" he exclaimed; \"there is none save myself without a home and a resting-place.\" \"Lord,\" said Pryderi, \"be not so sorrowful. Thy cousin is king of the Island of the Mighty, and though he has done thee wrong, thou hast never been a claimant of land or possessions.\" \"Yea,\" answered he, \"but although this man is my cousin, it grieveth me to see any one in the place of my brother, Bendigeid Vran; neither can I be happy in the same dwelling with him.\" \"Wilt thou follow the counsel of another?\" said Pryderi. \"I stand in need of counsel,\" he answered, \"and what may that counsel be?\" \"Seven cantrevs belong unto me,\" said Pryderi, \"wherein Rhiannon, my mother, dwells. I will bestow her upon thee, and the seven cantrevs with her; and though thou hadst no possessions but those cantrevs only, thou couldst not have any fairer than they. Do thou and Rhiannon enjoy them, and if thou desire any possessions thou wilt not despise these.\" \"I do not, chieftain,\" said he. \"Heaven reward thee for the friendship! I will go with thee to seek Rhiannon, and to look at thy possessions.\" \"Thou wilt do well,\" he answered; \"and I believe that thou didst never hear a lady discourse better than she, and when she was in her prime, none was ever fairer. Even now her aspect is not uncomely.\" They set forth, and, however long the journey, they came at last to Dyved; and a feast was prepared for them by Rhiannon and Kicva. Then began Manawyddan and Rhiannon to sit and to talk toget",
+      "wordCount": 4229,
+      "poemCount": 6
+    },
+    {
+      "id": "mabinogi-xi",
+      "part": "mabinogi",
+      "num": "XI",
+      "title": "Kilwich and Olwen",
+      "kicker": "The Mabinogeon",
+      "figures": [
+        "Arthur",
+        "Guenever",
+        "Gawain",
+        "Kay",
+        "Bedivere",
+        "Geraint",
+        "Kilwich",
+        "Taliesin"
+      ],
+      "excerpt": "Kilydd, a son of Prince Kelyddon, desired a wife as a helpmate, and the wife that he chose was Goleudid, the daughter of Prince Anlawd. And after their union the people put up prayers that they might have an heir. And they had a son through the prayers of the people; and called his name Kilwich. After this the boy's mother, Goleudid, the daughter of Prince Anlawd, fell sick. Then she called her husband to her, and sa",
+      "searchText": "Kilydd, a son of Prince Kelyddon, desired a wife as a helpmate, and the wife that he chose was Goleudid, the daughter of Prince Anlawd. And after their union the people put up prayers that they might have an heir. And they had a son through the prayers of the people; and called his name Kilwich. After this the boy's mother, Goleudid, the daughter of Prince Anlawd, fell sick. Then she called her husband to her, and said to him, \"Of this sickness I shall die, and thou wilt take another wife. Now wives are the gift of the Lord, but it would be wrong for thee to harm thy son. Therefore I charge thee that thou take not a wife until thou see a briar with two blossoms upon my grave.\" And this he promised her. Then she besought him to dress her grave every year, that no weeds might grow thereon. So the queen died. Now the king sent an attendant every morning to see if anything were growing upon the grave. And at the end of the seventh year they neglected that which they had promised to the queen. One day the king went to hunt; and he rode to the place of burial, to see the grave, and to know if it were time that he should take a wife: and the King saw the briar. And when he saw it, the king took counsel where he should find a wife. Said one of his counsellors, \"I know a wife that will suit thee well; and she is the wife of King Doged.\" And they resolved to go to seek her; and they slew the king, and brought away his wife. And they conquered the kings' lands. And he married the widow of King Doged, the sister of Yspadaden Penkawr. And one day his stepmother said to Kilwich, \"It were well for thee to have a wife.\" \"I am not yet of an age to wed,\" answered the youth. Then said she unto him, \"I declare to thee that it is thy destiny not to be suited with a wife until thou obtain Ol",
+      "wordCount": 4677,
+      "poemCount": 2
+    },
+    {
+      "id": "mabinogi-xii",
+      "part": "mabinogi",
+      "num": "XII",
+      "title": "Kilwich and Olwen (Continued)",
+      "kicker": "The Mabinogeon",
+      "figures": [
+        "Arthur",
+        "Kay",
+        "Bedivere",
+        "Kilwich"
+      ],
+      "excerpt": "KILWICH AND OLWEN (Continued) All that day they journeyed until the evening, and then they beheld a vast castle, which was the largest in the world. And lo! a black man, larger than three of the men of this world, came out from the castle. And they spoke unto him, and said, \"O man, whose castle is that?\" \"Stupid are ye, truly, O men! There is no one in the world that does not know that this is the castle of Gwernach",
+      "searchText": "KILWICH AND OLWEN (Continued) All that day they journeyed until the evening, and then they beheld a vast castle, which was the largest in the world. And lo! a black man, larger than three of the men of this world, came out from the castle. And they spoke unto him, and said, \"O man, whose castle is that?\" \"Stupid are ye, truly, O men! There is no one in the world that does not know that this is the castle of Gwernach the Giant.\" \"What treatment is there for guests and strangers that alight in that castle?\" \"O chieftain, Heaven protect thee! No guests ever returned thence alive, and no one may enter therein unless he brings with him his craft.\" Then they proceeded towards the gate. Said Gurhyr Gwalstat, \"Is there a porter?\" \"There is; wherefore dost thou call?\" \"Open the gate.\" \"I will not open it.\" \"Wherefore wilt thou not?\" \"The knife is in the meat, and the drink is in the horn, and there is revelry in the hall of Gwernach the Giant; and except for a craftsman who brings his craft, the gate will not be opened to-night.\" \"Verily, porter,\" then said Kay, \"my craft bring I with me.\" \"What is thy craft?\" \"The best burnisher of swords am I in the world.\" \"I will go and tell this unto Gwernach the Giant, and I will bring thee an answer.\" So the porter went in, and Gwernach said to him, \"Hast thou news from the gate?\" \"I have. There is a party at the door of the gate who desire to come in.\" \"Didst thou inquire of them if they possessed any art?\" \"I did inquire,\" said he, \"and one told me that he was well skilled in the burnishing of swords.\" \"We have need of him then. For some time have I sought for some one to polish my sword, and could find no one. Let this man enter, since he brings with him his craft.\" The porter thereupon returned and opened the gate. And Kay went in by",
+      "wordCount": 2544,
+      "poemCount": 1
+    },
+    {
+      "id": "mabinogi-xiii",
+      "part": "mabinogi",
+      "num": "XIII",
+      "title": "Taliesin",
+      "kicker": "The Mabinogeon",
+      "figures": [
+        "Taliesin"
+      ],
+      "excerpt": "Gwyddno Garanhir was sovereign of Gwaelod, a territory bordering on the sea. And he possessed a weir upon the strand between Dyvi and Aberystwyth, near to his own castle, and the value of an hundred pounds was taken in that weir every May eve. And Gwyddno had an only son named Elphin, the most hapless of youths, and the most needy. And it grieved his father sore, for he thought that he was born in an evil hour. By th",
+      "searchText": "Gwyddno Garanhir was sovereign of Gwaelod, a territory bordering on the sea. And he possessed a weir upon the strand between Dyvi and Aberystwyth, near to his own castle, and the value of an hundred pounds was taken in that weir every May eve. And Gwyddno had an only son named Elphin, the most hapless of youths, and the most needy. And it grieved his father sore, for he thought that he was born in an evil hour. By the advice of his council, his father had granted him the drawing of the weir that year, to see if good luck would ever befall him, and to give him something wherewith to begin the world. And this was on the twenty-ninth of April. The next day, when Elphin went to look, there was nothing in the weir but a leathern bag upon a pole of the weir. Then said the weir-ward unto Elphin, \"All thy ill-luck aforetime was nothing to this; and now thou hast destroyed the virtues of the weir, which always yielded the value of an hundred pounds every May eve; and to-night there is nothing but this leathern skin within it.\" \"How now,\" said Elphin, \"there may be therein the value of a hundred pounds.\" Well! they took up the leathern bag, and he who opened it saw the forehead of an infant, the fairest that ever was seen; and he said, \"Behold a radiant brow?\" (In the Welsh language, taliesin.) \"Taliesin be he called,\" said Elphin. And he lifted the bag in his arms, and, lamenting his bad luck, placed the boy sorrowfully behind him. And he made his horse amble gently, that before had been trotting, and he carried him as softly as if he had been sitting in the easiest chair in the world. And presently the boy made a Consolation, and praise to Elphin; and the Consolation was as you may here see: \"Fair Elphin, cease to lament! Never in Gwyddno's weir Was there such good luck as this",
+      "wordCount": 2669,
+      "poemCount": 6
+    },
+    {
+      "id": "hero-beowulf",
+      "part": "heroes",
+      "num": "",
+      "title": "Beowulf",
+      "kicker": "Hero Myths of the British Race",
+      "figures": [
+        "Beowulf"
+      ],
+      "excerpt": "Notable among the names of heroes of the British race is that of Beowulf, which appeals to all English-speaking people in a very special way, since he is the one hero in whose story we may see the ideals of our English forefathers before they left their Continental home to cross to the islands of Britain. Although this hero had distinguished himself by numerous feats of strength during his boyhood and early youth, it",
+      "searchText": "Notable among the names of heroes of the British race is that of Beowulf, which appeals to all English-speaking people in a very special way, since he is the one hero in whose story we may see the ideals of our English forefathers before they left their Continental home to cross to the islands of Britain. Although this hero had distinguished himself by numerous feats of strength during his boyhood and early youth, it was as the deliverer of Hrothgar, king of Denmark, from the monster Grendel that he first gained wide renown. Grendel was half monster and half man, and had his abode in the fen-fastnesses in the vicinity of Hrothgar's residence. Night after night he would steal into the king's great palace called Heorot and slay sometimes as many as thirty at one time of the knights sleeping there. Beowulf put himself at the head of a selected band of warriors, went against the monster, and after a terrible fight slew it. The following night Grendel's mother, a fiend scarcely less terrible than her son, carried off one of Hrothgar's boldest thanes. Once more Beowulf went to the help of the Danish king, followed the she-monster to her lair at the bottom of a muddy lake in the midst of the swamp, and with his good sword Hrunting and his own muscular arms broke the sea-woman's neck. Upon his return to his own country of the Geats, loaded with honors bestowed upon him by Hrothgar, Beowulf served the king of Geatland as the latter's most trusted counsellor and champion. When, after many years, the king fell before an enemy, the Geats unanimously chose Beowulf for their new king. His fame as a warrior kept his country free from invasion, and his wisdom as a statesman increased its prosperity and happiness. In the fiftieth year of Beowulf's reign, however, a great terror fell upo",
+      "wordCount": 682,
+      "poemCount": 1
+    },
+    {
+      "id": "hero-cuchulain",
+      "part": "heroes",
+      "num": "",
+      "title": "Cuchulain, Champion of Ireland",
+      "kicker": "Hero Myths of the British Race",
+      "figures": [
+        "Arthur",
+        "Cuchulain"
+      ],
+      "excerpt": "Among all the early literatures of Europe, there are two which, at exactly opposite corners of the continent, display most strikingly similar characteristics. These are the Greek and the Irish, and the legend of the Irish champion Cuchulain, which well illustrates the similarity of the literatures, bears so close a resemblance to the story of Achilles as to win for this hero the title of \"the Irish Achilles.\" Certain",
+      "searchText": "Among all the early literatures of Europe, there are two which, at exactly opposite corners of the continent, display most strikingly similar characteristics. These are the Greek and the Irish, and the legend of the Irish champion Cuchulain, which well illustrates the similarity of the literatures, bears so close a resemblance to the story of Achilles as to win for this hero the title of \"the Irish Achilles.\" Certainly in reckless courage, power of inspiring dread, sense of personal merit, and frankness of speech the Irish hero is fully equal to the mighty Greek. Cuchulain was the nephew of King Conor of Ulster, son of his sister Dechtire, and it is said that his father was no mortal man, but the great god Lugh of the Long Hand. Cuchulain was brought up by King Conor himself, and even while he was still a boy his fame spread all over Ireland. His warlike deeds were those of a proved warrior, not of a child of nursery age; and by the time Cuchulain was seventeen he was without peer among the champions of Ulster. Upon Cuchulain's marriage to Emer, daughter of Forgall the Wily, a Druid of great power, the couple took up their residence at Armagh, the capital of Ulster, under the protection of King Conor. Here there was one chief, Bricriu of the Bitter Tongue, who, like Thersites among the Grecian leaders, delighted in making mischief. Soon he had on foot plans for stirring up strife among the heroes of Ulster, leaders among whom were the mighty Laegaire, Conall Cearnach, cousin of Cuchulain, and Cuchulain himself. Inviting the members of King Conor's court to dinner, Bricriu arranged that a contest should arise over who should have the \"champion's portion,\" and so successful was he that, to avoid a bloody fight, the three heroes mentioned decided to submit their claims to",
+      "wordCount": 1356,
+      "poemCount": 4
+    },
+    {
+      "id": "hero-hereward",
+      "part": "heroes",
+      "num": "",
+      "title": "Hereward the Wake",
+      "kicker": "Hero Myths of the British Race",
+      "figures": [
+        "Hereward"
+      ],
+      "excerpt": "In Hereward the Wake (or \"Watchful\") is found one of those heroes whose date can be ascertained with a fair amount of exactness and yet in whose story occur mythological elements which seem to belong to all ages. The folklore of primitive races is a great storehouse whence a people can choose tales and heroic deeds to glorify its own national hero, careless that the same tales and deeds have done duty for other peopl",
+      "searchText": "In Hereward the Wake (or \"Watchful\") is found one of those heroes whose date can be ascertained with a fair amount of exactness and yet in whose story occur mythological elements which seem to belong to all ages. The folklore of primitive races is a great storehouse whence a people can choose tales and heroic deeds to glorify its own national hero, careless that the same tales and deeds have done duty for other peoples and other heroes. Hence it happens that Hereward the Saxon, a patriot hero as real and actual as Nelson or George Washington, whose deeds were recorded in prose and verse within forty years of his death, was even then surrounded by a cloud of romance and mystery, which hid in vagueness his family, his marriage, and even his death. Briefly it may be stated that Hereward was a native of Lincolnshire, and was in his prime about 1070. In that year he joined a party of Danes who appeared in England, attacked Peterborough and sacked the abbey there, and afterward took refuge in the Isle of Ely. Here he was besieged by William the Conqueror, and was finally forced to yield to the Norman. He thus came to stand for the defeated Saxon race, and his name has been passed down as that of the darling hero of the Saxons. For his splendid defence of Ely they forgave his final surrender to Duke William; they attributed to him all the virtues supposed to be inherent in the free-born, and all the glorious valor on which the English prided themselves; and, lastly, they surrounded his death with a halo of desperate fighting, and made his last conflict as wonderful as that of Roland at Roncesvalles. If Roland is the ideal of Norman feudal chivalry, Hereward is equally the ideal of Anglo-Saxon sturdy manliness and knighthood. An account of one of Hereward's adventures as a yout",
+      "wordCount": 980,
+      "poemCount": 0
+    },
+    {
+      "id": "hero-robin",
+      "part": "heroes",
+      "num": "",
+      "title": "Robin Hood",
+      "kicker": "Hero Myths of the British Race",
+      "figures": [
+        "Robin Hood"
+      ],
+      "excerpt": "Among the earliest heirlooms of the Anglo-Saxon tongue are the songs and legends of Robin Hood and his merry outlaws, which have charmed readers young and old for more than six hundred years. These entertaining stories date back to the time when Chaucer wrote his \"Canterbury Tales,\" when the minstrel and scribe stood in the place of the more prim and precise modern printed book. The question of whether or not Robin H",
+      "searchText": "Among the earliest heirlooms of the Anglo-Saxon tongue are the songs and legends of Robin Hood and his merry outlaws, which have charmed readers young and old for more than six hundred years. These entertaining stories date back to the time when Chaucer wrote his \"Canterbury Tales,\" when the minstrel and scribe stood in the place of the more prim and precise modern printed book. The question of whether or not Robin Hood was a real person has been asked for many years, just as a similar question has been asked about William Tell and others whom everyone would much rather accept on faith. It cannot be answered by a brief \"yes\" or \"no,\" even though learned men have pored over ancient records and have written books on the subject. According to the general belief Robin was an outlaw in the reign of Richard I, when in the depths of Sherwood Forest he entertained one hundred tall men, all good archers, with the spoil he took; but \"he suffered no woman to be oppressed or otherwise molested; poore men's goods he spared, abundantlie relieving them with that which by theft he got from abbeys and houses of rich carles.\" Consequently Robin was an immense favorite with the common people. This popularity extended from the leader to all the members of his hardy band. \"God save Robin Hood and all his good yeomanry\" is the ending of many old ballads. The clever archer who could outshoot his fellows, the brave yeoman inured to blows, and the man who could be true to his friends through thick and thin were favorites for all time; and they have been idealized in the persons of Robin Hood and his merry outlaws. One of the best-known stories of this picturesque figure of early English times is that given by Sir Walter Scott in \"Ivanhoe,\" concerning the archery contest during the rule or misru",
+      "wordCount": 987,
+      "poemCount": 2
+    }
+  ],
+  "figures": [
+    "Arthur",
+    "Bedivere",
+    "Beowulf",
+    "Branwen",
+    "Caradoc",
+    "Cuchulain",
+    "Galahad",
+    "Galehaut",
+    "Gawain",
+    "Geraint",
+    "Guenever",
+    "Hereward",
+    "Igraine",
+    "Isoude",
+    "Kay",
+    "Kilwich",
+    "Launcelot",
+    "Manawyddan",
+    "Merlin",
+    "Mordred",
+    "Palamedes",
+    "Perceval",
+    "Pwyll",
+    "Robin Hood",
+    "Taliesin",
+    "Tristram",
+    "Uther",
+    "Viviane"
+  ],
+  "preface": [
+    {
+      "type": "p",
+      "text": "If no other knowledge deserves to be called useful but that which helps to enlarge our possessions or to raise our station in society, then Mythology has no claim to the appellation. But if that which tends to make us happier and better can be called useful, then we claim that epithet for our subject. For Mythology is the handmaid of literature; and literature is one of the best allies of virtue and promoters of happiness."
+    },
+    {
+      "type": "p",
+      "text": "Without a knowledge of mythology much of the elegant literature of our own language cannot be understood and appreciated. When Byron calls Rome \"the Niobe of nations,\" or says of Venice, \"She looks a Sea-Cybele fresh from ocean,\" he calls up to the mind of one familiar with our subject, illustrations more vivid and striking than the pencil could furnish, but which are lost to the reader ignorant of mythology. Milton abounds in similar allusions. The short poem \"Comus\" contains more than thirty such, and the ode \"On the Morning of the Nativity\" half as many. Through \"Paradise Lost\" they are scattered profusely. This is one reason why we often hear persons by no means illiterate say that they cannot enjoy Milton. But were these persons to add to their more solid acquirements the easy learning of this little volume, much of the poetry of Milton which has appeared to them \"harsh and crabbed\" would be found \"musical as is Apollo's lute.\" Our citations, taken from more than twenty-five poets, from Spenser to Longfellow, will show how general has been the practice of borrowing illustrations from mythology."
+    },
+    {
+      "type": "p",
+      "text": "The prose writers also avail themselves of the same source of elegant and suggestive illustration. One can hardly take up a number of the \"Edinburgh\" or \"Quarterly Review\" without meeting with instances. In Macaulay's article on Milton there are twenty such."
+    },
+    {
+      "type": "p",
+      "text": "But how is mythology to be taught to one who does not learn it through the medium of the languages of Greece and Rome? To devote study to a species of learning which relates wholly to false marvels and obsolete faiths is not to be expected of the general reader in a practical age like this. The time even of the young is claimed by so many sciences of facts and things that little can be spared for set treatises on a science of mere fancy."
+    },
+    {
+      "type": "p",
+      "text": "But may not the requisite knowledge of the subject be acquired by reading the ancient poets in translations? We reply, the field is too extensive for a preparatory course; and these very translations require some previous knowledge of the subject to make them intelligible. Let any one who doubts it read the first page of the \"Aeneid,\" and see what he can make of \"the hatred of Juno,\" the \"decree of the Parcae,\" the \"judgment of Paris,\" and the \"honors of Ganymede,\" without this knowledge."
+    },
+    {
+      "type": "p",
+      "text": "Shall we be told that answers to such queries may be found in notes, or by a reference to the Classical Dictionary? We reply, the interruption of one's reading by either process is so annoying that most readers prefer to let an allusion pass unapprehended rather than submit to it. Moreover, such sources give us only the dry facts without any of the charm of the original narrative; and what is a poetical myth when stripped of its poetry? The story of Ceyx and Halcyone, which fills a chapter in our book, occupies but eight lines in the best (Smith's) Classical Dictionary; and so of others."
+    },
+    {
+      "type": "p",
+      "text": "Our work is an attempt to solve this problem, by telling the stories of mythology in such a manner as to make them a source of amusement. We have endeavored to tell them correctly, according to the ancient authorities, so that when the reader finds them referred to he may not be at a loss to recognize the reference. Thus we hope to teach mythology not as a study, but as a relaxation from study; to give our work the charm of a story-book, yet by means of it to impart a knowledge of an important branch of education. The index at the end will adapt it to the purposes of reference, and make it a Classical Dictionary for the parlor."
+    },
+    {
+      "type": "p",
+      "text": "Most of the classical legends in \"Stories of Gods and Heroes\" are derived from Ovid and Virgil. They are not literally translated, for, in the author's opinion, poetry translated into literal prose is very unattractive reading. Neither are they in verse, as well for other reasons as from a conviction that to translate faithfully under all the embarrassments of rhyme and measure is impossible. The attempt has been made to tell the stories in prose, preserving so much of the poetry as resides in the thoughts and is separable from the language itself, and omitting those amplifications which are not suited to the altered form."
+    }
+  ]
+}
