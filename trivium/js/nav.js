@@ -54,7 +54,7 @@
     labels: {
       label: "Words as mere labels",
       pages: [
-        { id: "path-labels", href: "path-labels.html", title: "What is true in caring for things" },
+        { id: "path-labels", href: "path-labels.html", title: "Why things matter more than words" },
         { id: "path-labels-2", href: "path-labels-2.html", title: "What a name is asked to do" },
         { id: "path-labels-3", href: "path-labels-3.html", title: "Why labels cannot be second" }
       ]
