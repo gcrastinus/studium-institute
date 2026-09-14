@@ -206,7 +206,7 @@
   function renderHome() {
     document.title = "The Age of Chivalry — Studium Institute";
     $view.innerHTML =
-      figureHtml("home", "King Arthur sees the Questing Beast", "hero-fig") +
+      figureHtml("home", "King Arthur sees the Questing Beast", "hero-fig hero-fig--home") +
       '<p class="kicker">Thomas Bulfinch · 1858</p>' +
       "<h1>The Age of Chivalry</h1>" +
       '<div class="rule">❧</div>' +
