@@ -40,7 +40,7 @@
       pages: [
         { id: "path-thinking", href: "path-thinking.html", title: "What is true in wanting to think critically" },
         { id: "path-thinking-2", href: "path-thinking-2.html", title: "What puzzles and studying biases cannot teach" },
-        { id: "path-thinking-3", href: "path-thinking-3.html", title: "From inference back to speech" }
+        { id: "path-thinking-3", href: "path-thinking-3.html", title: "From thinking back to speech" }
       ]
     },
     voice: {
