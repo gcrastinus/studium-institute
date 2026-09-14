@@ -48,7 +48,7 @@
       pages: [
         { id: "path-voice", href: "path-voice.html", title: "What is true in starting from self-expression" },
         { id: "path-voice-2", href: "path-voice-2.html", title: "When expression is not yet speech" },
-        { id: "path-voice-3", href: "path-voice-3.html", title: "Why training the tongue is not later" }
+        { id: "path-voice-3", href: "path-voice-3.html", title: "Why training our speech is earlier than finding a voice" }
       ]
     },
     labels: {
