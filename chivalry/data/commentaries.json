@@ -1,0 +1,197 @@
+{
+  "hardWords": {
+    "accolade": "The blow with the flat of a sword that makes a man a knight; later, any public honor.",
+    "hauberk": "A shirt of mail, reaching at least to the knees.",
+    "mail": "Armor of interlinked iron rings (from French maille, “mesh”).",
+    "visor": "The grated or slotted face-piece of a helmet, raised or lowered in a groove.",
+    "bever": "A helmet piece that could be opened so the wearer might drink (from Italian bevere).",
+    "ventayle": "The air-passage of a helmet; another name for the bever.",
+    "esquire": "The rank between page and knight; a youth in training, usually from about fourteen.",
+    "page": "A boy, often from age seven, serving in a castle while he learns courtesy and arms.",
+    "errant": "Wandering; a knight-errant rides in quest of adventure and redress of wrongs.",
+    "joust": "A combat of two knights with lances, aiming to unhorse one another; narrower than a tournament.",
+    "tournament": "A larger martial pageant of many knights, meant to show skill as well as force.",
+    "vizor": "Older spelling of visor.",
+    "sangreal": "The Holy Grail; in these romances, the vessel of the Last Supper.",
+    "graal": "Older spelling of Grail.",
+    "paynim": "A pagan, in medieval Christian usage; often a Saracen in the romances.",
+    "guerdon": "A reward, especially one given by a lady to her knight.",
+    "favor": "A token of a lady’s regard—scarf, sleeve, or veil—worn on a knight’s helm or shield.",
+    "lists": "The fenced ground of a tournament.",
+    "kirtle": "A gown or tunic.",
+    "ouches": "Brooches or jeweled clasps.",
+    "curtesie": "Courtesy; the manners of a court.",
+    "corse": "A corpse; a dead body.",
+    "wharfs": "The landing-places of a river town; here, Camelot’s shore.",
+    "burgher": "A townsman, not a knight.",
+    "hight": "Named, called.",
+    "escalibore": "Excalibur, Arthur’s sword; Bulfinch also writes Excalibar.",
+    "paynyms": "Pagans (Caxton’s spelling in the Morte d’Arthur).",
+    "lesings": "Lies, false tales.",
+    "troubadours": "Poets of the south of France (langue d’oc) who sang of love and satire.",
+    "trouveurs": "Poets of northern France (langue d’oïl) who told adventure-romances.",
+    "langue d'oc": "The southern French speech in which “yes” was oc.",
+    "langue d'oil": "The northern French speech in which “yes” was oïl (later oui).",
+    "varlet": "A young attendant; another word for a page.",
+    "villain": "Here a bonded peasant (villein), not “scoundrel”; attached to the soil.",
+    "serf": "A slave of the lowest kind, whose labor belonged wholly to a lord.",
+    "clerk": "Anyone in clerical orders—or, later, anyone who could read, and so claim “benefit of clergy.”",
+    "benefit of clergy": "Exemption, for those counted clerks, from some capital punishments.",
+    "plate": "Solid iron pieces shaped to the body; later armor, after about 1300.",
+    "doublet": "A padded garment worn under mail to take the shock of a blow.",
+    "gauntlet": "An armored glove.",
+    "armlet": "Armor for the arm.",
+    "spurs": "The last tokens given in the making of a knight; “to win one’s spurs.”",
+    "Camelot": "Arthur’s chief court in the later romances.",
+    "Joyous Gard": "Lancelot’s castle.",
+    "Avalon": "The island to which Arthur is borne after Camlann, to be healed—or to wait.",
+    "Camlann": "Arthur’s last battle, against Mordred.",
+    "Modred": "Arthur’s treacherous kinsman; also spelled Mordred.",
+    "Igraine": "Arthur’s mother; wife first of Gorlois, then of Uther.",
+    "Uther": "Uther Pendragon, Arthur’s father.",
+    "Nimue": "A Lady of the Lake; in some tellings she imprisons Merlin.",
+    "Viviane": "Another name of the damsel who beguiles Merlin.",
+    "Enid": "Geraint’s wife, type of patience and truth.",
+    "Olwen": "The maiden whose hair is yellow as broom; Kilwich’s destined wife.",
+    "Prydwen": "Arthur’s ship.",
+    "Caliburn": "Another name of Excalibur.",
+    "Elphin": "The luckless prince who finds the infant Taliesin in a weir.",
+    "weir": "A fish-trap built in a river.",
+    "pismire": "An ant.",
+    "boon": "A favor asked of a king or a knight, which honor then requires him to grant.",
+    "quest": "A search undertaken as a point of honor, especially the Grail quest.",
+    "Round Table": "Arthur’s table, made so that no knight should claim a higher seat than another."
+  },
+  "poems": {
+    "arthur-i:0": {
+      "source": "Robert de Beauvais, quoted by Scott",
+      "note": "Bulfinch gives a scrap of thirteenth-century French so you can hear the language of the Norman court. The ‘matter’ (matyere) is Tristram’s story, already so often told that the poet will not ‘say too much.’",
+      "allusions": [
+        {"ref": "Tristran / Tristrem", "note": "The same hero as Tristram; the spelling shows how the name moved from French into English."},
+        {"ref": "Sir Walter Scott", "note": "Scott printed early romances and used them in his own poems; Bulfinch borrows the specimen from Scott’s introduction to Sir Tristrem."}
+      ]
+    },
+    "arthur-i:1": {
+      "source": "Robert Mannyng of Brunne",
+      "note": "This is English of the common people after the Conquest. ‘Strange Inglis’ means the Frenchified speech of the nobility, not a foreign language in our sense.",
+      "allusions": [
+        {"ref": "Inglis", "note": "English. Brunne writes for ‘simple men’ who cannot follow court French."}
+      ]
+    },
+    "arthur-i:2": {
+      "source": "Sir Thomas Malory, Le Morte Darthur (1485), in Caxton’s spelling",
+      "note": "Malory’s ‘nine worthies’ are a medieval hall of fame: three pagans, three Jews, three Christians. Arthur is placed with Charlemagne and Godfrey of Bouillon. Read a few lines aloud; the spelling is less wild if you sound it.",
+      "allusions": [
+        {"ref": "ix worthy", "note": "The Nine Worthies, a standard late-medieval list of exemplary captains."},
+        {"ref": "Godefray of boloyn", "note": "Godfrey of Bouillon, a leader of the First Crusade and first ruler of Jerusalem."}
+      ]
+    },
+    "arthur-ii:0": {
+      "source": "Milton and the chronicle tradition",
+      "note": "This chapter follows Milton’s History of Britain as well as Geoffrey of Monmouth. The poems here are literary ornaments: they show how later English poets treated Brutus, Lear, and Arthur as if they were history.",
+      "allusions": [
+        {"ref": "Albion", "note": "An old name of Britain; in the myth, a giant son of Neptune."},
+        {"ref": "Brutus", "note": "Not the Roman; a Trojan great-grandson of Aeneas, invented to give Britain a classical pedigree."}
+      ]
+    },
+    "arthur-iii:0": {
+      "source": "Spenser, The Faerie Queene, and later verse on Merlin",
+      "note": "Merlin is less a stage magician here than a prophet-engineer: he moves stones, hides a king, and is at last trapped by his own craft. Spenser’s stanzas make the cave a moral landscape—listen for the hollow sound.",
+      "allusions": [
+        {"ref": "Viviane / Nimue", "note": "The damsel of the Lake who learns Merlin’s art and imprisons him; names vary by romance."},
+        {"ref": "Stonehenge", "note": "Geoffrey has Merlin fetch the stones from Ireland; the ‘Giant’s Dance’ is an older name for the circle."}
+      ]
+    },
+    "arthur-iv:0": {
+      "source": "Verse on Arthur’s crowning and Excalibur",
+      "note": "Watch the two swords: the sword in the stone proves the king; the sword from the Lake (Excalibur) is a gift that must later be returned. Poets like the second better, because it can be thrown back.",
+      "allusions": [
+        {"ref": "Escalibore / Excalibar", "note": "Excalibur. ‘Hight’ means ‘is called.’"},
+        {"ref": "Lady of the Lake", "note": "Not Tennyson’s Elaine of Astolat; an older water-spirit who fosters Lancelot and arms Arthur."}
+      ]
+    },
+    "arthur-vi:0": {
+      "source": "Ballad of Gawain and the Green Knight / related romance verse",
+      "note": "Gawain’s courtesy is the point. A challenge that looks like mere strength is really a test of truth-telling. If a line feels abrupt, it is the ballad’s way: action, then speech, then action.",
+      "allusions": [
+        {"ref": "Green Knight", "note": "A supernatural challenger; in the great Middle English poem he is bound to Morgan le Fay and to a Christmas game."}
+      ]
+    },
+    "arthur-vii:1": {
+      "source": "The Boy and the Mantle (traditional ballad)",
+      "note": "A ‘mantle test’ is a folk motif: a magic garment fits only the faithful wife. Guenever fails; Cradock’s lady almost fails, then confesses a kiss and is cleared. Read it as court satire, not as a sermon. Hard words sit in the clothing: kirtle, ouches, curtesie.",
+      "allusions": [
+        {"ref": "Carlisle", "note": "A northern Arthurian court in many ballads, instead of Camelot."},
+        {"ref": "Cradock / Caradoc", "note": "The same knight as Caradoc Briefbras in the prose tale just above."}
+      ]
+    },
+    "arthur-x:0": {
+      "source": "Alfred, Lord Tennyson, The Lady of Shalott",
+      "note": "Tennyson retells Elaine of Astolat as a weaver who may not look at Camelot except in a mirror. When she looks at Lancelot, the curse holds: she dies on the river. ‘Corse’ is corpse. Notice that Lancelot’s only speech is courteous and late—too late, which is the poem’s sting.",
+      "allusions": [
+        {"ref": "Shalott / Astolat", "note": "The same place; Malory’s Elaine of Astolat becomes Tennyson’s Lady of Shalott."},
+        {"ref": "Camelot", "note": "Here a town of towers and wharfs, seen from outside—the Lady never belongs to it."}
+      ]
+    },
+    "arthur-xii:0": {
+      "source": "Tristram lyrics / romance verse",
+      "note": "The love-potion is not a modern ‘excuse’; in the romance it is a fate the lovers drink and then must live. Songs in this chapter often belong to Iseult’s grief or to Tristram’s harp.",
+      "allusions": [
+        {"ref": "Isoude / Iseult / Isolde", "note": "The same queen; Irish in origin, married to King Mark of Cornwall."},
+        {"ref": "Mark", "note": "Tristram’s uncle and liege; the tragedy is that love and loyalty cannot both be kept."}
+      ]
+    },
+    "arthur-xiii:0": {
+      "source": "Tristram’s songs and later imitations",
+      "note": "When a dying or exiled knight ‘sings,’ the poem is doing the work of an inner speech. Look for the proper names: they tell you which court he has lost.",
+      "allusions": [
+        {"ref": "Brittany / Armorica", "note": "Tristram’s other home; there is often a second Iseult (‘of the White Hands’) in that land."}
+      ]
+    },
+    "arthur-xv:0": {
+      "source": "Verse on the Round Table",
+      "note": "The Table is a political image: equality among peers under one king. Poets like it because a circle has no ‘head of the table’ except the king’s presence.",
+      "allusions": [
+        {"ref": "siege", "note": "A seat. The Siege Perilous is the vacant place reserved for the Grail knight."}
+      ]
+    },
+    "arthur-xviii:0": {
+      "source": "Perceval / Grail verse",
+      "note": "Perceval’s fault is often silence: he does not ask whom the Grail serves. In poetry that withheld question becomes a moral: courtesy without charity is incomplete.",
+      "allusions": [
+        {"ref": "Fisher King", "note": "The wounded keeper of the Grail castle; the land fails with him."}
+      ]
+    },
+    "arthur-xix:0": {
+      "source": "Grail poetry (including later English verse Bulfinch quotes)",
+      "note": "Sangreal is ‘Holy Grail.’ The romances never quite agree whether it is a cup, a dish, or a vision. What they agree on: only the pure see it plainly.",
+      "allusions": [
+        {"ref": "Joseph of Arimathea", "note": "In Grail legend he brings the vessel to Britain."},
+        {"ref": "Galahad", "note": "Lancelot’s son, begotten in enchantment; the knight who succeeds where his father cannot."}
+      ]
+    },
+    "arthur-xxiii:0": {
+      "source": "Morte d’Arthur verse; Wordsworth and others on Arthur’s return",
+      "note": "‘Morte’ means death, but the tradition refuses to let Arthur stay dead. The barge to Avalon, the returned sword, the once and future king: keep those three images distinct as you read.",
+      "allusions": [
+        {"ref": "Avalon", "note": "The apple-island of healing; in some tellings Arthur sleeps there until Britain’s need."},
+        {"ref": "Bedivere", "note": "The last knight, charged to throw Excalibur back to the water—and tempted to keep it."}
+      ]
+    },
+    "mabinogi-xiii:0": {
+      "source": "The first song of Taliesin",
+      "note": "Taliesin speaks as a child and as a seer at once. Welsh bardic poems in translation keep the short line and the boast: small as I am, I shall be more than three hundred salmon.",
+      "allusions": [
+        {"ref": "Gwyddno’s weir", "note": "A fish-trap that should have made Elphin rich; it yields a poet instead."},
+        {"ref": "Elphin", "note": "The prince whose luck turns when he takes up the child."}
+      ]
+    },
+    "hero-robin:0": {
+      "source": "Early Robin Hood ballads",
+      "note": "The refrain ‘God save Robin Hood and all his good yeomanry’ is the people’s blessing. Yeoman here is a free fighting man, not a knight—an important contrast after so many chapters of the Round Table.",
+      "allusions": [
+        {"ref": "Richard I", "note": "The setting many later tellings choose; the earliest ballads are less exact about kings."}
+      ]
+    }
+  }
+}

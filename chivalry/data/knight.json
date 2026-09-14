@@ -1,0 +1,51 @@
+{
+  "title": "Becoming and being a knight",
+  "lede": "Bulfinch’s first chapter is not yet Arthur’s story. It is a handbook of the order that the later romances take for granted: how a boy is made a knight, what he wears, whom he fights for show, and what the rest of society was while he rode.",
+  "quoteIdeal": "Chivalry… framed an ideal of the heroic character, combining invincible strength and valor, justice, modesty, loyalty to superiors, courtesy to equals, compassion to weakness, and devotedness to the Church; an ideal which, if never met with in real life, was acknowledged by all as the highest model for emulation.",
+  "timeline": [
+    {
+      "age": "About 7",
+      "name": "Page",
+      "also": "Valet or varlet",
+      "text": "The noble child leaves his father’s house for a patron’s castle. He learns the first articles of religion, reverence for lords, carving and waiting at table, harp and dance, hunting, falconry, and the first exercises on horseback."
+    },
+    {
+      "age": "About 14",
+      "name": "Esquire",
+      "also": "Squire",
+      "text": "The work hardens: to vault onto a horse in armor, to run and scale walls so encumbered, to wrestle, to wield the battle-axe without lifting the visor, and to ride with grace. Courtesy is practiced among the ladies of the same house; a mistress of the heart is chosen early."
+    },
+    {
+      "age": "About 21",
+      "name": "Knight",
+      "also": "The accolade",
+      "text": "When the education is thought complete, knighthood is conferred. The candidate has fasted, watched, confessed, and received the sacrament. White garments, a blessed sword, spurs, mail, and the three strokes of the accolade end the making of a knight."
+    }
+  ],
+  "ceremony": [
+    "A severe fast and whole nights in prayer.",
+    "Confession and the sacrament.",
+    "Snow-white garments; the sword hung from the neck is blessed by a priest.",
+    "Kneeling, with folded arms, before the presiding knight; oaths taken.",
+    "Spurs, coat of mail, hauberk, armlet, gauntlet, and sword given in turn—sometimes by ladies.",
+    "The accolade: three strokes with the flat of the sword on shoulder or neck.",
+    "The words: “In the name of God, of St. Michael, and St. George, I make thee a knight; be valiant, courteous, and loyal!”",
+    "Helmet, shield, and spear received; the investiture ends."
+  ],
+  "classes": [
+    {"name": "Knights", "text": "Mounted warriors of rank, or in a great man’s service. In war they keep the field or the castle; in peace they haunt the court, the tournament, or the road as knights-errant."},
+    {"name": "Freemen", "text": "Owners of small independent land, who might yet become vassals of a stronger neighbor for protection."},
+    {"name": "Villains (villeins)", "text": "Bound to the soil and sold with it, but paying a fixed rent and keeping any surplus of their industry. Not “villains” in the later moral sense."},
+    {"name": "Serfs", "text": "The lowest slavery: the fruit of their labor belonged to the master who fed and clothed them."},
+    {"name": "Clerks", "text": "At first the clergy; later, anyone who could read might be counted a clerk and claim benefit of clergy—exemption from some capital punishments."}
+  ],
+  "tournament": "The tournament, says Bulfinch, is a French invention: a pageant of many weapons and rehearsed courtesy. The joust or just is narrower—two knights, lances, the aim to unhorse. Church councils repeatedly condemned tournaments for the quarrels and deaths they caused. Regulations forbade wounding the horse, using the sword’s point, or striking a man who had raised his visor. Knights fought as servants d’amour, wearing favors: scarfs, sleeves, veils, clasps.",
+  "armor": [
+    {"term": "Mail", "text": "From French maille, mesh. Two kinds: plate or scale mail, and chain mail. Early mail was a frock to the knees, later with hose, gloves, and a hood."},
+    {"term": "Hauberk", "text": "A complete covering of double chain mail, open like a coat or closed like a shirt. Proof against a sword-blow; a lance-point might still drive a link into the flesh."},
+    {"term": "Doublet and plate", "text": "A stuffed doublet, and often an iron breastplate, worn under mail. Hence the poets’ phrase “to pierce both plate and mail.” About 1300, solid plate harness began to supplant mail."},
+    {"term": "Shield", "text": "Usually wood covered with leather, hoop of metal at the rim so a sword should not cut it through."},
+    {"term": "Helmet", "text": "Headpiece strengthened with iron circles, plus a visor (a grating to see through). Some had a bever, from Italian bevere, to drink; also called the ventayle, the air-passage."},
+    {"term": "Laces and misericorde", "text": "The helm was laced to the hauberk; an overthrown knight could not be finished until those laces were cut—or the skirt of the hauberk lifted. A small dagger at the right side did the last work."}
+  ]
+}
