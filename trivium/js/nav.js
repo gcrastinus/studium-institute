@@ -38,7 +38,7 @@
     thinking: {
       label: "Critical thinking",
       pages: [
-        { id: "path-thinking", href: "path-thinking.html", title: "What is true in wanting to reason well" },
+        { id: "path-thinking", href: "path-thinking.html", title: "What is true in wanting to think critically" },
         { id: "path-thinking-2", href: "path-thinking-2.html", title: "What puzzles leave untaught" },
         { id: "path-thinking-3", href: "path-thinking-3.html", title: "From inference back to speech" }
       ]
@@ -375,6 +375,25 @@
       if (!rateEl.querySelector(".speak-rate-btn")) rateEl.innerHTML = rateWidgetHTML(rate);
     }
 
+    var darkBtn = document.getElementById("dark-toggle");
+    var cluster = document.getElementById("top-right-controls");
+    if (!cluster) {
+      cluster = document.createElement("div");
+      cluster.id = "top-right-controls";
+      cluster.className = "top-right-controls";
+      document.body.appendChild(cluster);
+    }
+    var unit = document.getElementById("speak-unit");
+    if (!unit) {
+      unit = document.createElement("div");
+      unit.id = "speak-unit";
+      unit.className = "speak-unit";
+    }
+    unit.appendChild(btn);
+    unit.appendChild(rateEl);
+    if (darkBtn) cluster.appendChild(darkBtn);
+    cluster.appendChild(unit);
+
     var rateBtn = rateEl.querySelector(".speak-rate-btn");
     var rateMenu = rateEl.querySelector(".speak-rate-menu");
 
@@ -406,6 +425,7 @@
       btn.setAttribute("aria-disabled", "true");
       btn.style.opacity = ".45";
       btn.style.cursor = "default";
+      if (unit) unit.style.opacity = ".45";
       rateEl.style.opacity = ".45";
       if (rateBtn) {
         rateBtn.disabled = true;
