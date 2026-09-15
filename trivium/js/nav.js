@@ -58,14 +58,6 @@
         { id: "path-labels-2", href: "path-labels-2.html", title: "What a name does" },
         { id: "path-labels-3", href: "path-labels-3.html", title: "Why labels cannot be second" }
       ]
-    },
-    ai: {
-      label: "Machines that write",
-      pages: [
-        { id: "path-ai", href: "path-ai.html", title: "What is true in machine fluency" },
-        { id: "path-ai-2", href: "path-ai-2.html", title: "What a speaker still has to be" },
-        { id: "path-ai-3", href: "path-ai-3.html", title: "Why the arts remain yours" }
-      ]
     }
   };
 
