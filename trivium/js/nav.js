@@ -326,7 +326,7 @@
   }
 
   function rateWidgetHTML(current) {
-    var html = '<button type="button" class="speak-rate-btn" aria-haspopup="listbox" aria-expanded="false" title="Reading speed" aria-label="Reading speed">' + rateLabel(current) + "</button>";
+    var html = '<button type="button" class="speak-rate-btn" aria-haspopup="listbox" aria-expanded="false" title="Reading speed" aria-label="Reading speed">▾</button>';
     html += '<ul class="speak-rate-menu" role="listbox" hidden>';
     RATES.forEach(function (r) {
       html += '<li role="option" data-rate="' + r + '" aria-selected="' + (r === current ? "true" : "false") + '">' + rateLabel(r) + "</li>";
@@ -344,7 +344,7 @@
       btn.id = "speak-toggle";
       btn.title = "Read this screen aloud";
       btn.setAttribute("aria-label", "Read this screen aloud");
-      btn.textContent = "🔊";
+      btn.textContent = "▶";
       document.body.appendChild(btn);
     }
 
@@ -383,15 +383,15 @@
     }
     unit.appendChild(btn);
     unit.appendChild(rateEl);
-    if (darkBtn) cluster.appendChild(darkBtn);
     cluster.appendChild(unit);
+    if (darkBtn) cluster.appendChild(darkBtn);
 
     var rateBtn = rateEl.querySelector(".speak-rate-btn");
     var rateMenu = rateEl.querySelector(".speak-rate-menu");
 
     function setRateUI(r) {
       rate = r;
-      if (rateBtn) rateBtn.textContent = rateLabel(r);
+      /* caret stays ▾; rate shown only in menu */
       if (rateMenu) {
         rateMenu.querySelectorAll("[data-rate]").forEach(function (li) {
           li.setAttribute("aria-selected", parseFloat(li.getAttribute("data-rate")) === r ? "true" : "false");
@@ -465,7 +465,7 @@
     function setSpeakingUI(on) {
       speaking = on;
       btn.classList.toggle("speaking", on);
-      btn.textContent = on ? "⏹" : "🔊";
+      btn.textContent = on ? "❚❚" : "▶";
       btn.title = on ? "Stop reading" : "Read this screen aloud";
       btn.setAttribute("aria-label", btn.title);
     }
@@ -480,7 +480,7 @@
     function normalizeText(s) {
       return String(s || "")
         .replace(/\u00a0/g, " ")
-        .replace(/[❧❦☰☾☀🔊⏹]/g, " ")
+        .replace(/[❧❦☰☾☀🔊⏹▶❚▾]/g, " ")
         .replace(/[·•]/g, ", ")
         .replace(/\s+/g, " ")
         .replace(/\s+([,.;:!?])/g, "$1")

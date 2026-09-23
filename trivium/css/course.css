@@ -520,28 +520,19 @@ h1 {
   align-items: center;
   justify-content: center;
   height: 100%;
-  min-width: 52px;
+  min-width: 28px;
   border: none;
   border-left: 1px solid var(--line);
   background: transparent;
   color: var(--gold);
-  font-family: var(--display);
-  font-size: 12px;
-  letter-spacing: 0.08em;
+  font-size: 11px;
   border-radius: 0 22px 22px 0;
-  padding: 0 12px 0 10px;
+  padding: 0 10px;
   box-shadow: none;
   cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
   transition: background 0.15s, color 0.15s;
-}
-
-.speak-rate-btn::after {
-  content: "▾";
-  margin-left: 5px;
-  font-size: 9px;
-  opacity: 0.85;
 }
 
 #speak-toggle:hover,
@@ -563,7 +554,7 @@ h1 {
   margin: 0;
   padding: 6px;
   list-style: none;
-  min-width: 100%;
+  min-width: 4.5em;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -641,7 +632,7 @@ h1 {
   .top-right-controls { top: 12px; right: 12px; gap: 6px; }
   .speak-unit { height: 40px; border-radius: 20px; }
   #speak-toggle { width: 40px; font-size: 16px; border-radius: 20px 0 0 20px; }
-  .speak-rate-btn { min-width: 48px; font-size: 11px; padding: 0 10px 0 8px; border-radius: 0 20px 20px 0; }
+  .speak-rate-btn { min-width: 26px; font-size: 10px; padding: 0 8px; border-radius: 0 20px 20px 0; }
   body { font-size: 18px; }
 }
 
