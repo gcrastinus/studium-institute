@@ -224,7 +224,8 @@
           "<p>King Arthur I–XXIII, the Mabinogeon, and the hero myths, each on its own screen, with the poems set apart for study.</p>" +
           '<span class="btn btn-ghost">Open the map</span>' +
         "</a>" +
-      "</div>";
+      "</div>" +
+      '<p class="designer-credit">These sets of exercises were designed by Timothy Kearns, PhD, created and maintained with the assistance of AI, and are extensively revised for clarity and precision.</p>';
   }
 
   function renderKnight() {

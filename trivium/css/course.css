@@ -764,3 +764,14 @@ button.mark:hover { border-color: var(--gold); color: var(--gold); }
   .prose .return { padding: 14px 15px 4px; }
   button.mark { font-size: 16px; width: 100%; }
 }
+
+
+.designer-credit{
+  text-align:center;
+  margin:28px auto 4px;
+  max-width:40rem;
+  font-size:15px;
+  font-style:italic;
+  line-height:1.45;
+  color:var(--ink-soft);
+}
