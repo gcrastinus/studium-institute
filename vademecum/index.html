@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vademecum of the arts · 1050–1510</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=EB+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=20260908a">
+</head>
+<body>
+  <header class="mast">
+    <div class="mast-left">
+      <div class="mast-title-row">
+        <h1>Vademecum of the arts</h1>
+        <div class="century-pick" id="century-pick">
+          <button type="button" class="century-trigger" id="century-trigger"
+            aria-haspopup="listbox" aria-expanded="false" aria-controls="century-menu"
+            aria-label="Jump to century">
+            <span id="century-label">11th c.</span>
+          </button>
+          <div class="century-menu" id="century-menu" role="listbox" aria-label="Centuries" hidden></div>
+        </div>
+      </div>
+      <p class="lede">Earliest years at the left; later years to the right</p>
+    </div>
+  </header>
+
+  <div id="stage">
+    <div id="paper">
+      <div id="decade-rail"></div>
+      <div id="axis"></div>
+      <div id="lanes"></div>
+    </div>
+  </div>
+
+  <div id="chrome-dock">
+    <div id="legend-dock" aria-label="Medium key"></div>
+  </div>
+
+  <aside id="artist-panel" hidden>
+    <button class="x" id="panel-x" aria-label="Close">×</button>
+    <div id="panel-body"></div>
+  </aside>
+
+  <div id="lightbox" hidden>
+    <button class="x light-x" id="light-x" aria-label="Close">×</button>
+    <figure>
+      <img id="light-img" alt="">
+      <figcaption id="light-cap"></figcaption>
+    </figure>
+  </div>
+
+<script src="app.js?v=20260908a"></script>
+</body>
+</html>
