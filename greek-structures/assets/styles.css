@@ -115,6 +115,9 @@ details.card summary .th{width:96px;height:72px;border-radius:3px;object-fit:cov
 details.card summary h4{margin:0;font-size:1rem}
 details.card summary .peek{font-size:.9rem;color:var(--ink2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:2px}
 details.card summary .more{font-family:var(--title);font-size:.66rem;letter-spacing:.14em;color:var(--rust)}
+/* uniform 'Open' boxes: every closed card reserves room for a 2-line title + 2-line peek + the Open line */
+details.card summary{min-height:calc(20px + 2.4rem + 2px + 2.79rem + 1.55em)}
+details.card summary h4{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 details.card[open] summary .more::after{content:" ▲"} details.card:not([open]) summary .more::after{content:" ▼"}
 details.card[open]{grid-column:1/-1}
 details.card .body{padding:4px 18px 16px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
