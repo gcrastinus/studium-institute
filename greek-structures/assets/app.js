@@ -50,15 +50,58 @@ document.addEventListener('click',e=>{const t=e.target.closest('[data-zoom]');if
 /* ---- Tabs ---- */
 const tabs=$('#tabs'), tp=$('#tabPanel');
 S.tabs.forEach((t,i)=>{const b=document.createElement('button');b.className='tab';b.role='tab';b.innerHTML=`<span class="ic" aria-hidden="true">${t.icon}</span>${t.label}`;b.onclick=()=>showTab(i);tabs.appendChild(b)});
-function cardHTML(c){
+function cardHTML(c,i){
   const m=c.img&&img(c.img);
   const peek=(c.H[0]||c.E[0]).replace(/<[^>]+>/g,'');
   const fig=m?`<figure><img src="images/${m.file}" alt="${esc(m.caption)}" data-zoom="${c.img}"><figcaption>${esc(m.caption)}. ${esc(m.artist)}, ${esc(m.license)}.</figcaption></figure>`:'';
   const key=c.plan?`<ol class="key">${S.agoraKey.map(x=>`<li>${esc(x)}</li>`).join('')}</ol><p class="note">Key from the plan’s Wikimedia Commons page.</p>`:'';
-  return `<details class="card"><summary>${m?`<img class="th" src="images/${m.file}" alt="">`:'<span class="th">❦</span>'}<div><h4>${c.title}</h4><div class="peek">${esc(peek)}</div><span class="more">Open</span></div></summary>
-   <div class="body${m?'':' noimg'}"><div>${c.H.map((h,j)=>`<div class="hq${j?' cont':''}">${esc(h)}</div>`).join('')}${flagsHTML(c.corr)}</div>
-   <div><div class="en"><ul>${c.E.map(x=>`<li>${x}</li>`).join('')}</ul></div>${fig}${key}</div></div></details>`;
+  return `<article class="card" data-i="${i}"><div class="sum" role="button" tabindex="0" aria-expanded="false" aria-controls="cardPanel">${m?`<img class="th" src="images/${m.file}" alt="">`:'<span class="th">❦</span>'}<div><h4>${c.title}</h4><div class="peek">${esc(peek)}</div><span class="more">Open</span></div></div>
+   <div class="body${m&&c.H.length?'':' noimg'}" hidden>${c.H.length?'':'<!-- no main points -->'}<div${c.H.length?'':' hidden'}>${c.H.map((h,j)=>`<div class="hq${j?' cont':''}">${esc(h)}</div>`).join('')}${flagsHTML(c.corr)}</div>
+   <div><div class="en"><ul>${c.E.map(x=>`<li>${x}</li>`).join('')}</ul></div>${fig}${key}</div></div></article>`;
 }
+/* One detail panel per tab. The active card keeps its grid cell; its body is moved into a
+   full-width panel inserted after the last card of the active card's row. */
+let activeCard=null;
+const cardsGrid=()=>$('.cards',tp);
+const gridCols=g=>Math.max(1,getComputedStyle(g).gridTemplateColumns.split(' ').filter(Boolean).length);
+function placePanel(){
+  const g=cardsGrid(), pn=$('#cardPanel');
+  if(!g||!pn||!activeCard)return;
+  const cards=$$('.card',g), i=cards.indexOf(activeCard), n=gridCols(g);
+  const end=Math.min(cards.length-1,Math.floor(i/n)*n+n-1);
+  if(cards[end].nextElementSibling!==pn)cards[end].after(pn);
+  const gr=g.getBoundingClientRect(), cr=activeCard.getBoundingClientRect();
+  pn.style.setProperty('--notch',Math.round(cr.left-gr.left+cr.width/2)+'px');
+}
+function closeCard(){
+  const pn=$('#cardPanel');
+  if(activeCard){const b=$('.body',pn);if(b){b.hidden=true;activeCard.appendChild(b)}
+    activeCard.classList.remove('active');$('.sum',activeCard).setAttribute('aria-expanded','false');$('.more',activeCard).textContent='Open'}
+  if(pn)pn.remove();activeCard=null;
+}
+function openCard(card,scroll){
+  const g=cardsGrid(); if(!g)return;
+  const was=activeCard, top0=card.getBoundingClientRect().top;
+  closeCard();
+  if(was===card){keepPlace(card,top0);syncRows();return}
+  const pn=document.createElement('div');pn.id='cardPanel';pn.className='cpanel';pn.setAttribute('role','region');
+  pn.setAttribute('aria-label',$('h4',card).textContent);
+  const b=$('.body',card);b.hidden=false;pn.appendChild(b);
+  activeCard=card;card.classList.add('active');$('.sum',card).setAttribute('aria-expanded','true');$('.more',card).textContent='Close';
+  g.appendChild(pn);placePanel();
+  if(scroll){const r=card.getBoundingClientRect(),vh=innerHeight;
+    if(r.top<70||r.top>vh*0.45)scrollTo({top:scrollY+r.top-80,behavior:'smooth'})}
+  else keepPlace(card,top0);
+  syncRows();
+}
+/* if closing a panel above the card moved it, restore the card's on-screen position */
+function keepPlace(card,top0){const d=card.getBoundingClientRect().top-top0;if(Math.abs(d)>1)scrollTo({top:scrollY+d,behavior:'instant'})}
+function syncRows(){$$('.mrow',tp).forEach(x=>x.classList.toggle('on',!!activeCard&&+x.dataset.i===+activeCard.dataset.i))}
+tp.addEventListener('click',e=>{const s=e.target.closest('.card .sum');if(s&&!e.target.closest('[data-zoom],a'))openCard(s.parentElement,false)});
+tp.addEventListener('keydown',e=>{const s=e.target.closest('.card .sum');
+  if(s&&(e.key==='Enter'||e.key===' ')){e.preventDefault();openCard(s.parentElement,false)}
+  else if(e.key==='Escape'&&activeCard&&!lb.classList.contains('open')&&e.target.closest('.cards')){const c=activeCard;closeCard();syncRows();$('.sum',c).focus()}});
+let rsz;addEventListener('resize',()=>{cancelAnimationFrame(rsz);rsz=requestAnimationFrame(placePanel)});
 function modelHTML(t){
   return `<div class="model"><div class="hq">${esc(S.modelIntro)}</div>
    <div class="mrows">${t.cards.map((c,i)=>`<button class="mrow" data-i="${i}"><span class="nm">${c.title}</span><span class="pub">${c.pair[0]}</span><span class="ar">⇄</span><span class="spk">${c.pair[1]}</span></button>`).join('')}</div>
@@ -77,11 +120,12 @@ function housesHTML(){return `<div class="hdiag"><div class="seg">${Object.entri
 function drawHD(k){const v=HD[k];$('#hdSvg').innerHTML=`<svg viewBox="40 -10 520 470" role="img" aria-label="${esc(v.t)} schematic plan"><defs><marker id="ar" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" refX="7" refY="7" orient="auto"><path d="M0 0L14 7L0 14z" fill="#8b3a1e"/></marker><marker id="ar2" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto"><path d="M0 0L12 6L0 12z" fill="#556b3a"/></marker></defs><g font-family="EB Garamond, serif" fill="#2b2118">${v.svg}</g></svg><p class="cap"><b>${v.t}.</b> ${v.c} <i>(Schematic, not to scale.)</i></p>`;
   $$('[data-hd]').forEach(b=>b.classList.toggle('on',b.dataset.hd===k))}
 function showTab(i){
+  activeCard=null;
   $$('.tab',tabs).forEach((b,j)=>b.setAttribute('aria-selected',j===i));
   const t=S.tabs[i];
-  tp.innerHTML=`<div class="tabpanel"><p class="intro">${t.intro}</p>${t.model?modelHTML(t):''}${t.houses?housesHTML():''}<div class="cards">${t.cards.map(cardHTML).join('')}</div></div>`;
+  tp.innerHTML=`<div class="tabpanel"><p class="intro">${t.intro}</p>${t.model?modelHTML(t):''}${t.houses?housesHTML():''}<div class="cards">${t.cards.map((c,j)=>cardHTML(c,j)).join('')}</div></div>`;
   if(t.houses){drawHD('house');$$('[data-hd]').forEach(b=>b.onclick=()=>drawHD(b.dataset.hd))}
-  if(t.model)$$('.mrow',tp).forEach(r=>r.onclick=()=>{const d=$$('details.card',tp)[+r.dataset.i];$$('.mrow',tp).forEach(x=>x.classList.remove('on'));r.classList.add('on');d.open=true;d.scrollIntoView({behavior:'smooth',block:'center'})});
+  if(t.model)$$('.mrow',tp).forEach(r=>r.onclick=()=>{const c=$$('.card',tp)[+r.dataset.i];if(c!==activeCard)openCard(c,true);else c.scrollIntoView({behavior:'smooth',block:'start'})});
 }
 showTab(0);
 

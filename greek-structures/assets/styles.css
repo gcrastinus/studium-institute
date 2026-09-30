@@ -108,23 +108,33 @@ section{padding:56px 0 20px}
 .tabpanel{animation:fade .3s}
 .tabpanel .intro{text-align:center;font-style:italic;color:var(--ink2);max-width:70ch;margin:0 auto 16px}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:16px;align-items:start}
-details.card{background:var(--card);border:1px solid var(--line);border-radius:6px;box-shadow:var(--shadow);overflow:hidden}
-details.card summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:96px 1fr;gap:12px;align-items:center;padding:10px}
-details.card summary::-webkit-details-marker{display:none}
-details.card summary .th{width:96px;height:72px;border-radius:3px;object-fit:cover;background:var(--parch2);display:flex;align-items:center;justify-content:center;font-size:1.8rem;color:var(--gold)}
-details.card summary h4{margin:0;font-size:1rem}
-details.card summary .peek{font-size:.9rem;color:var(--ink2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:2px}
-details.card summary .more{font-family:var(--title);font-size:.66rem;letter-spacing:.14em;color:var(--rust)}
-/* uniform 'Open' boxes: every closed card reserves room for a 2-line title + 2-line peek + the Open line */
-details.card summary{min-height:calc(20px + 2.4rem + 2px + 2.79rem + 1.55em)}
-details.card summary h4{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-details.card[open] summary .more::after{content:" ▲"} details.card:not([open]) summary .more::after{content:" ▼"}
-details.card[open]{grid-column:1/-1}
-details.card .body{padding:4px 18px 16px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
-details.card .body.noimg{grid-template-columns:1fr}
-details.card .body figure{margin:8px 0 0}
-details.card .body figure img{width:100%;border-radius:4px;cursor:zoom-in;border:1px solid var(--line)}
-details.card .body figcaption{font-size:.85rem;color:var(--ink2);line-height:1.35;margin-top:4px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:6px;box-shadow:var(--shadow);overflow:hidden;transition:border-color .15s,box-shadow .15s,background-color .15s}
+.card .sum{cursor:pointer;display:grid;grid-template-columns:96px 1fr;gap:12px;align-items:center;padding:10px;outline:none}
+.card .sum:focus-visible{box-shadow:inset 0 0 0 2px var(--gold)}
+.card:hover{border-color:var(--gold)}
+.card .sum .th{width:96px;height:72px;border-radius:3px;object-fit:cover;background:var(--parch2);display:flex;align-items:center;justify-content:center;font-size:1.8rem;color:var(--gold)}
+.card .sum h4{margin:0;font-size:1rem}
+.card .sum .peek{font-size:.9rem;color:var(--ink2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:2px}
+.card .sum .more{font-family:var(--title);font-size:.66rem;letter-spacing:.14em;color:var(--rust)}
+/* uniform 'Open' boxes: every card reserves room for a 2-line title + 2-line peek + the Open line */
+.card .sum{min-height:calc(20px + 2.4rem + 2px + 2.79rem + 1.55em)}
+.card .sum h4{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card .sum .more::after{content:" ▼"}
+.card.active{border-color:var(--rust);box-shadow:0 0 0 1px var(--rust),var(--shadow);background:#fff8e8}
+.card.active .sum .more{background:var(--rust);color:#fbf1dc;padding:1px 8px;border-radius:10px}
+.card.active .sum .more::after{content:" ▲"}
+/* the full-width detail panel below the active card's row */
+.cpanel{grid-column:1/-1;position:relative;background:var(--card);border:1px solid var(--line);border-top:3px solid var(--rust);border-radius:6px;box-shadow:var(--shadow);margin-top:-2px;animation:cpIn .22s ease-out}
+.cpanel::before{content:"";position:absolute;top:-11px;left:var(--notch,50%);width:18px;height:18px;margin-left:-9px;background:var(--card);border-left:3px solid var(--rust);border-top:3px solid var(--rust);transform:rotate(45deg);border-radius:3px 0 0 0}
+@keyframes cpIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.cpanel{animation:none}}
+.card .body,.cpanel .body{padding:14px 18px 16px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card .body[hidden]{display:none}
+.cpanel .body.noimg{grid-template-columns:1fr}
+.cpanel .body.noimg figure{max-width:620px}
+.cpanel .body figure{margin:8px 0 0}
+.cpanel .body figure img{width:100%;border-radius:4px;cursor:zoom-in;border:1px solid var(--line)}
+.cpanel .body figcaption{font-size:.85rem;color:var(--ink2);line-height:1.35;margin-top:4px}
 .key{columns:2;font-size:.88rem;padding-left:1.6em;margin:.4em 0}
 .key li{cursor:default;padding:1px 3px;border-radius:3px}
 .key li:hover{background:rgba(168,129,47,.2)}
@@ -174,7 +184,7 @@ footer{text-align:center;padding:30px 20px 50px;color:var(--ink2);font-size:.9re
   .tl-track{flex-direction:column;padding:0 0 0 26px}
   .tl-track::before{left:8px;right:auto;top:0;bottom:0;width:3px;height:auto;background:linear-gradient(var(--gold),var(--rust))}
   .era::before{left:-25px;top:16px}
-  .tl-grid,.ov,details.card .body{grid-template-columns:1fr}
+  .tl-grid,.ov,.cpanel .body{grid-template-columns:1fr}
   .cards{grid-template-columns:1fr}
   .mrow{grid-template-columns:1fr 26px 1fr}
   .mrow .nm{grid-column:1/-1}
@@ -183,4 +193,4 @@ footer{text-align:center;padding:30px 20px 50px;color:var(--ink2);font-size:.9re
   .tab{white-space:nowrap;flex:0 0 auto}
   .where{margin-left:0;width:100%}
 }
-@media print{nav.top,.lb{display:none}details.card .body,details.corr .cb{display:block}}
+@media print{nav.top,.lb{display:none}.card .body[hidden],.cpanel .body,details.corr .cb{display:block}}
