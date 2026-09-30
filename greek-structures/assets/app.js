@@ -1,8 +1,9 @@
 (function(){
 const S=window.SITE, $=(q,r=document)=>r.querySelector(q), $$=(q,r=document)=>[...r.querySelectorAll(q)];
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const corrById=Object.fromEntries(S.corrections.map(c=>[c.id,c]));
+const flagsHTML=ids=>ids&&ids.length?`<div class="flags">${ids.map(id=>{const c=corrById[id];return `<a class="flag" href="#${id}" data-corr="${id}" title="${esc(c.issue.replace(/<[^>]+>/g,''))}">⚑ ${id.slice(1)} · ${c.type}</a>`}).join('')}</div>`:'';
 const img=k=>S.images[k];
-const imgKeys=c=>c.img?[].concat(c.img):[];
 
 /* ---- Timeline ---- */
 const tr=$('#tlTrack'), panel=$('#tlPanel'); let cur=1;
@@ -19,7 +20,8 @@ function showEra(i){
    <div class="tl-grid"><div>
      ${e.H?`<div class="hq">${esc(e.H)}</div>`:''}${e.H2?`<div class="hq cont">${esc(e.H2)}</div>`:''}
      ${e.summary?`<div class="en">${e.summary}</div>`:''}
-   </div><div>
+     ${flagsHTML(e.corr)}
+   </div><div><div class="en" style="background:none;border-left-color:transparent;padding-left:0"></div>
      <ul class="events">${e.events.map(([d,t])=>`<li><b>${d}</b>${t}</li>`).join('')}</ul></div></div>
    <div class="tl-nav"><button class="btn" id="tlPrev" ${i===0?'disabled':''}>‹ Earlier</button><button class="btn" id="tlNext" ${i===S.timeline.length-1?'disabled':''}>Later ›</button></div>`;
   $('#tlPrev').onclick=()=>showEra(cur-1); $('#tlNext').onclick=()=>showEra(cur+1);
@@ -28,12 +30,18 @@ showEra(1);
 tr.addEventListener('keydown',ev=>{if(ev.key==='ArrowRight'||ev.key==='ArrowDown'){ev.preventDefault();showEra(Math.min(cur+1,S.timeline.length-1));$$('.era',tr)[cur].focus()}
   if(ev.key==='ArrowLeft'||ev.key==='ArrowUp'){ev.preventDefault();showEra(Math.max(cur-1,0));$$('.era',tr)[cur].focus()}});
 
-/* ---- Lightbox (steps through the pictures of the section in view) ---- */
+/* ---- Gallery + lightbox ---- */
+const keys=Object.keys(S.images), themes={all:'All',cities:'Cities & colonies',civic:'Civic buildings',temples:'Temples & sanctuaries',life:'Assembly, courts, army, games, theatre',arts:'Arts'};
+const gal=$('#gal'), gf=$('#galFilters');
+Object.entries(themes).forEach(([k,v])=>{const b=document.createElement('button');b.className='btn'+(k==='all'?' on':'');b.textContent=v;b.onclick=()=>{$$('.btn',gf).forEach(x=>x.classList.remove('on'));b.classList.add('on');$$('figure',gal).forEach(f=>f.classList.toggle('hide',k!=='all'&&f.dataset.theme!==k))};gf.appendChild(b)});
+keys.forEach(k=>{const m=img(k);const f=document.createElement('figure');f.dataset.theme=m.theme;f.dataset.key=k;
+  f.innerHTML=`<img loading="lazy" src="images/${m.file}" alt="${esc(m.caption)}"><figcaption>${esc(m.caption)}<small>${esc(m.artist)} · ${esc(m.license)}</small></figcaption>`;
+  f.onclick=()=>openLB(k);gal.appendChild(f)});
 const lb=$('#lb'); let lbk=null;
 function openLB(k){lbk=k;const m=img(k);$('img',lb).src='images/'+m.file;$('img',lb).alt=m.caption;
   $('.cap',lb).innerHTML=`${esc(m.caption)}<br><small>${esc(m.artist)} · <a href="${m.licenseUrl||m.page}" target="_blank" rel="noopener">${esc(m.license)}</a> · <a href="${m.page}" target="_blank" rel="noopener">Wikimedia Commons</a></small>`;
   lb.classList.add('open');$('.lb-x',lb).focus()}
-const step=d=>{const sec=$('main>section.active')||document;const ks=[...new Set($$('[data-zoom]',sec).map(x=>x.dataset.zoom))];if(!ks.length)return;const i=ks.indexOf(lbk);openLB(ks[(i+d+ks.length)%ks.length])};
+const step=d=>{const i=keys.indexOf(lbk);openLB(keys[(i+d+keys.length)%keys.length])};
 $('.lb-x',lb).onclick=()=>lb.classList.remove('open');$('.lb-p',lb).onclick=()=>step(-1);$('.lb-n',lb).onclick=()=>step(1);
 lb.onclick=e=>{if(e.target===lb)lb.classList.remove('open')};
 document.addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')lb.classList.remove('open');if(e.key==='ArrowRight')step(1);if(e.key==='ArrowLeft')step(-1)});
@@ -41,15 +49,15 @@ document.addEventListener('click',e=>{const t=e.target.closest('[data-zoom]');if
 
 /* ---- Tabs ---- */
 const tabs=$('#tabs'), tp=$('#tabPanel');
-S.tabs.forEach((t,i)=>{const b=document.createElement('button');b.className='tab';b.role='tab';b.innerHTML=`<span class="ic" aria-hidden="true">${t.icon}</span>${t.label}`;b.onclick=()=>{showTab(i);history.replaceState(null,'','#institutions/'+t.id)};tabs.appendChild(b)});
+S.tabs.forEach((t,i)=>{const b=document.createElement('button');b.className='tab';b.role='tab';b.innerHTML=`<span class="ic" aria-hidden="true">${t.icon}</span>${t.label}`;b.onclick=()=>showTab(i);tabs.appendChild(b)});
 function cardHTML(c){
-  const ks=imgKeys(c), m=ks.length&&img(ks[0]);
+  const m=c.img&&img(c.img);
   const peek=(c.H[0]||c.E[0]).replace(/<[^>]+>/g,'');
-  const key=`<ol class="key">${S.agoraKey.map(x=>`<li>${esc(x)}</li>`).join('')}</ol><p class="note">Key from the plan’s Wikimedia Commons page.</p>`;
-  const fig=ks.map((k,j)=>{const n=img(k);return `<figure><img loading="lazy" src="images/${n.file}" alt="${esc(n.caption)}" data-zoom="${k}"><figcaption>${esc(n.caption)}. ${esc(n.artist)}, ${esc(n.license)}.</figcaption></figure>${c.plan&&j===0?key:''}`}).join('');
+  const fig=m?`<figure><img src="images/${m.file}" alt="${esc(m.caption)}" data-zoom="${c.img}"><figcaption>${esc(m.caption)}. ${esc(m.artist)}, ${esc(m.license)}.</figcaption></figure>`:'';
+  const key=c.plan?`<ol class="key">${S.agoraKey.map(x=>`<li>${esc(x)}</li>`).join('')}</ol><p class="note">Key from the plan’s Wikimedia Commons page.</p>`:'';
   return `<details class="card"><summary>${m?`<img class="th" src="images/${m.file}" alt="">`:'<span class="th">❦</span>'}<div><h4>${c.title}</h4><div class="peek">${esc(peek)}</div><span class="more">Open</span></div></summary>
-   <div class="body${m?'':' noimg'}"><div>${c.H.map((h,j)=>`<div class="hq${j?' cont':''}">${esc(h)}</div>`).join('')}</div>
-   <div><div class="en"><ul>${c.E.map(x=>`<li>${x}</li>`).join('')}</ul></div>${fig}</div></div></details>`;
+   <div class="body${m?'':' noimg'}"><div>${c.H.map((h,j)=>`<div class="hq${j?' cont':''}">${esc(h)}</div>`).join('')}${flagsHTML(c.corr)}</div>
+   <div><div class="en"><ul>${c.E.map(x=>`<li>${x}</li>`).join('')}</ul></div>${fig}${key}</div></div></details>`;
 }
 function modelHTML(t){
   return `<div class="model"><div class="hq">${esc(S.modelIntro)}</div>
@@ -68,33 +76,31 @@ const HD={
 function housesHTML(){return `<div class="hdiag"><div class="seg">${Object.entries(HD).map(([k,v],i)=>`<button class="btn${i===1?' on':''}" data-hd="${k}">${v.t}</button>`).join('')}</div><div id="hdSvg"></div></div>`}
 function drawHD(k){const v=HD[k];$('#hdSvg').innerHTML=`<svg viewBox="40 -10 520 470" role="img" aria-label="${esc(v.t)} schematic plan"><defs><marker id="ar" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" refX="7" refY="7" orient="auto"><path d="M0 0L14 7L0 14z" fill="#8b3a1e"/></marker><marker id="ar2" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto"><path d="M0 0L12 6L0 12z" fill="#556b3a"/></marker></defs><g font-family="EB Garamond, serif" fill="#2b2118">${v.svg}</g></svg><p class="cap"><b>${v.t}.</b> ${v.c} <i>(Schematic, not to scale.)</i></p>`;
   $$('[data-hd]').forEach(b=>b.classList.toggle('on',b.dataset.hd===k))}
-let curTab=0;
 function showTab(i){
-  curTab=i;
   $$('.tab',tabs).forEach((b,j)=>b.setAttribute('aria-selected',j===i));
   const t=S.tabs[i];
   tp.innerHTML=`<div class="tabpanel"><p class="intro">${t.intro}</p>${t.model?modelHTML(t):''}${t.houses?housesHTML():''}<div class="cards">${t.cards.map(cardHTML).join('')}</div></div>`;
   if(t.houses){drawHD('house');$$('[data-hd]').forEach(b=>b.onclick=()=>drawHD(b.dataset.hd))}
   if(t.model)$$('.mrow',tp).forEach(r=>r.onclick=()=>{const d=$$('details.card',tp)[+r.dataset.i];$$('.mrow',tp).forEach(x=>x.classList.remove('on'));r.classList.add('on');d.open=true;d.scrollIntoView({behavior:'smooth',block:'center'})});
 }
+showTab(0);
 
-/* ---- Credits ---- */
-const where={};S.tabs.forEach(t=>t.cards.forEach(c=>imgKeys(c).forEach(k=>(where[k]=where[k]||[]).push(`<a href="#institutions/${t.id}">${esc(t.label)}</a>: ${esc(c.title.replace(/<[^>]+>/g,''))}`))));
-$('#credTable tbody').innerHTML=Object.keys(S.images).map(k=>{const m=img(k);return `<tr><td><img loading="lazy" src="images/${m.file}" alt="" data-zoom="${k}" style="cursor:zoom-in"></td><td>${esc(m.caption)}<br><small>${esc(m.title)}</small></td><td>${(where[k]||[]).join('<br>')}</td><td>${esc(m.artist)}</td><td>${m.licenseUrl?`<a href="${m.licenseUrl}" target="_blank" rel="noopener">${esc(m.license)}</a>`:esc(m.license)}</td><td><a href="${m.page}" target="_blank" rel="noopener">Commons file page</a></td></tr>`}).join('');
+/* ---- Corrections ---- */
+const cl=$('#corrList'), cf=$('#corrFilters');
+cl.innerHTML=S.corrections.map(c=>`<details class="corr" id="${c.id}" data-type="${c.type}"><summary><span class="id">${c.id.slice(1)}.</span><span class="type ${c.type}">${c.type}</span><q>${esc(c.quote)}</q><span class="where">${c.where}</span></summary>
+ <div class="cb"><p>${c.issue}</p><div class="sugg">${c.suggest}</div></div></details>`).join('');
+const types=[...new Set(S.corrections.map(c=>c.type))];
+[['All',S.corrections.length],...types.map(t=>[t,S.corrections.filter(c=>c.type===t).length])].forEach(([t,n],i)=>{const b=document.createElement('button');b.className='btn'+(i?'':' on');b.textContent=`${t} (${n})`;
+  b.onclick=()=>{$$('.btn',cf).forEach(x=>x.classList.remove('on'));b.classList.add('on');$$('details.corr',cl).forEach(d=>d.style.display=(t==='All'||d.dataset.type===t)?'':'none')};cf.appendChild(b)});
+$('#expandAll').onclick=e=>{const open=e.target.textContent==='Expand all';$$('details.corr',cl).forEach(d=>d.open=open);e.target.textContent=open?'Collapse all':'Expand all'};
+document.addEventListener('click',e=>{const f=e.target.closest('[data-corr]');if(!f)return;e.preventDefault();const d=document.getElementById(f.dataset.corr);d.style.display='';d.open=true;d.scrollIntoView({behavior:'smooth',block:'center'});d.classList.remove('flash');void d.offsetWidth;d.classList.add('flash')});
 
-/* ---- One section at a time; state in the URL hash ---- */
-const navLinks=$$('nav.top a[data-sec]'), secs=$$('main>section[data-sec]'), nav=$('nav.top');
-const secIds=secs.map(x=>x.dataset.sec);
-function route(scroll){
-  const [name,sub]=decodeURIComponent(location.hash.slice(1)).split('/');
-  const id=secIds.includes(name)?name:secIds[0];
-  secs.forEach(x=>{const on=x.dataset.sec===id;x.classList.toggle('active',on);x.hidden=!on});
-  navLinks.forEach(a=>{const on=a.dataset.sec===id;a.classList.toggle('on',on);if(on){a.setAttribute('aria-current','page');a.scrollIntoView({block:'nearest',inline:'nearest'})}else a.removeAttribute('aria-current')});
-  if(id==='institutions'){const ti=S.tabs.findIndex(t=>t.id===sub);if(ti>=0||!tp.innerHTML)showTab(ti>=0?ti:curTab)}
-  lb.classList.remove('open');
-  if(scroll&&window.scrollY>nav.offsetTop)window.scrollTo(0,nav.offsetTop);
-  document.title=`${$('h2',secs[secIds.indexOf(id)]).textContent} · Structures of Archaic and Classical Greece`;
-}
-window.addEventListener('hashchange',()=>route(true));
-route(false);
+/* ---- Handout & credits ---- */
+$('#handoutText').textContent=S.handout.trim();
+$('#credTable tbody').innerHTML=keys.map(k=>{const m=img(k);return `<tr><td><img src="images/${m.file}" alt="" data-zoom="${k}" style="cursor:zoom-in"></td><td>${esc(m.caption)}<br><small>${esc(m.title)}</small></td><td>${esc(m.artist)}</td><td>${m.licenseUrl?`<a href="${m.licenseUrl}" target="_blank" rel="noopener">${esc(m.license)}</a>`:esc(m.license)}</td><td><a href="${m.page}" target="_blank" rel="noopener">Commons file page</a></td></tr>`}).join('');
+
+/* ---- nav highlight ---- */
+const links=$$('nav.top a'), secs=links.map(a=>$(a.getAttribute('href')));
+const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+en.target.id))}}),{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>s&&io.observe(s));
 })();

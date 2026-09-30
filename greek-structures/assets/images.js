@@ -44,7 +44,7 @@ SITE.images={
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
   "desc": "Site plan of the Agora of Athens in the Classical period.",
   "credit": "Own work",
-  "caption": "Site plan of the Agora of Athens in the Classical period (numbered key beside the plan)",
+  "caption": "Site plan of the Agora of Athens in the Classical period (numbered key in the Civic buildings tab)",
   "theme": "civic"
  },
  "stoa": {
