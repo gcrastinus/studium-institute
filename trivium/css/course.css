@@ -1,17 +1,17 @@
 :root {
-  --paper: #f6f0e1;
-  --paper2: #efe6cf;
-  --card: #fffdf4;
-  --ink: #2b2118;
-  --ink-soft: #5a4a38;
-  --muted: #7a6854;
-  --gold: #a67c2e;
-  --gold-soft: #c9a45c;
-  --line: #d9c9a3;
-  --wine: #7b2d26;
-  --sage: #48664c;
-  --panel: #f4ecd8;
-  --glow: #fbf7ea;
+  --paper: #f6f0e3;
+  --paper2: #ece3cf;
+  --card: #fcf8ee;
+  --ink: #2e2924;
+  --ink-soft: #574b3e;
+  --muted: #6b5d4c;
+  --gold: #8a6022;
+  --gold-soft: #be9853;
+  --line: #dacdb0;
+  --wine: #84332a;
+  --sage: #45634a;
+  --panel: #f1e8d6;
+  --glow: #faf6ec;
   --shadow: 0 2px 14px rgba(74, 58, 32, 0.10);
   --serif: "EB Garamond", Georgia, "Times New Roman", serif;
   --display: "Cinzel", serif;
@@ -20,19 +20,19 @@
 }
 
 body.dark {
-  --paper: #0d141e;
-  --paper2: #090e15;
-  --card: #111b2a;
-  --ink: #e9dfc8;
-  --ink-soft: #b4a583;
-  --muted: #8a7a62;
-  --gold: #c9a45c;
-  --gold-soft: #a67c2e;
-  --line: #1f3452;
-  --wine: #c45c58;
-  --sage: #8fbf95;
-  --panel: #142236;
-  --glow: #0f1a29;
+  --paper: #24211e;
+  --paper2: #1c1a17;
+  --card: #2d2925;
+  --ink: #e8e0d0;
+  --ink-soft: #c2b59c;
+  --muted: #a09480;
+  --gold: #d9a95a;
+  --gold-soft: #a9823f;
+  --line: #4a4237;
+  --wine: #e08a7a;
+  --sage: #a8c29a;
+  --panel: #2f2b26;
+  --glow: #29251f;
   --shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
   color-scheme: dark;
 }
@@ -47,7 +47,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-html:has(body.dark) { background: #0d141e; }
+html:has(body.dark) { background: #24211e; }
 
 ::-webkit-scrollbar { width: 12px; height: 12px; }
 ::-webkit-scrollbar-track { background: var(--paper2); }
@@ -546,6 +546,9 @@ h1 {
   background: var(--gold);
   color: #fff;
 }
+
+body.dark #speak-toggle.speaking,
+body.dark #speak-toggle.speaking:hover { color: var(--paper); }
 
 .speak-rate-menu {
   position: absolute;
