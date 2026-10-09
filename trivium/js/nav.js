@@ -204,13 +204,13 @@
       if (status === "done") {
         var state = loadState();
         var when = (state.cycleDates && state.cycleDates[key]) || "";
-        controls.innerHTML = '<p class="marked">Marked as a first pass' +
+        controls.innerHTML = '<p class="marked">This is marked as a first pass' +
           (when ? " on " + when : "") + '. <button type="button" data-role="undo">Not yet after all</button></p>';
         if (welcome) welcome.hidden = false;
       } else {
         controls.innerHTML = '<button type="button" class="mark" data-role="mark">' +
           "I have made a first pass in " + art.app + "</button>" +
-          '<p class="marked-note">This is remembered in this browser only. Nothing is sent anywhere, and the course never checks your work — the judgement is yours.</p>';
+          '<p class="marked-note">This is remembered in this browser only. Nothing is sent anywhere, and the course never checks the work; the judgment belongs to the reader.</p>';
         if (welcome) welcome.hidden = true;
       }
       var mark = controls.querySelector('[data-role="mark"]');
@@ -258,7 +258,7 @@
       html += '<a class="' + cls + '" href="' + item.href + '"' + aria + ">" + item.short + "</a>";
     });
     if (state.path && PATHS[state.path]) {
-      html += '<div class="path-chip"><strong>Your starting-point</strong>' +
+      html += '<div class="path-chip"><strong>The starting-point</strong>' +
         PATHS[state.path].label +
         '<br><button type="button" id="clear-path">Clear</button></div>';
       html += '<div class="toc-group">That path</div>';
