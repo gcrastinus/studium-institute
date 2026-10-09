@@ -210,7 +210,7 @@
       } else {
         controls.innerHTML = '<button type="button" class="mark" data-role="mark">' +
           "I have made a first pass in " + art.app + "</button>" +
-          '<p class="marked-note">This is remembered in this browser only. Nothing is sent anywhere, and the course never checks the work; the judgment belongs to the reader.</p>';
+          '<p class="marked-note">This is remembered in this browser only. Nothing is sent anywhere, and the course never checks the work; the reader decides.</p>';
         if (welcome) welcome.hidden = true;
       }
       var mark = controls.querySelector('[data-role="mark"]');
@@ -258,7 +258,7 @@
       html += '<a class="' + cls + '" href="' + item.href + '"' + aria + ">" + item.short + "</a>";
     });
     if (state.path && PATHS[state.path]) {
-      html += '<div class="path-chip"><strong>The starting-point</strong>' +
+      html += '<div class="path-chip"><strong>Your starting-point</strong>' +
         PATHS[state.path].label +
         '<br><button type="button" id="clear-path">Clear</button></div>';
       html += '<div class="toc-group">That path</div>';
