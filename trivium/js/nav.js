@@ -58,6 +58,14 @@
         { id: "path-labels-2", href: "path-labels-2.html", title: "What a name does" },
         { id: "path-labels-3", href: "path-labels-3.html", title: "Why labels cannot be second" }
       ]
+    },
+    math: {
+      label: "Mathematics and symbols",
+      pages: [
+        { id: "path-math", href: "path-math.html", title: "What is true in starting from mathematics" },
+        { id: "path-math-2", href: "path-math-2.html", title: "Why mathematics needs words" },
+        { id: "path-math-3", href: "path-math-3.html", title: "Why words come first" }
+      ]
     }
   };
 
