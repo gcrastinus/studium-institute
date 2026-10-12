@@ -304,8 +304,8 @@ const DATA = {
         {
           "id": "st-marks-wiki-st-marks-basilica-ceiling-2-7236759984",
           "title": "Central nave looking east",
-          "date": "c. 1085",
-          "year": 1085,
+          "date": "begun 1063",
+          "year": 1063,
           "place": "Venice",
           "file": "images/st-marks-st-marks-basilica-ceiling-2-7236759984.jpg",
           "w": 1280,
@@ -424,6 +424,41 @@ const DATA = {
           "place": "Florence",
           "file": "images/florence-baptistery-laterne-auf-dem-baptisterium-san-giovanni-floren.jpg",
           "w": 1163,
+          "h": 1600
+        }
+      ]
+    },
+    {
+      "id": "sant-angelo-formis",
+      "name": "Sant'Angelo in Formis",
+      "nameFull": "Basilica of Sant'Angelo in Formis",
+      "dates": "frescoes c. 1072–1086",
+      "born": 1072,
+      "died": 1086,
+      "medium": "painting",
+      "region": "italy",
+      "place": "Capua",
+      "famous": "sant-angelo-formis-pantocrator",
+      "vasari": null,
+      "works": [
+        {
+          "id": "sant-angelo-formis-pantocrator",
+          "title": "Christ Pantocrator",
+          "date": "c. 1072–1086",
+          "year": 1072,
+          "place": "Sant'Angelo in Formis",
+          "file": "images/sant-angelo-formis-cristo-pantocratore.jpg",
+          "w": 1600,
+          "h": 1066
+        },
+        {
+          "id": "sant-angelo-formis-last-judgment",
+          "title": "Last Judgment",
+          "date": "c. 1072–1086",
+          "year": 1072,
+          "place": "Sant'Angelo in Formis",
+          "file": "images/sant-angelo-formis-last-judgment.jpg",
+          "w": 1179,
           "h": 1600
         }
       ]
@@ -730,6 +765,31 @@ const DATA = {
           "file": "images/nicholaus-basilica-di-san-zeno-protiro-lunetta-di-nicholau-2.jpg",
           "w": 1280,
           "h": 960
+        }
+      ]
+    },
+    {
+      "id": "san-clemente",
+      "name": "San Clemente, Rome",
+      "nameFull": "Basilica of San Clemente, Rome",
+      "dates": "apse mosaic c. 1120",
+      "born": 1120,
+      "died": 1130,
+      "medium": "painting",
+      "region": "italy",
+      "place": "Rome",
+      "famous": "san-clemente-apse",
+      "vasari": null,
+      "works": [
+        {
+          "id": "san-clemente-apse",
+          "title": "Apse mosaic: the Cross as the Tree of Life",
+          "date": "c. 1120",
+          "year": 1120,
+          "place": "Rome, San Clemente",
+          "file": "images/san-clemente-apse-mosaic.jpg",
+          "w": 1056,
+          "h": 1600
         }
       ]
     },
@@ -1125,6 +1185,66 @@ const DATA = {
           "file": "images/antelami-benedetto-antelami-timpaan-van-madonna-met-kind-.jpg",
           "w": 1280,
           "h": 1096
+        }
+      ]
+    },
+    {
+      "id": "lucca-cathedral",
+      "name": "Lucca Cathedral",
+      "nameFull": "Cathedral of San Martino, Lucca",
+      "dates": "façade galleries 1204",
+      "born": 1204,
+      "died": 1210,
+      "medium": "architecture",
+      "region": "italy",
+      "place": "Lucca",
+      "famous": "lucca-cathedral-galleries",
+      "vasari": null,
+      "works": [
+        {
+          "id": "lucca-cathedral-galleries",
+          "title": "Façade galleries, Guidetto da Como",
+          "date": "1204",
+          "year": 1204,
+          "place": "Lucca, San Martino",
+          "file": "images/lucca-cathedral-guidetto-galleries.jpg",
+          "w": 1600,
+          "h": 1219
+        }
+      ]
+    },
+    {
+      "id": "sant-andrea-vercelli",
+      "name": "Sant'Andrea, Vercelli",
+      "nameFull": "Basilica of Sant'Andrea, Vercelli",
+      "dates": "begun 1219",
+      "born": 1219,
+      "died": 1227,
+      "medium": "architecture",
+      "region": "italy",
+      "place": "Vercelli",
+      "famous": "sant-andrea-vercelli-rose",
+      "vasari": null,
+      "works": [
+        {
+          "id": "sant-andrea-vercelli-rose",
+          "title": "West façade, rose window",
+          "date": "begun 1219",
+          "year": 1219,
+          "place": "Vercelli",
+          "file": "images/sant-andrea-vercelli-rose.jpg",
+          "w": 1600,
+          "h": 1225
+        },
+        {
+          "id": "sant-andrea-vercelli-facade",
+          "title": "West façade",
+          "date": "begun 1219",
+          "year": 1219,
+          "place": "Vercelli",
+          "file": "images/sant-andrea-vercelli-facade.jpg",
+          "w": 1600,
+          "h": 1227
         }
       ]
     },
@@ -10186,15 +10306,46 @@ function decadeOf(y){
 
 function pickDecadeHeroes(){
   const rank = {painting:0, sculpture:1, architecture:2, music:3, antiquity:4};
+  const fameScore = (a, w) => (a.famous === w.id ? 0 : 10) + (rank[a.medium] ?? 9);
   const byDec = {};
+  const pool = [];
   DATA.artists.forEach(a => {
     a.works.forEach(w => {
       if (!w.file) return; // rail needs a picture
+      pool.push({artist:a, work:w});
       const d = decadeOf(w.year);
-      const score = (a.famous === w.id ? 0 : 10) + (rank[a.medium] ?? 9);
+      const score = fameScore(a, w);
       const prev = byDec[d];
       if (!prev || score < prev.score) byDec[d] = {score, artist:a, work:w};
     });
+  });
+  // A decade with no dated picture otherwise paints as a solid dark tile.
+  // Borrow the closest unused picture from someone active in that decade.
+  const used = new Set(Object.values(byDec).map(h => h.work.file));
+  const activeIn = (a, d) => {
+    const born = Number(a.born);
+    const died = Number(a.died);
+    const start = Number.isFinite(born) ? born : d;
+    const end = Number.isFinite(died) ? died : start + 40;
+    return start <= d + 9 && end >= d;
+  };
+  (DATA.decades || []).forEach(d => {
+    if (byDec[d]) return;
+    let best = null;
+    pool.forEach(({artist, work}) => {
+      if (used.has(work.file)) return;
+      const act = activeIn(artist, d) ? 0 : 1;
+      const dist = Math.abs(Number(work.year) - (d + 5));
+      const fame = fameScore(artist, work);
+      const better = !best
+        || act < best.act
+        || (act === best.act && dist < best.dist)
+        || (act === best.act && dist === best.dist && fame < best.fame);
+      if (better) best = {act, dist, fame, artist, work};
+    });
+    if (!best) return;
+    byDec[d] = {score: best.fame, artist: best.artist, work: best.work};
+    used.add(best.work.file);
   });
   return byDec;
 }

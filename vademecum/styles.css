@@ -147,7 +147,7 @@ button:focus-visible{
 #decade-rail{position:relative;height:var(--rail-h);margin-bottom:0;}
 .decade-cell{position:absolute;top:0;bottom:0;padding:0 3px;}
 .decade-cell .shot{height:calc(100% - 28px);border:1px solid rgba(40,20,8,.25);
-  overflow:hidden;background:#2b2114; box-shadow:0 1px 0 var(--gold);}
+  overflow:hidden;background:#e4d0a4; box-shadow:0 1px 0 var(--gold);}
 .decade-cell img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;}
 .decade-cell .decade-num{margin:4px 0 0;font-size:13px;font-weight:600;color:#6a5640;
   letter-spacing:.04em; text-align:center; line-height:1;}
