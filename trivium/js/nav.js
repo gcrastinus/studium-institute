@@ -10,7 +10,7 @@
     { id: "index", href: "index.html", title: "Welcome", short: "Welcome" },
     { id: "modern-starts", href: "where-to-begin.html", title: "Where to Begin", short: "Where to Begin" },
     { id: "why-words", href: "why-words.html", title: "Why we begin with words", short: "Why words" },
-    { id: "why-words-2", href: "why-words-2.html", title: "What language is for", short: "What language is for" },
+    { id: "why-words-2", href: "why-words-2.html", title: "The Purposes of Language", short: "The Purposes of Language" },
     { id: "why-words-3", href: "why-words-3.html", title: "Discourse and the three arts", short: "Discourse, three arts" },
     { id: "words-things", href: "words-things.html", title: "Words, concepts, and things", short: "Words and things" },
     { id: "words-things-2", href: "words-things-2.html", title: "What kind of sign a word is", short: "What a word is" },
