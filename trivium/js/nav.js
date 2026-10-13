@@ -8,7 +8,7 @@
      same pager into the HTML so the walk-through navigates without JS. */
   var SPINE = [
     { id: "index", href: "index.html", title: "Welcome", short: "Welcome" },
-    { id: "modern-starts", href: "modern-starts.html", title: "Modern starting-points", short: "Starting-points" },
+    { id: "modern-starts", href: "where-to-begin.html", title: "Where to Begin", short: "Where to Begin" },
     { id: "why-words", href: "why-words.html", title: "Why we begin with words", short: "Why words" },
     { id: "why-words-2", href: "why-words-2.html", title: "What language is for", short: "What language is for" },
     { id: "why-words-3", href: "why-words-3.html", title: "Discourse and the three arts", short: "Discourse, three arts" },
@@ -305,7 +305,7 @@
       seq = PATHS[pathKey].pages.slice();
       i = -1;
       seq.forEach(function (p, idx) { if (p.id === id) i = idx; });
-      prev = i > 0 ? seq[i - 1] : { href: "modern-starts.html", title: "Modern starting-points" };
+      prev = i > 0 ? seq[i - 1] : { href: "where-to-begin.html", title: "Where to Begin" };
       next = i >= 0 && i < seq.length - 1
         ? seq[i + 1]
         : { href: "why-words.html", title: "Why we begin with words" };
