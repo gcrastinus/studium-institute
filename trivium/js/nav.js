@@ -9,19 +9,19 @@
   var SPINE = [
     { id: "index", href: "index.html", title: "Welcome", short: "Welcome" },
     { id: "modern-starts", href: "where-to-begin.html", title: "Where to Begin", short: "Where to Begin" },
-    { id: "why-words", href: "why-words.html", title: "Why we begin with words", short: "Why words" },
+    { id: "why-words", href: "why-words.html", title: "Why We Begin with Words", short: "Why We Begin with Words" },
     { id: "why-words-2", href: "why-words-2.html", title: "The Purposes of Language", short: "The Purposes of Language" },
-    { id: "why-words-3", href: "why-words-3.html", title: "Discourse and the three arts", short: "Discourse, three arts" },
-    { id: "words-things", href: "words-things.html", title: "Words, Concepts, and Things", short: "Words and things" },
-    { id: "words-things-2", href: "words-things-2.html", title: "Words as signs", short: "Words as signs" },
+    { id: "why-words-3", href: "why-words-3.html", title: "Discourse and the Three Arts", short: "Discourse and the Three Arts" },
+    { id: "words-things", href: "words-things.html", title: "Words, Concepts, and Things", short: "Words, Concepts, and Things" },
+    { id: "words-things-2", href: "words-things-2.html", title: "Words as Signs", short: "Words as Signs" },
     { id: "grammar", href: "grammar.html", title: "Grammar", short: "Grammar" },
-    { id: "to-grammatica", href: "to-grammatica.html", title: "Into Ars Grammatica", short: "Ars Grammatica" },
+    { id: "to-grammatica", href: "to-grammatica.html", title: "Practicing Grammar", short: "Practicing Grammar" },
     { id: "logic", href: "logic.html", title: "Logic", short: "Logic" },
-    { id: "to-syllogistica", href: "to-syllogistica.html", title: "Into Ars Syllogistica", short: "Ars Syllogistica" },
+    { id: "to-syllogistica", href: "to-syllogistica.html", title: "Practicing Logic", short: "Practicing Logic" },
     { id: "rhetoric", href: "rhetoric.html", title: "Rhetoric", short: "Rhetoric" },
-    { id: "to-rhetorica", href: "to-rhetorica.html", title: "Into Ars Rhetorica", short: "Ars Rhetorica" },
-    { id: "three-arts", href: "three-arts.html", title: "The three arts together", short: "Three arts" },
-    { id: "quadrivium", href: "quadrivium.html", title: "The quadrivium (later)", short: "Quadrivium" },
+    { id: "to-rhetorica", href: "to-rhetorica.html", title: "Practicing Rhetoric", short: "Practicing Rhetoric" },
+    { id: "three-arts", href: "three-arts.html", title: "The Three Arts Together", short: "The Three Arts Together" },
+    { id: "quadrivium", href: "quadrivium.html", title: "The Quadrivium", short: "The Quadrivium" },
     { id: "sources", href: "sources.html", title: "Sources", short: "Sources" }
   ];
 
@@ -29,41 +29,41 @@
     science: {
       label: "Science and data",
       pages: [
-        { id: "path-science", href: "path-science.html", title: "What is true in starting from science" },
-        { id: "path-science-2", href: "path-science-2.html", title: "What science still needs from words" },
-        { id: "path-science-3", href: "path-science-3.html", title: "Why the arts of speech come first" }
+        { id: "path-science", href: "path-science.html", title: "What Is True in Starting from Science" },
+        { id: "path-science-2", href: "path-science-2.html", title: "What Science Still Needs from Words" },
+        { id: "path-science-3", href: "path-science-3.html", title: "Why the Arts of Speech Come First" }
       ]
     },
     thinking: {
       label: "Critical thinking",
       pages: [
-        { id: "path-thinking", href: "path-thinking.html", title: "What is true in wanting to think critically" },
-        { id: "path-thinking-2", href: "path-thinking-2.html", title: "What puzzles and studying biases cannot teach" },
-        { id: "path-thinking-3", href: "path-thinking-3.html", title: "From thinking back to speech" }
+        { id: "path-thinking", href: "path-thinking.html", title: "What Is True in Wanting to Think Critically" },
+        { id: "path-thinking-2", href: "path-thinking-2.html", title: "What Puzzles and Studying Biases Cannot Teach" },
+        { id: "path-thinking-3", href: "path-thinking-3.html", title: "From Thinking Back to Speech" }
       ]
     },
     voice: {
       label: "Voice and self-expression",
       pages: [
-        { id: "path-voice", href: "path-voice.html", title: "What is true in starting from self-expression" },
-        { id: "path-voice-2", href: "path-voice-2.html", title: "When expression is not yet speech" },
-        { id: "path-voice-3", href: "path-voice-3.html", title: "Why training our speech is earlier than finding a voice" }
+        { id: "path-voice", href: "path-voice.html", title: "What Is True in Starting from Self-Expression" },
+        { id: "path-voice-2", href: "path-voice-2.html", title: "When Expression Is Not Yet Speech" },
+        { id: "path-voice-3", href: "path-voice-3.html", title: "Why Training Our Speech Is Earlier than Finding a Voice" }
       ]
     },
     labels: {
       label: "Words as mere labels",
       pages: [
-        { id: "path-labels", href: "path-labels.html", title: "How words might lead us astray" },
-        { id: "path-labels-2", href: "path-labels-2.html", title: "What a name does" },
-        { id: "path-labels-3", href: "path-labels-3.html", title: "Why labels cannot be second" }
+        { id: "path-labels", href: "path-labels.html", title: "How Words Might Lead Us Astray" },
+        { id: "path-labels-2", href: "path-labels-2.html", title: "What a Name Does" },
+        { id: "path-labels-3", href: "path-labels-3.html", title: "Why Labels Cannot Be Second" }
       ]
     },
     math: {
       label: "Mathematics and symbols",
       pages: [
-        { id: "path-math", href: "path-math.html", title: "What is true in starting from mathematics" },
-        { id: "path-math-2", href: "path-math-2.html", title: "Why mathematics needs words" },
-        { id: "path-math-3", href: "path-math-3.html", title: "Why words come first" }
+        { id: "path-math", href: "path-math.html", title: "What Is True in Starting from Mathematics" },
+        { id: "path-math-2", href: "path-math-2.html", title: "Why Mathematics Needs Words" },
+        { id: "path-math-3", href: "path-math-3.html", title: "Why Words Come First" }
       ]
     }
   };
@@ -307,7 +307,7 @@
       prev = i > 0 ? seq[i - 1] : { href: "where-to-begin.html", title: "Where to Begin" };
       next = i >= 0 && i < seq.length - 1
         ? seq[i + 1]
-        : { href: "why-words.html", title: "Why we begin with words" };
+        : { href: "why-words.html", title: "Why We Begin with Words" };
     } else {
       i = findSpine(id);
       if (i < 0) return;              /* leave the server-rendered pager alone */

@@ -777,3 +777,6 @@ button.mark:hover { border-color: var(--gold); color: var(--gold); }
   margin: 2.6rem 0 2rem;
   height: 0;
 }
+
+/* Page titles: written in title case, shown in small caps. */
+.page-head h1 { font-variant: small-caps; }
