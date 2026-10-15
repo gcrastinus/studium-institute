@@ -12,7 +12,7 @@
     { id: "why-words", href: "why-words.html", title: "Why we begin with words", short: "Why words" },
     { id: "why-words-2", href: "why-words-2.html", title: "The Purposes of Language", short: "The Purposes of Language" },
     { id: "why-words-3", href: "why-words-3.html", title: "Discourse and the three arts", short: "Discourse, three arts" },
-    { id: "words-things", href: "words-things.html", title: "Words, concepts, and things", short: "Words and things" },
+    { id: "words-things", href: "words-things.html", title: "Words, Concepts, and Things", short: "Words and things" },
     { id: "words-things-2", href: "words-things-2.html", title: "Words as signs", short: "Words as signs" },
     { id: "grammar", href: "grammar.html", title: "Grammar", short: "Grammar" },
     { id: "to-grammatica", href: "to-grammatica.html", title: "Into Ars Grammatica", short: "Ars Grammatica" },
