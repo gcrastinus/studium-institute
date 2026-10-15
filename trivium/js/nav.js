@@ -14,7 +14,6 @@
     { id: "why-words-3", href: "why-words-3.html", title: "Discourse and the three arts", short: "Discourse, three arts" },
     { id: "words-things", href: "words-things.html", title: "Words, concepts, and things", short: "Words and things" },
     { id: "words-things-2", href: "words-things-2.html", title: "Words as signs", short: "Words as signs" },
-    { id: "words-things-3", href: "words-things-3.html", title: "Categories and predicables", short: "Categories, predicables" },
     { id: "grammar", href: "grammar.html", title: "Grammar", short: "Grammar" },
     { id: "to-grammatica", href: "to-grammatica.html", title: "Into Ars Grammatica", short: "Ars Grammatica" },
     { id: "logic", href: "logic.html", title: "Logic", short: "Logic" },
