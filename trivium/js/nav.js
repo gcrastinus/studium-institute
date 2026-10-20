@@ -515,10 +515,13 @@
       try {
         var voices = window.speechSynthesis.getVoices() || [];
         var en = voices.filter(function (v) { return /^en(-|_)/i.test(v.lang); });
-        return en.filter(function (v) { return v.localService && /samantha|daniel|karen|moira|alex|serena|rishi|siri/i.test(v.name); })[0]
-          || en.filter(function (v) { return v.localService; })[0]
-          || en[0]
-          || null;
+        var score = function (v) {
+          return (/premium/i.test(v.name) ? 40 : 0) + (/enhanced/i.test(v.name) ? 30 : 0)
+            + (v.localService ? 20 : 0) + (/^(Ava|Zoe|Allison|Samantha|Evan|Tom|Susan|Daniel|Karen|Moira|Serena)\b/i.test(v.name) ? 10 : 0)
+            + (v.default ? 5 : 0) + (/^en(-|_)US/i.test(v.lang) ? 3 : 0) - (/google|eloquence|novelty|bells|bubbles|zarvox|whisper|bad news|good news|organ|trinoids|albert|jester|superstar|cellos|wobble|boing|bahh|fred|junior|ralph|kathy|grandma|grandpa|rocko|shelley|flo|eddy|reed|sandy/i.test(v.name) ? 50 : 0);
+        };
+        var best = en.sort(function (a, b) { return score(b) - score(a); })[0];
+        return best || voices[0] || null;
       } catch (e) { return null; }
     }
 
