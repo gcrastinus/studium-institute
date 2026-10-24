@@ -255,7 +255,7 @@
     var current = pageId();
     var html = "";
     html += '<a class="toc-brand" href="https://studiuminstitute.org">Studium Institute</a>';
-    html += '<p class="toc-title">Introduction to the Trivium</p>';
+    html += '<p class="toc-title">Preface to the Trivium</p>';
     html += '<div class="toc-group">Course</div>';
     SPINE.forEach(function (item) {
       var cls = "item";
