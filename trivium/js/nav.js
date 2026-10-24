@@ -68,11 +68,11 @@
     }
   };
 
-  /* The cycle: doctrine, then practice in the matching application, then
+  /* The cycle: doctrine, then study in the matching course, then
      return. Order matters — it is the order the course recommends. */
   var ARTS = [
     { key: "grammar", label: "Grammar", doctrine: "grammar.html", bridge: "to-grammatica.html", app: "Ars Grammatica" },
-    { key: "logic", label: "Logic", doctrine: "logic.html", bridge: "to-syllogistica.html", app: "Ars Syllogistica" },
+    { key: "logic", label: "Logic", doctrine: "logic.html", bridge: "to-syllogistica.html", app: "Ars Logica" },
     { key: "rhetoric", label: "Rhetoric", doctrine: "rhetoric.html", bridge: "to-rhetorica.html", app: "Ars Rhetorica" }
   ];
 
@@ -290,8 +290,9 @@
 
   function pagerLink(dir, item) {
     if (!item) return "";
-    return '<a class="' + dir + '" href="' + item.href + '"><span class="dir">' +
-      (dir === "prev" ? "Previous" : "Next") + "</span>" + item.title + "</a>";
+    var cls = dir === "next" ? "b main next" : "b prev";
+    return '<a class="' + cls + '" href="' + item.href + '"><small class="dir">' +
+      (dir === "prev" ? "Previous" : "Next") + "</small>" + item.title + "</a>";
   }
 
   function renderPager() {
@@ -620,12 +621,17 @@
     try { saved = localStorage.getItem(THEME); } catch (e) { saved = null; }
     if (saved === "dark") document.body.classList.add("dark");
     if (btn) {
-      btn.textContent = document.body.classList.contains("dark") ? "☀" : "☾";
+      var label = function () {
+        var d = document.body.classList.contains("dark");
+        btn.textContent = d ? "Light" : "Dark";
+        btn.setAttribute("aria-label", d ? "Switch to light mode" : "Switch to dark mode");
+      };
+      label();
       btn.addEventListener("click", function () {
         document.body.classList.toggle("dark");
         var dark = document.body.classList.contains("dark");
         try { localStorage.setItem(THEME, dark ? "dark" : "light"); } catch (e) {}
-        btn.textContent = dark ? "☀" : "☾";
+        label();
       });
     }
   }
@@ -652,12 +658,10 @@
   }
 
   markVisited(pageId());
-  renderToc();
   renderPager();
   renderReturn();
   bindAppLinks();
   bindPathChoices();
   bindTheme();
   bindSpeak();
-  bindMobileNav();
 })();
