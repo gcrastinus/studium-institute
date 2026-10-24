@@ -60,8 +60,7 @@ a:hover { color: var(--accent-hover); }
   position: sticky; top: 0; z-index: 40;
   display: flex; align-items: center; gap: 18px;
   padding: 10px 22px;
-  background: color-mix(in srgb, var(--bg-elev) 92%, transparent);
-  backdrop-filter: blur(8px);
+  background: var(--bg-elev);
   border-bottom: 1px solid var(--rule);
 }
 .brand { text-decoration: none; color: inherit; min-width: 0; }

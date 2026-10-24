@@ -28,7 +28,7 @@ header.hero{position:relative;text-align:center;padding:64px 20px 40px;
 .sw{width:14px;height:14px;border-radius:2px;display:inline-block}
 .sw.h{background:var(--rust)} .sw.e{background:var(--olive)} .sw.f{background:var(--gold)}
 /* nav */
-nav.top{position:sticky;top:0;z-index:50;background:rgba(236,222,190,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);box-shadow:var(--shadow)}
+nav.top{position:sticky;top:0;z-index:50;background:#ecdebe;border-bottom:1px solid var(--line);box-shadow:var(--shadow)}
 nav.top ul{display:flex;gap:4px;list-style:none;margin:0 auto;padding:6px 12px;max-width:1180px;overflow-x:auto;scrollbar-width:none}
 nav.top a{display:block;white-space:nowrap;padding:8px 12px;font-family:var(--title);font-size:.82rem;letter-spacing:.08em;text-decoration:none;color:var(--ink);border-radius:3px}
 nav.top a:hover,nav.top a.on{background:var(--rust);color:#fbf1dc}
