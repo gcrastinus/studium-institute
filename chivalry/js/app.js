@@ -225,7 +225,7 @@
           '<span class="btn btn-ghost">Open the map</span>' +
         "</a>" +
       "</div>" +
-      '<p class="designer-credit">These sets of exercises were designed by Timothy Kearns, PhD, created and maintained with the assistance of AI, and are extensively revised for clarity and precision.</p>';
+      '<p class="designer-credit">These courses of study were designed by Timothy Kearns, PhD, built and maintained with the assistance of AI tools, and are continuously revised for clarity and precision.</p>';
   }
 
   function renderKnight() {
