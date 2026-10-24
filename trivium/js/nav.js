@@ -30,7 +30,7 @@
       label: "Science and data",
       pages: [
         { id: "path-science", href: "path-science.html", title: "What Is True in Starting from Science" },
-        { id: "path-science-2", href: "path-science-2.html", title: "What Science Still Needs from Words" },
+        { id: "path-science-2", href: "path-science-2.html", title: "Why Science Needs Words" },
         { id: "path-science-3", href: "path-science-3.html", title: "Why the Arts of Speech Come First" }
       ]
     },
