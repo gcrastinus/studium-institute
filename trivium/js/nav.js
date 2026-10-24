@@ -315,7 +315,12 @@
       prev = i > 0 ? SPINE[i - 1] : null;
       next = i < SPINE.length - 1 ? SPINE[i + 1] : null;
     }
-    el.innerHTML = pagerLink("prev", prev) + pagerLink("next", next);
+    var back = "";
+    if (pathKey && PATHS[pathKey] && i === seq.length - 1) {
+      /* path end: a way back to choose another starting point */
+      back = '<a class="b back" href="where-to-begin.html"><small class="dir">Back to</small>Where to Begin</a>';
+    }
+    el.innerHTML = pagerLink("prev", prev) + pagerLink("next", next) + back;
   }
 
   function bindPathChoices() {
