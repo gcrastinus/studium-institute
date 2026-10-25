@@ -117,6 +117,7 @@ h2 { font-family: var(--display); font-weight: 400; font-size: 2.1rem; line-heig
 h3 { font-family: var(--display); font-weight: 400; font-size: 1.45rem; line-height: 1.25; margin: 1.3em 0 0.3em; }
 
 .prose p { margin: 0 0 1em; }
+.sc { font-variant: small-caps; }
 .prose ul, .prose ol { padding-left: 1.4em; margin: 0 0 1em; }
 .prose li { margin-bottom: 0.4em; }
 .prose code { font-family: var(--text); font-size: 0.9em; color: var(--sepia); word-break: break-all; }
@@ -157,9 +158,6 @@ p > .app-link { margin: 0 auto; }
 .card h3 { margin: 0 0 0.2em; font-size: 1.3rem; color: inherit; }
 .card p { margin: 0; color: var(--sepia); font-size: 0.9rem; }
 .pager { margin-top: 44px; }
-.page-sources { margin-top: 8px; padding-top: 1em; border-top: 1px solid var(--line); color: var(--sepia); }
-.page-sources h2 { font-size: 1.1rem; margin: 0 0 0.5em; color: var(--sepia); }
-.prose .page-sources p { font-size: 1rem; margin: 0; }
 
 
 .designer-credit {
