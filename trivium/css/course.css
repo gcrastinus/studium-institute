@@ -157,6 +157,9 @@ p > .app-link { margin: 0 auto; }
 .card h3 { margin: 0 0 0.2em; font-size: 1.3rem; color: inherit; }
 .card p { margin: 0; color: var(--sepia); font-size: 0.9rem; }
 .pager { margin-top: 44px; }
+.page-sources { margin-top: 8px; padding-top: 1em; border-top: 1px solid var(--line); color: var(--sepia); }
+.page-sources h2 { font-size: 1.1rem; margin: 0 0 0.5em; color: var(--sepia); }
+.prose .page-sources p { font-size: 1rem; margin: 0; }
 
 
 .designer-credit {
