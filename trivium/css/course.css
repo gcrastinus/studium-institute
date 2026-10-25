@@ -117,7 +117,7 @@ h2 { font-family: var(--display); font-weight: 400; font-size: 2.1rem; line-heig
 h3 { font-family: var(--display); font-weight: 400; font-size: 1.45rem; line-height: 1.25; margin: 1.3em 0 0.3em; }
 
 .prose p { margin: 0 0 1em; }
-.sc { font-variant: small-caps; }
+.sc { font-variant: small-caps; font-variant-caps: small-caps; font-synthesis: weight style small-caps; letter-spacing: .04em; }
 .prose ul, .prose ol { padding-left: 1.4em; margin: 0 0 1em; }
 .prose li { margin-bottom: 0.4em; }
 .prose code { font-family: var(--text); font-size: 0.9em; color: var(--sepia); word-break: break-all; }
