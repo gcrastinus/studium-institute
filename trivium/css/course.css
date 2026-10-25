@@ -87,6 +87,11 @@ a:hover, a:focus { color: var(--wine); }
 #speak-toggle:focus-visible, .speak-rate-btn:focus-visible, #dark-toggle:focus-visible {
   border-color: var(--wine); color: var(--wine);
 }
+/* play and speed buttons highlight as one unit, so the divider between them changes too */
+.speak-unit:hover #speak-toggle, .speak-unit:hover .speak-rate-btn,
+.speak-unit:focus-within #speak-toggle, .speak-unit:focus-within .speak-rate-btn {
+  border-color: var(--wine); color: var(--wine); background: var(--tint);
+}
 #speak-toggle.speaking, #speak-toggle.speaking:hover { background: var(--wine); color: var(--paper); border-color: var(--wine); }
 
 .speak-rate-menu {
