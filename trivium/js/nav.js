@@ -38,7 +38,7 @@
       label: "Critical thinking",
       pages: [
         { id: "path-thinking", href: "path-thinking.html", title: "Critical Thinking as a Starting Point" },
-        { id: "path-thinking-2", href: "path-thinking-2.html", title: "What Puzzles and Studying Biases Cannot Teach" },
+        { id: "path-thinking-2", href: "path-thinking-2.html", title: "What Critical Thinking Cannot Teach" },
         { id: "path-thinking-3", href: "path-thinking-3.html", title: "From Thinking Back to Speech" }
       ]
     },
