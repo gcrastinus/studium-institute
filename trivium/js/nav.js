@@ -61,7 +61,7 @@
       label: "Mathematics and symbols",
       pages: [
         { id: "path-math", href: "path-math.html", title: "The Primacy of Mathematics" },
-        { id: "path-math-2", href: "path-math-2.html", title: "Why Mathematics Needs Words" },
+        { id: "path-math-2", href: "path-math-2.html", title: "Mathematics Needs To Be Interpreted" },
         { id: "path-math-3", href: "path-math-3.html", title: "Why the Arts of Speech Come First" }
       ]
     }
