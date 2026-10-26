@@ -9,7 +9,7 @@
   var SPINE = [
     { id: "index", href: "index.html", title: "Welcome", short: "Welcome" },
     { id: "modern-starts", href: "where-to-begin.html", title: "Where to Begin", short: "Where to Begin" },
-    { id: "why-words", href: "why-words.html", title: "Why We Begin with Words", short: "Why We Begin with Words" },
+    { id: "why-words", href: "why-words.html", title: "Why the Classical Tradition Begins with Words", short: "Why the Classical Tradition Begins with Words" },
     { id: "why-words-2", href: "why-words-2.html", title: "The Purposes of Language", short: "The Purposes of Language" },
     { id: "why-words-3", href: "why-words-3.html", title: "Discourse and the Three Arts", short: "Discourse and the Three Arts" },
     { id: "words-things", href: "words-things.html", title: "Words, Concepts, and Things", short: "Words, Concepts, and Things" },
@@ -308,7 +308,7 @@
       prev = i > 0 ? seq[i - 1] : { href: "where-to-begin.html", title: "Where to Begin" };
       next = i >= 0 && i < seq.length - 1
         ? seq[i + 1]
-        : { href: "why-words.html", title: "Why We Begin with Words" };
+        : { href: "why-words.html", title: "Why the Classical Tradition Begins with Words" };
     } else {
       i = findSpine(id);
       if (i < 0) return;              /* leave the server-rendered pager alone */
