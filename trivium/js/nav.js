@@ -39,7 +39,7 @@
       pages: [
         { id: "path-thinking", href: "path-thinking.html", title: "Critical Thinking as a Starting Point" },
         { id: "path-thinking-2", href: "path-thinking-2.html", title: "The Limits of Critical Thinking" },
-        { id: "path-thinking-3", href: "path-thinking-3.html", title: "From Thinking Back to Speech" }
+        { id: "path-thinking-3", href: "path-thinking-3.html", title: "From Critical Thinking Back to Speech" }
       ]
     },
     voice: {
