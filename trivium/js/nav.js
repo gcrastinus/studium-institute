@@ -54,7 +54,6 @@
       label: "Words as mere labels",
       pages: [
         { id: "path-labels", href: "path-labels.html", title: "Words as Labels as a Starting Point" },
-        { id: "path-labels-2", href: "path-labels-2.html", title: "Why Names Are More than Labels" },
         { id: "path-labels-3", href: "path-labels-3.html", title: "From Words as Labels Back to Speech" }
       ]
     },
