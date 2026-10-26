@@ -45,17 +45,17 @@
     voice: {
       label: "Voice and self-expression",
       pages: [
-        { id: "path-voice", href: "path-voice.html", title: "What Is True in Starting from Self-Expression" },
-        { id: "path-voice-2", href: "path-voice-2.html", title: "When Expression Is Not Yet Speech" },
-        { id: "path-voice-3", href: "path-voice-3.html", title: "Why Training Our Speech Is Earlier than Finding a Voice" }
+        { id: "path-voice", href: "path-voice.html", title: "Self-Expression as a Starting Point" },
+        { id: "path-voice-2", href: "path-voice-2.html", title: "The Limits of Self-Expression" },
+        { id: "path-voice-3", href: "path-voice-3.html", title: "From Self-Expression Back to Speech" }
       ]
     },
     labels: {
       label: "Words as mere labels",
       pages: [
-        { id: "path-labels", href: "path-labels.html", title: "How Words Might Lead Us Astray" },
-        { id: "path-labels-2", href: "path-labels-2.html", title: "What a Name Does" },
-        { id: "path-labels-3", href: "path-labels-3.html", title: "Why Labels Cannot Be Second" }
+        { id: "path-labels", href: "path-labels.html", title: "Words as Labels as a Starting Point" },
+        { id: "path-labels-2", href: "path-labels-2.html", title: "Why Names Are More than Labels" },
+        { id: "path-labels-3", href: "path-labels-3.html", title: "From Words as Labels Back to Speech" }
       ]
     },
     math: {
@@ -63,7 +63,7 @@
       pages: [
         { id: "path-math", href: "path-math.html", title: "What Is True in Starting from Mathematics" },
         { id: "path-math-2", href: "path-math-2.html", title: "Why Mathematics Needs Words" },
-        { id: "path-math-3", href: "path-math-3.html", title: "Why Words Come First" }
+        { id: "path-math-3", href: "path-math-3.html", title: "Why the Arts of Speech Come First" }
       ]
     }
   };
