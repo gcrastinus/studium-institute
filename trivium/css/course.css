@@ -188,3 +188,9 @@ p > .app-link { margin: 0 auto; }
   .top, .top-right-controls { display: none; }
   body { padding-top: 0; }
 }
+
+/* Collapsible Philosophical Exploration box */
+details.explore { margin: 1.6em 0; border: 1px solid var(--line); padding: 4px 18px; }
+details.explore > summary { cursor: pointer; font-weight: 700; padding: 12px 0; color: var(--wine); }
+details.explore[open] > summary { border-bottom: 1px solid var(--line); margin-bottom: 0.6em; }
+details.explore > summary:hover { text-decoration: underline; }
