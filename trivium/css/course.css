@@ -139,6 +139,7 @@ hr, .prose hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
 
 .note, .need { margin: 1.2em 0; padding: 14px 18px; border: 1px solid var(--line); }
 .note > h2:first-child { margin-top: 0.8em; }
+.prose > .note:has(> h2:first-child) { margin-top: 2.2em; }
 
 /* ---- stacked centered buttons ----------------------------------------- */
 
