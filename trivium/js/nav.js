@@ -53,7 +53,7 @@
     labels: {
       label: "Words as mere labels",
       pages: [
-        { id: "path-labels", href: "path-labels.html", title: "Words as Labels as a Starting Point" },
+        { id: "path-labels", href: "path-labels.html", title: "Are Words Enough to Be a Starting Point?" },
         { id: "path-labels-3", href: "path-labels-3.html", title: "From Words as Labels Back to Speech" }
       ]
     },
