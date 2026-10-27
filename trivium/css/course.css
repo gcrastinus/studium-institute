@@ -189,8 +189,12 @@ p > .app-link { margin: 0 auto; }
   body { padding-top: 0; }
 }
 
-/* Collapsible Philosophical Exploration box */
-details.explore { margin: 1.6em 0; border: 1px solid var(--line); padding: 4px 18px; }
-details.explore > summary { cursor: pointer; font-weight: 700; padding: 12px 0; color: var(--wine); }
+/* Collapsible Philosophical Exploration box: a small outlined box, title plus a drop-down arrow */
+details.explore { margin: 1.6em 0; border: 1px solid var(--line); padding: 0 18px; }
+details.explore > summary { list-style: none; cursor: pointer; font-weight: 700; padding: 12px 0; color: var(--wine); display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+details.explore > summary::-webkit-details-marker { display: none; }
+details.explore > summary::after { content: "\25BE"; font-size: 1.4em; line-height: 1; flex: none; transition: transform 0.15s; transform: rotate(-90deg); }
+details.explore[open] > summary::after { transform: rotate(0deg); }
 details.explore[open] > summary { border-bottom: 1px solid var(--line); margin-bottom: 0.6em; }
-details.explore > summary:hover { text-decoration: underline; }
+details.explore > summary:hover, details.explore > summary:focus-visible { text-decoration: underline; }
+details.explore[open] { padding-bottom: 6px; }
