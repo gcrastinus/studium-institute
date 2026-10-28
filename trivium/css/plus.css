@@ -1,0 +1,18 @@
+/* Plus menu (Preface to the Trivium, trial): dark mode, then translating the page. No font menu here. */
+#plus-wrap{position:relative; display:flex}
+#plus-btn{min-width:48px; height:44px; padding:0 12px; border:1px solid var(--line); background:var(--paper); color:var(--ink); font:400 26px/1.2 var(--text); cursor:pointer; display:flex; align-items:center; justify-content:center}
+#plus-btn:hover, #plus-btn:focus-visible, #plus-btn[aria-expanded="true"]{border-color:var(--wine); color:var(--wine); background:var(--tint)}
+#plus-menu{position:absolute; top:calc(100% + 6px); right:0; z-index:70; width:330px; max-width:calc(100vw - 24px); max-height:calc(100vh - 80px); overflow-y:auto; background:var(--paper); border:1px solid var(--ink); padding:6px 0; color:var(--ink); font-family:var(--text); font-size:1rem; line-height:1.4; text-align:left}
+#plus-menu[hidden]{display:none}
+#plus-menu button{display:flex; align-items:center; gap:12px; width:100%; margin:0; padding:10px 16px; text-align:left; font:inherit; color:var(--ink); background:transparent; border:0; cursor:pointer}
+#plus-menu button:hover, #plus-menu button:focus-visible{background:var(--tint); color:var(--wine)}
+#plus-menu .plus-check{width:20px; flex:none; text-align:center; font-weight:700}
+#plus-menu [aria-checked="true"] .plus-check::before{content:"✓"}
+#plus-menu .plus-sep{border-top:1px solid var(--line); margin:6px 0}
+#plus-menu .plus-arrow{margin-left:auto; transition:transform .15s}
+#plus-menu [aria-expanded="true"] .plus-arrow{transform:rotate(180deg)}
+#plus-menu .plus-help{padding:4px 16px 10px; font-size:.9rem; line-height:1.5}
+#plus-menu .plus-help[hidden]{display:none}
+#plus-menu .plus-help p{margin:0 0 .6em}
+#plus-menu .plus-help p:last-child{margin-bottom:0}
+@media print{#plus-wrap{display:none !important}}
