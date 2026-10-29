@@ -12,8 +12,8 @@
   var enHref = es ? "../" + file : file;
   var esHref = es ? file : "es/" + file;
   var T = es
-    ? { btn: "Modo oscuro e idioma", dark: "Modo oscuro", lang: "Idioma", saved: "" }
-    : { btn: "Dark mode and language", dark: "Dark mode", lang: "Language", saved: "Saved choice: Español" };
+    ? { btn: "Modo oscuro e idioma", dark: "Modo oscuro", lang: "Traducción automática", saved: "" }
+    : { btn: "Dark mode and language", dark: "Dark mode", lang: "Auto-Translation", saved: "Saved choice: Español" };
 
   var host = document.getElementById("top-right-controls");
   var dark = document.getElementById("dark-toggle");
@@ -26,8 +26,9 @@
       '<div id="plus-menu" role="menu" aria-label="' + T.btn + '" hidden>' +
       '<button type="button" role="menuitemcheckbox" id="plus-dark" aria-checked="false"><span class="plus-check" aria-hidden="true"></span><span>' + T.dark + "</span></button>" +
       '<div class="plus-sep" role="separator"></div>' +
-      '<div class="plus-head" id="plus-lang-head">' + T.lang + "</div>" +
       '<a class="plus-item" role="menuitemradio" lang="en" hreflang="en" href="' + enHref + '" data-lang="en" aria-current="' + (!es) + '" aria-checked="' + (!es) + '"><span class="plus-check" aria-hidden="true"></span><span>English</span></a>' +
+      '<div class="plus-sep" role="separator"></div>' +
+      '<div class="plus-head" id="plus-lang-head">' + T.lang + "</div>" +
       '<a class="plus-item" role="menuitemradio" lang="es" hreflang="es" href="' + esHref + '" data-lang="es" aria-current="' + es + '" aria-checked="' + es + '"><span class="plus-check" aria-hidden="true"></span><span>Español</span></a>' +
       (savedEs ? '<div class="plus-saved">' + T.saved + "</div>" : "") +
       "</div>";

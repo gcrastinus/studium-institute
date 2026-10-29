@@ -20,7 +20,7 @@ from locate import locate, STRUCT
 ROOT = os.path.dirname(HERE)
 TRIV = os.path.join(ROOT, 'trivium')
 SRC = os.environ.get('ES_SOURCE', '/workspace/spanish-pilot/final/preface-es-final.md')
-V = '20261029a'
+V = '20261029b'
 SITE = 'https://studiuminstitute.org/trivium/'
 ORDER = ("index where-to-begin why-words why-words-2 why-words-3 words-things words-things-2 grammar "
          "to-grammatica logic to-syllogistica rhetoric to-rhetorica three-arts quadrivium sources "
