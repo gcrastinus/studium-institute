@@ -16,6 +16,7 @@
     { id: "why-words-3", href: "why-words-3.html", title: "Discourse and the Three Arts", short: "Discourse and the Three Arts" },
     { id: "words-things", href: "words-things.html", title: "Words, Concepts, and Things", short: "Words, Concepts, and Things" },
     { id: "words-things-2", href: "words-things-2.html", title: "Words as Signs", short: "Words as Signs" },
+    { id: "principles-order", href: "principles-order.html", title: "How the Classical Tradition Differs from the Modern: Principles and Order", short: "Principles and Order" },
     { id: "grammar", href: "grammar.html", title: "Grammar", short: "Grammar" },
     { id: "to-grammatica", href: "to-grammatica.html", title: "Studying Grammar", short: "Studying Grammar" },
     { id: "logic", href: "logic.html", title: "Logic", short: "Logic" },
