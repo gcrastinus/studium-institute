@@ -1,0 +1,38 @@
+/* + menu (Preface to the Trivium): Dark mode, then Language. No font menu here (Timothy's rule). */
+#plus-wrap { position: relative; display: flex; }
+#plus-btn { min-width: 52px; height: 44px; padding: 0 12px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); font: 400 28px/1 var(--text); cursor: pointer; display: flex; align-items: center; justify-content: center; }
+#plus-btn:hover, #plus-btn:focus-visible, #plus-btn[aria-expanded="true"] { border-color: var(--wine); color: var(--wine); background: var(--tint); }
+#plus-btn:focus-visible, #plus-menu button:focus-visible, #plus-menu a:focus-visible { outline: 3px solid var(--wine); outline-offset: 2px; }
+#plus-menu { position: absolute; top: calc(100% + 6px); right: 0; z-index: 70; width: 320px; max-width: calc(100vw - 20px); max-height: calc(100vh - 80px); overflow-y: auto; background: var(--paper); border: 1px solid var(--ink); padding: 6px 0; color: var(--ink); font-family: var(--text); font-size: 1.1rem; line-height: 1.4; text-align: left; }
+#plus-menu[hidden] { display: none; }
+#plus-menu button, #plus-menu a.plus-item { display: flex; align-items: center; gap: 12px; width: 100%; min-height: 52px; margin: 0; padding: 10px 18px; text-align: left; font: inherit; color: var(--ink); background: transparent; border: 0; cursor: pointer; text-decoration: none; }
+#plus-menu button:hover, #plus-menu a.plus-item:hover, #plus-menu button:focus-visible, #plus-menu a.plus-item:focus-visible { background: var(--tint); color: var(--wine); }
+#plus-menu .plus-check { width: 22px; flex: none; text-align: center; font-weight: 700; }
+#plus-menu [aria-checked="true"] .plus-check::before, #plus-menu [aria-current="true"] .plus-check::before { content: "\2713"; }
+#plus-menu [aria-current="true"] { font-weight: 700; }
+#plus-menu .plus-sep { border-top: 1px solid var(--line); margin: 6px 0; }
+#plus-menu .plus-head { padding: 8px 18px 2px; color: var(--sepia); font-size: 1rem; }
+#plus-menu .plus-saved { padding: 2px 18px 8px 52px; color: var(--sepia); font-size: 0.95rem; }
+#dark-toggle[hidden] { display: none; }
+@media print { #plus-wrap { display: none !important; } }
+
+/* Spanish pages: trial note, Show English, and the English shown under each block */
+.es-tools { text-align: center; margin: 0 0 1.6em; }
+.es-note { color: var(--sepia); font-size: 0.95rem; font-style: italic; margin: 0 0 0.6em; }
+.es-tools .es-links { display: flex; flex-wrap: wrap; gap: 10px 22px; justify-content: center; align-items: center; font-size: 1.1rem; }
+#show-en { font: inherit; font-size: 1.1rem; min-height: 48px; padding: 8px 18px; background: var(--paper); color: var(--wine); border: 2px solid var(--wine); cursor: pointer; }
+#show-en[hidden] { display: none; }
+#show-en:hover, #show-en:focus-visible, #show-en[aria-pressed="true"] { background: var(--tint); }
+#show-en:focus-visible { outline: 3px solid var(--wine); outline-offset: 2px; }
+.es-tools a { color: var(--navy); }
+.en-orig { display: none !important; }
+body.show-en .en-orig {
+  display: block !important; margin: 0.45em 0 0; padding: 0.3em 0 0.3em 0.8em;
+  border-left: 3px solid var(--line); color: var(--sepia);
+  font-family: var(--text); font-size: 0.9rem; font-weight: 400; font-style: normal;
+  line-height: 1.5; letter-spacing: 0; text-align: left; text-transform: none;
+}
+body.show-en h1 .en-orig, body.show-en h2 .en-orig, body.show-en h3 .en-orig, body.show-en h4 .en-orig { font-size: 1rem; }
+body.show-en .en-orig em, body.show-en .en-orig i { font-style: italic; }
+body.show-en td .en-orig, body.show-en th .en-orig { font-size: 0.85rem; }
+body.show-en .kicker .en-orig { text-align: center; border-left: 0; padding-left: 0; }

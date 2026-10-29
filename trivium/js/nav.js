@@ -3,6 +3,8 @@
 
   var STORAGE = "studium-trivium-v1";
   var THEME = "studium-trivium-theme";
+  /* Spanish pages (trivium/es/) carry their own translated pager and speak Spanish. */
+  var ES = (document.documentElement.lang || "").toLowerCase().indexOf("es") === 0;
 
   /* Keep SPINE in step with SPINE_ORDER in _build_pages.py, which emits the
      same pager into the HTML so the walk-through navigates without JS. */
@@ -296,7 +298,7 @@
 
   function renderPager() {
     var el = document.getElementById("pager");
-    if (!el) return;
+    if (!el || ES) return;
     var id = pageId();
     var pathKey = document.body.getAttribute("data-path") || pathIdOf(id);
     var seq, i, prev, next;
@@ -519,14 +521,14 @@
     function pickVoice() {
       try {
         var voices = window.speechSynthesis.getVoices() || [];
-        var en = voices.filter(function (v) { return /^en(-|_)/i.test(v.lang); });
+        var en = voices.filter(function (v) { return ES ? /^es(-|_|$)/i.test(v.lang) : /^en(-|_)/i.test(v.lang); });
         var score = function (v) {
           return (/premium/i.test(v.name) ? 40 : 0) + (/enhanced/i.test(v.name) ? 30 : 0)
             + (v.localService ? 20 : 0) + (/^(Ava|Zoe|Allison|Samantha|Evan|Tom|Susan|Daniel|Karen|Moira|Serena)\b/i.test(v.name) ? 10 : 0)
             + (v.default ? 5 : 0) + (/^en(-|_)US/i.test(v.lang) ? 3 : 0) - (/google|eloquence|novelty|bells|bubbles|zarvox|whisper|bad news|good news|organ|trinoids|albert|jester|superstar|cellos|wobble|boing|bahh|fred|junior|ralph|kathy|grandma|grandpa|rocko|shelley|flo|eddy|reed|sandy/i.test(v.name) ? 50 : 0);
         };
         var best = en.sort(function (a, b) { return score(b) - score(a); })[0];
-        return best || voices[0] || null;
+        return best || (ES ? null : voices[0]) || null;
       } catch (e) { return null; }
     }
 
@@ -566,7 +568,7 @@
           return;
         }
         var u = new SpeechSynthesisUtterance(queue.shift());
-        u.lang = "en-US";
+        u.lang = ES ? "es-ES" : "en-US";
         if (voice) u.voice = voice;
         u.rate = rate;
         u.pitch = 1;
@@ -608,7 +610,7 @@
       if (speaking) stopSpeak();
       else {
         var text = collectSpeakText();
-        speakChunks(chunkText(text || "There is nothing to read on this screen."));
+        speakChunks(chunkText(text || (ES ? "No hay nada que leer en esta pantalla." : "There is nothing to read on this screen.")));
       }
     });
 
