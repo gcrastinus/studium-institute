@@ -36,3 +36,19 @@ body.show-en h1 .en-orig, body.show-en h2 .en-orig, body.show-en h3 .en-orig, bo
 body.show-en .en-orig em, body.show-en .en-orig i { font-style: italic; }
 body.show-en td .en-orig, body.show-en th .en-orig { font-size: 0.85rem; }
 body.show-en .kicker .en-orig { text-align: center; border-left: 0; padding-left: 0; }
+
+/* Outlines box at the foot of the first Preface page */
+details.outline { margin: 2em 0 1.2em; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 0 4px; font-size: 1.1rem; }
+details.outline > summary { cursor: pointer; list-style: none; padding: 12px 0; color: var(--sepia); font-size: 1.1rem; display: flex; align-items: center; gap: 10px; }
+details.outline > summary::-webkit-details-marker, details.outline-path > summary::-webkit-details-marker { display: none; }
+details.outline > summary::before, details.outline-path > summary::before { content: "\25B8"; flex: none; transition: transform 0.15s; }
+details.outline[open] > summary::before, details.outline-path[open] > summary::before { transform: rotate(90deg); }
+details.outline > summary:hover, details.outline > summary:focus-visible, details.outline-path > summary:hover, details.outline-path > summary:focus-visible { color: var(--wine); text-decoration: underline; outline: none; }
+details.outline a:focus-visible, details.outline summary:focus-visible { outline: 3px solid var(--wine); outline-offset: 2px; }
+.outline-body { padding: 0 0 12px; }
+.outline-head { margin: 0.6em 0 0.3em; color: var(--sepia); font-size: 1rem; }
+.outline-body ol { margin: 0 0 0.6em; padding-left: 1.6em; line-height: 1.5; }
+.outline-body li { margin: 0.25em 0; }
+details.outline-path { margin: 0.2em 0; padding-left: 4px; }
+details.outline-path > summary { cursor: pointer; list-style: none; padding: 6px 0; display: flex; align-items: center; gap: 10px; color: var(--ink); }
+@media print { details.outline { display: none; } }
